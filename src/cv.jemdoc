@@ -21,7 +21,16 @@ I was born in Sofia, Bulgaria (20.11.1975)
 {{<div name="ProbaYes" style="display:none;">}}
 ~~~
 {}
-I am working on all sorts of interesting projects involving machine learning and optimization
++Projects+: machine learning applied to various domains /e.g.,/
+- fault detection
+- causal analysis
+- image classification (deep learning)
+- deep reinforcement learning for trajectory generation
+- concurrent HMM for behavior detection
+- camera calibration
+- graph analysis
+- time series analysis
+- evaluation of fuzzy controllers, etc.
 {{</div>}}
 ~~~
 
@@ -132,9 +141,3 @@ I am working on all sorts of interesting projects involving machine learning and
 - Japanese (conversational)
 - Russian (basic)
 - French (beginner)
-
-== Other
-
-Periods of unemployment
-- {{<period>2016.01 - 2017.08</period>}} in France
-- {{<period>2006.04 - 2006.11</period>}} in Bulgaria
