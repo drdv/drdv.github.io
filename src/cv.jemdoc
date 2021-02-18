@@ -13,6 +13,19 @@ I was born in Sofia, Bulgaria (20.11.1975)
 == Professional experience
 
 {{
+<period>2021.03 - present</period>
+<place><a href="https://www.kelkoogroup.com/">Kelkoo</a></place>
+<input type="button" name="button" value="details" width="20" onclick="toggle('Kelkoo');">
+}}
+
+{{<div name="Kelkoo" style="display:none;">}}
+~~~
+{}
+New beginnings are always exciting ...
+{{</div>}}
+~~~
+
+{{
 <period>2017.09 - 2021.03</period>
 <place><a href="http://www.probayes.com/en/">ProbaYes</a></place>
 <input type="button" name="button" value="details" width="20" onclick="toggle('ProbaYes');">
@@ -33,20 +46,6 @@ I was born in Sofia, Bulgaria (20.11.1975)
 - evaluation of fuzzy controllers, etc.
 {{</div>}}
 ~~~
-
-{{
-<period>2021.03 - present</period>
-<place><a href="https://www.kelkoogroup.com/">Kelkoo</a></place>
-<input type="button" name="button" value="details" width="20" onclick="toggle('Kelkoo');">
-}}
-
-{{<div name="Kelkoo" style="display:none;">}}
-~~~
-{}
-New beginnings are always exciting ...
-{{</div>}}
-~~~
-
 
 == Research experience
 
