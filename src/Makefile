@@ -1,9 +1,4 @@
 FILES = $(wildcard *.jemdoc)
 
-all: jomdoc
-	mv *.html ..
-	rm -rf ../eqs
-	mv eqs ..
-
-jomdoc:
-	./jemdoc.py ${FILES}
+jemdoc:
+	docker run -it --rm -w /home/site --volume ${PWD}:/home/site jemdoc jemdoc.py ${FILES}
