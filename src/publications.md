@@ -49,11 +49,11 @@
     === "bibtex"
         ```bibtex
         @inproceedings{Bohorquez.2016,
-        author     = {Bohorquez, Nestor and Sherikov, Alexander and Dimitrov, Dimitar and Wieber, Pierre-Brice},
-        title      = {Safe navigation strategies for a biped robot walking in a crowd},
-        booktitle  = {IEEE-RAS International Conference on Humanoid Robots (Humanoids)},
-        pages      = {379--386},
-        year       = 2016}
+         author     = {Bohorquez, Nestor and Sherikov, Alexander and Dimitrov, Dimitar and Wieber, Pierre-Brice},
+         title      = {Safe navigation strategies for a biped robot walking in a crowd},
+         booktitle  = {IEEE-RAS International Conference on Humanoid Robots (Humanoids)},
+         pages      = {379--386},
+         year       = 2016}
         ```
 
 ??? info "A newton method with always feasible iterates for nonlinear model predictive control of walking in a multi-contact situation"

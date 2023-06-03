@@ -9,9 +9,9 @@ I was born in Sofia, Bulgaria (20.11.1975)
     **senior data scientist** (science team)
 
     === "research"
-        + machine learning and oprations research for online bidding
-        + trffic / resource optimization
-        + modeling of merchant-publisher interation (handling of sparse data)
+        + machine learning and operations research for online bidding
+        + traffic / resource optimization
+        + modeling of merchant-publisher interaction (handling of sparse data)
         + multi-objective formulations for margin optimization
 
     === "coding"
@@ -35,6 +35,7 @@ I was born in Sofia, Bulgaria (20.11.1975)
         + graph analysis
         + time series analysis
         + evaluation of fuzzy controllers
+
     === "coding"
         + `python`
         + `C++`
