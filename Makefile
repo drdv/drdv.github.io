@@ -29,3 +29,6 @@ setup-venv: ## setup venv with dependencies
 	. ${VENV_NAME}/bin/activate && \
 	pip install --upgrade pip && \
 	pip install -r .requirements.txt
+
+clean:
+	rm -rf site
