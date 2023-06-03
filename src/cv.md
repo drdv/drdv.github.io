@@ -4,7 +4,7 @@ I was born in Sofia, Bulgaria (20.11.1975)
 
 ## Professional experience
 
-??? "**2021.03** - **present**: [Kelkoo](https://www.kelkoogroup.com)"
+???+ info "**2021.03** - **present**: [Kelkoo](https://www.kelkoogroup.com)"
 
     **senior data scientist** (science team)
 
@@ -19,7 +19,7 @@ I was born in Sofia, Bulgaria (20.11.1975)
         + `scala`
         + `spark`
 
-??? "**2017.09** - **2021.03**: [ProbaYes](http://www.probayes.com/en)"
+??? info "**2017.09** - **2021.03**: [ProbaYes](http://www.probayes.com/en)"
 
     **data scientist/software engineer**
 
@@ -42,7 +42,7 @@ I was born in Sofia, Bulgaria (20.11.1975)
 
 ## Research experience
 
-??? "**2012.10** - **2015.12**: [INRIA Rhône-Alpes](http://www.inria.fr/centre/grenoble)"
+??? info "**2012.10** - **2015.12**: [INRIA Rhône-Alpes](http://www.inria.fr/centre/grenoble)"
 
     **research scientist** ([BIPOP](http://www.inrialpes.fr/bipop/index.html) team)
 
@@ -59,7 +59,7 @@ I was born in Sofia, Bulgaria (20.11.1975)
         + `c++`
         + `matlab`
 
-??? "**2007.12** - **2012.09**: [Örebro University](http://www.oru.se)"
+??? info "**2007.12** - **2012.09**: [Örebro University](http://www.oru.se)"
 
     **research scientist/lecturer** ([Mobile Robotics and Olfaction Lab at AASS](https://www.oru.se/english/research/research-environments/ent/AASS/alumni))
 
@@ -78,7 +78,7 @@ I was born in Sofia, Bulgaria (20.11.1975)
         + `c++`
         + `matlab`
 
-??? "**2012.10** - **2015.12**: [INRIA Rhône-Alpes](http://www.inria.fr/centre/grenoble)"
+??? info "**2012.10** - **2015.12**: [INRIA Rhône-Alpes](http://www.inria.fr/centre/grenoble)"
 
     **research scientist** ([BIPOP](http://www.inrialpes.fr/bipop/index.html) team)
 
@@ -91,7 +91,7 @@ I was born in Sofia, Bulgaria (20.11.1975)
 
 ## Education
 
-??? "**2003.04** - **2006.03**: [Tohoku University](http://www.tohoku.ac.jp)"
+??? info "**2003.04** - **2006.03**: [Tohoku University](http://www.tohoku.ac.jp)"
 
     + [Space Robotics Laboratory](http://www.astro.mech.tohoku.ac.jp) Department of Aerospace Engineering
     + **degree**: Ph.D. in aerospace engineering
@@ -99,13 +99,13 @@ I was born in Sofia, Bulgaria (20.11.1975)
     + **advisor**: [Prof. Kazuya Yoshida](https://scholar.google.com/citations?user=mzUOHycAAAAJ&hl=en)
     + **awards**: Scholarship from the Japanese Ministry of Education MONBU-SHYO (**2003.04** - **2006.03**)
 
-??? "**2003.04** - **2006.03**: [Hirosaki University](https://www.hirosaki-u.ac.jp/en)"
+??? info "**2003.04** - **2006.03**: [Hirosaki University](https://www.hirosaki-u.ac.jp/en)"
 
     + Department of [Mechanical Science and Engineering](https://www.st.hirosaki-u.ac.jp/english)
     + **advisor**: [Prof. Dragomir Nenchev](https://scholar.google.com/citations?user=f72Fm44AAAAJ&hl=en)
     + **awards**: Scholarship from Hirosaki University (**2002.10** - **2003.03**)
 
-??? "**1994.09** - **2001.09**: [Technical University - Sofia](http://www.tu-sofia.bg)"
+??? info "**1994.09** - **2001.09**: [Technical University - Sofia](http://www.tu-sofia.bg)"
 
     + Faculty of [Automatics](http://fa.tu-sofia.bg)
     + **degrees**: M.Sc. in robotics (**1999.09**), B.A. in electrical engineering (**1997.09**)

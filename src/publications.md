@@ -2,7 +2,7 @@
 
 ## 2016
 
-??? "Efficient resolution of potentially conflicting linear constraints in robotics"
+??? info "Efficient resolution of potentially conflicting linear constraints in robotics"
 
     [manuscript](https://hal.inria.fr/hal-01183003)
 
@@ -14,7 +14,7 @@
     === "bibtex"
         + not published
 
-??? "Geometric and numerical aspects of redundancy"
+??? info "Geometric and numerical aspects of redundancy"
 
     [preprint](https://hal.inria.fr/hal-01418462/document)
 
@@ -36,7 +36,7 @@
          year       = 2016}
         ```
 
-??? "Safe navigation strategies for a biped robot walking in a crowd"
+??? info "Safe navigation strategies for a biped robot walking in a crowd"
 
     [preprint](pdf/humanoids16_1.pdf), [video](video/humanoids16_1.mp4)
 
@@ -56,7 +56,7 @@
         year       = 2016}
         ```
 
-??? "A newton method with always feasible iterates for nonlinear model predictive control of walking in a multi-contact situation"
+??? info "A newton method with always feasible iterates for nonlinear model predictive control of walking in a multi-contact situation"
 
     [preprint](pdf/humanoids16_2.pdf), [video](video/humanoids16_2.mp4)
 
@@ -77,7 +77,7 @@
          year       = 2016}
         ```
 
-??? "A hierarchical approach to minimum-time control of industrial robots"
+??? info "A hierarchical approach to minimum-time control of industrial robots"
 
     [preprint](pdf/icra16.pdf)
 
@@ -99,7 +99,7 @@
 
 ## 2015
 
-??? "Autonomous transport vehicles: where we are and what is missing"
+??? info "Autonomous transport vehicles: where we are and what is missing"
 
     [paper](http://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=7059356)
 
@@ -128,7 +128,7 @@
          year       = 2015}
         ```
 
-??? "Model predictive motion control based on generalized dynamical movement primitives"
+??? info "Model predictive motion control based on generalized dynamical movement primitives"
 
     [preprint](pdf/jirs14.pdf)
 
@@ -148,7 +148,7 @@
          year       = 2015}
         ```
 
-??? "Balancing a humanoid robot with a prioritized contact force distribution"
+??? info "Balancing a humanoid robot with a prioritized contact force distribution"
 
     [preprint](pdf/humanoids15_1.pdf), [video](video/humanoids15_1.mp4)
 
@@ -167,7 +167,7 @@
          year       = 2015}
         ```
 
-??? "A robust linear MPC approach to online generation of 3D biped walking motion"
+??? info "A robust linear MPC approach to online generation of 3D biped walking motion"
 
     [preprint](pdf/humanoids15_2.pdf), [video](video/humanoids15_2.mp4)
 
@@ -190,7 +190,7 @@
 
 ## 2014
 
-??? "Efficiently combining task and motion planning using geometric constraints"
+??? info "Efficiently combining task and motion planning using geometric constraints"
 
     [preprint](pdf/ijrr14.pdf)
 
@@ -213,7 +213,7 @@
          year       = 2014}
         ```
 
-??? "Whole body motion controller with long-term balance constraints"
+??? info "Whole body motion controller with long-term balance constraints"
 
     [preprint](pdf/humanoids14.pdf), [video](video/humanoids14.mp4)
 
@@ -232,7 +232,7 @@
          year       = 2014}
         ```
 
-??? "Multi-objective control of robots"
+??? info "Multi-objective control of robots"
 
     [preprint](pdf/rsj14.pdf)
 
@@ -255,7 +255,7 @@
 
 ## 2013
 
-??? "Representing movement primitives as implicit dynamical systems learned from multiple demonstrations"
+??? info "Representing movement primitives as implicit dynamical systems learned from multiple demonstrations"
 
     [preprint](pdf/icar13.pdf)
 
@@ -275,7 +275,7 @@
 
 ## 2012
 
-??? "Constraint propagation on interval bounds for dealing with geometric backtracking"
+??? info "Constraint propagation on interval bounds for dealing with geometric backtracking"
 
     [preprint](pdf/iros12_1.pdf)
 
@@ -295,7 +295,7 @@
          year       = 2012}
         ```
 
-??? "On mission-dependent coordination of multiple vehicles under spatial and temporal constraints"
+??? info "On mission-dependent coordination of multiple vehicles under spatial and temporal constraints"
 
     [preprint](pdf/iros12_2.pdf)
 
@@ -314,7 +314,7 @@
          year       = 2012}
         ```
 
-??? "Independent contact regions based on a patch contact model"
+??? info "Independent contact regions based on a patch contact model"
 
     [preprint](pdf/icra12_1.pdf)
 
@@ -334,7 +334,7 @@
          year       = 2012}
         ```
 
-??? "Generation of independent contact regions on objects reconstructed from noisy real-world range data"
+??? info "Generation of independent contact regions on objects reconstructed from noisy real-world range data"
 
     [preprint](pdf/icra12_2.pdf)
 
@@ -355,7 +355,7 @@
          year       = 2012}
         ```
 
-??? "Mapping between different kinematic structures without absolute positioning during operation"
+??? info "Mapping between different kinematic structures without absolute positioning during operation"
 
     [paper](pdf/el12.pdf)
 
@@ -381,7 +381,7 @@
 
 ## 2011
 
-??? "A sparse model predictive control formulation for walking motion generation"
+??? info "A sparse model predictive control formulation for walking motion generation"
 
     [preprint](pdf/iros11_1.pdf), [presentation](pdf/iros11_1_presentation.pdf), [errata](pdf/iros11_1_errata.pdf), [implementation](http://www.sherikov.net/pages/naowalk.html)
 
@@ -400,7 +400,7 @@
          year       = 2011}
         ```
 
-??? "Prioritized independent contact regions for form closure grasps"
+??? info "Prioritized independent contact regions for form closure grasps"
 
     [preprint](pdf/iros11_2.pdf)
 
@@ -420,7 +420,7 @@
          year       = 2011}
         ```
 
-??? "Walking motion generation with online foot position adaptation based on $\ell_1$- and $\ell_\infty$-norm penalty formulations"
+??? info "Walking motion generation with online foot position adaptation based on $\ell_1$- and $\ell_\infty$-norm penalty formulations"
 
     [preprint](pdf/icra11.pdf), [presentation](pdf/icra11_presentation.pdf)
 
@@ -441,7 +441,7 @@
 
 ## 2010
 
-??? "Online walking motion generation with automatic foot step placement"
+??? info "Online walking motion generation with automatic foot step placement"
 
     [preprint](pdf/arj10.pdf)
 
@@ -466,7 +466,7 @@
          year       = 2010}
         ```
 
-??? "On the efficient computation of independent contact regions for force closure grasps"
+??? info "On the efficient computation of independent contact regions for force closure grasps"
 
     [preprint](pdf/iros10.pdf)
 
@@ -486,7 +486,7 @@
          year       = 2010}
         ```
 
-??? "An optimized linear model predictive control solver"
+??? info "An optimized linear model predictive control solver"
 
     [paper](pdf/LMPC_solver_bfg09_springer.pdf)
 
@@ -511,7 +511,7 @@
 
 ## 2009
 
-??? "An optimized linear model predictive control solver for online walking motion generation"
+??? info "An optimized linear model predictive control solver for online walking motion generation"
 
     [paper](pdf/icra09.pdf)
 
@@ -532,7 +532,7 @@
          year       = 2009}
         ```
 
-??? "Extraction of grasp related features by human dual-hand object exploration"
+??? info "Extraction of grasp related features by human dual-hand object exploration"
 
     [paper](pdf/icar09.pdf)
 
@@ -554,7 +554,7 @@
 
 ## 2008
 
-??? "Online walking gait generation with adaptive foot positioning through linear model predictive control"
+??? info "Online walking gait generation with adaptive foot positioning through linear model predictive control"
 
     [paper](pdf/iros08.pdf)
 
@@ -575,7 +575,7 @@
          year       = 2008}
         ```
 
-??? "On the implementation of model predictive control for on-line walking pattern generation"
+??? info "On the implementation of model predictive control for on-line walking pattern generation"
 
     [paper](pdf/icra08.pdf)
 
@@ -597,7 +597,7 @@
 
 ## 2006
 
-??? "On the capture of tumbling satellite by a space robot"
+??? info "On the capture of tumbling satellite by a space robot"
 
     [paper](pdf/iros06_1.pdf)
 
@@ -616,7 +616,7 @@
          year       = 2006}
         ```
 
-??? "Utilization of holonomic distribution control for reactionless path planning"
+??? info "Utilization of holonomic distribution control for reactionless path planning"
 
     [paper](pdf/iros06_2.pdf)
 
@@ -634,7 +634,7 @@
          year       = 2006}
         ```
 
-??? "Dynamics and control of space manipulators during a satellite capturing operation"
+??? info "Dynamics and control of space manipulators during a satellite capturing operation"
 
     [thesis](pdf/drdv_thesis.pdf) from Tohoku University (Japan), [Space Robotics Laboratory](http://www.astro.mech.tohoku.ac.jp)
 
@@ -652,7 +652,7 @@
 
 ## 2005
 
-??? "Utilization of distributed momentum control for planning approaching trajectories of a space manipulator to a target satellite"
+??? info "Utilization of distributed momentum control for planning approaching trajectories of a space manipulator to a target satellite"
 
     [preprint](pdf/iSairas05.pdf)
 
@@ -671,7 +671,7 @@
 
 ## 2004
 
-??? "Utilization of the bias momentum approach for capturing a tumbling satellite"
+??? info "Utilization of the bias momentum approach for capturing a tumbling satellite"
 
     [preprint](pdf/iros04_1.pdf)
 
@@ -689,7 +689,7 @@
          year       = 2004}
         ```
 
-??? "Momentum distribution in a space manipulator for facilitating the post-impact control"
+??? info "Momentum distribution in a space manipulator for facilitating the post-impact control"
 
     [preprint](pdf/iros04_2.pdf)
 
