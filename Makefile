@@ -13,13 +13,16 @@ echo -e "${_BLUE}============================================================${_
 endef
 
 help: ## show this help
-	@egrep -h '\s##\s' $(MAKEFILE_LIST) | awk 'BEGIN {FS = ":.*?## "}; {printf "${_BLUE}%-15s${_END} %s\n", $$1, $$2}'
+	@egrep -h '\s##\s' $(MAKEFILE_LIST) | awk 'BEGIN {FS = ":.*?## "}; {printf "${_BLUE}%-12s${_END} %s\n", $$1, $$2}'
 
 serve:  ## serve site locally
 	source ${VENV_ACTIVATE} && mkdocs serve
 
 build: ## build site
 	source ${VENV_ACTIVATE} && mkdocs build
+
+deploy: ## deploy site
+	source ${VENV_ACTIVATE} && mkdocs gh-deploy
 
 setup-venv: ## setup venv with dependencies
 	${PYTHON} -m venv ${VENV_NAME} && \
