@@ -18,10 +18,10 @@ help: ## show this help
 serve: build ## serve site locally
 	source ${VENV_ACTIVATE} && mkdocs serve
 
-build: ## build site
+build: clean ## build site
 	source ${VENV_ACTIVATE} && mkdocs build
 
-deploy: ## deploy site
+deploy: clean ## deploy site
 	source ${VENV_ACTIVATE} && mkdocs gh-deploy
 
 setup-venv: ## setup venv with dependencies
