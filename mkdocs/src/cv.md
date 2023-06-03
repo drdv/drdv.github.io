@@ -9,8 +9,7 @@ I was born in Sofia, Bulgaria (20.11.1975)
     **senior data scientist** (science team)
 
     === "coding"
-        + machine learning for online bidding
-        + oprations research
+        + machine learning and oprations research for online bidding
 
     === "coding"
         + `python`
@@ -46,8 +45,8 @@ I was born in Sofia, Bulgaria (20.11.1975)
 
     === "research"
         + fast and reliable solution of lexicographic optimization problems applied to robot control
-            + implementation of `C++` prototype
-            + application to real robot safety
+            + implementation of solver in `C++`
+            + applied to real-world robot safety
         + nonlinear model predictive control
         + robust control for safe locomotion
         + minimum-time control
@@ -59,7 +58,7 @@ I was born in Sofia, Bulgaria (20.11.1975)
 
 ??? "**2007.12** - **2012.09**: [Örebro University](http://www.oru.se)"
 
-    **research scientist/lecturer** ([MR&O](http://www.aass.oru.se/Research/Learning/index.html) laboratory)
+    **research scientist/lecturer** ([Mobile Robotics and Olfaction Lab at AASS](https://www.oru.se/english/research/research-environments/ent/AASS/alumni))
 
     === "research"
         + model predictive control applied to walking robots
@@ -97,10 +96,10 @@ I was born in Sofia, Bulgaria (20.11.1975)
     + **advisor**: [Prof. Kazuya Yoshida](https://scholar.google.com/citations?user=mzUOHycAAAAJ&hl=en)
     + **awards**: Scholarship from the Japanese Ministry of Education MONBU-SHYO (**2003.04** - **2006.03**)
 
-??? "**2003.04** - **2006.03**: [Hirosaki University](http://www.hirosaki-u.ac.jp)"
+??? "**2003.04** - **2006.03**: [Hirosaki University](https://www.hirosaki-u.ac.jp/en)"
 
-    + Department of [Mechanical Science and Engineering](http://www.st.hirosaki-u.ac.jp/english/faculty/dept-5-2016.html)
-    + **advisor**: [Prof. Dragomir Nenchev](http://www.rls.mse.tcu.ac.jp/~nenchev/index.html)
+    + Department of [Mechanical Science and Engineering](https://www.st.hirosaki-u.ac.jp/english)
+    + **advisor**: [Prof. Dragomir Nenchev](https://scholar.google.com/citations?user=f72Fm44AAAAJ&hl=en)
     + **awards**: Scholarship from Hirosaki University (**2002.10** - **2003.03**)
 
 ??? "**1994.09** - **2001.09**: [Technical University - Sofia](http://www.tu-sofia.bg)"
@@ -108,7 +107,6 @@ I was born in Sofia, Bulgaria (20.11.1975)
     + Faculty of [Automatics](http://fa.tu-sofia.bg)
     + **degrees**: M.Sc. in robotics (**1999.09**), B.A. in electrical engineering (**1997.09**)
     + **advisor**: Prof. Veselin Pavlov (M.Sc. thesis)
-    + **awards**: Scholarship from Hirosaki University (**2002.10** - **2003.03**)
     + I decided to move to Japan after having spent two years as a doctoral student
 
 
