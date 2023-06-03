@@ -4,7 +4,7 @@
 
 ??? info "Efficient resolution of potentially conflicting linear constraints in robotics"
 
-    [manuscript](https://hal.inria.fr/hal-01183003)
+    [manuscript](https://hal.inria.fr/hal-01183003){ .md-button }
 
     === "authors"
         + [Dimitar Dimitrov](https://scholar.google.com/citations?user=rYC8ycUAAAAJ&hl=en)
@@ -16,7 +16,7 @@
 
 ??? info "Geometric and numerical aspects of redundancy"
 
-    [preprint](https://hal.inria.fr/hal-01418462/document)
+    [preprint](https://hal.inria.fr/hal-01418462/document){ .md-button }
 
     === "authors"
         + [Pierre-Brice Wieber](https://scholar.google.com/citations?hl=en&user=zSSrBp4AAAAJ)
@@ -38,7 +38,8 @@
 
 ??? info "Safe navigation strategies for a biped robot walking in a crowd"
 
-    [preprint](pdf/humanoids16_1.pdf), [video](video/humanoids16_1.mp4)
+    [preprint](pdf/humanoids16_1.pdf){ .md-button }
+    [video](video/humanoids16_1.mp4){ .md-button }
 
     === "authors"
         + [Nestor Bohorquez](https://scholar.google.com/citations?hl=en&user=_ucslocAAAAJ)
@@ -58,7 +59,8 @@
 
 ??? info "A newton method with always feasible iterates for nonlinear model predictive control of walking in a multi-contact situation"
 
-    [preprint](pdf/humanoids16_2.pdf), [video](video/humanoids16_2.mp4)
+    [preprint](pdf/humanoids16_2.pdf){ .md-button }
+    [video](video/humanoids16_2.mp4){ .md-button }
 
     === "authors"
         + [Diana Serra](https://scholar.google.com/citations?user=V2ddnd8AAAAJ&hl=en&oi=ao)
@@ -79,7 +81,7 @@
 
 ??? info "A hierarchical approach to minimum-time control of industrial robots"
 
-    [preprint](pdf/icra16.pdf)
+    [preprint](pdf/icra16.pdf){ .md-button }
 
     === "authors"
         + Saed Al Homsi
@@ -101,7 +103,7 @@
 
 ??? info "Autonomous transport vehicles: where we are and what is missing"
 
-    [paper](http://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=7059356)
+    [paper](http://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=7059356){ .md-button }
 
     === "authors"
         + [Henrik Andreasson](https://scholar.google.com/citations?hl=en&user=V5q8hW4AAAAJ)
@@ -130,7 +132,7 @@
 
 ??? info "Model predictive motion control based on generalized dynamical movement primitives"
 
-    [preprint](pdf/jirs14.pdf)
+    [preprint](pdf/jirs14.pdf){ .md-button }
 
     === "authors"
         + [Robert Krug](https://scholar.google.com/citations?hl=en&user=OZNzz9gAAAAJ)
@@ -150,7 +152,8 @@
 
 ??? info "Balancing a humanoid robot with a prioritized contact force distribution"
 
-    [preprint](pdf/humanoids15_1.pdf), [video](video/humanoids15_1.mp4)
+    [preprint](pdf/humanoids15_1.pdf){ .md-button }
+    [video](video/humanoids15_1.mp4){ .md-button }
 
     === "authors"
         + [Alexander Sherikov](https://scholar.google.se/citations?hl=en&user=yVOvGd0AAAAJ)
@@ -169,7 +172,8 @@
 
 ??? info "A robust linear MPC approach to online generation of 3D biped walking motion"
 
-    [preprint](pdf/humanoids15_2.pdf), [video](video/humanoids15_2.mp4)
+    [preprint](pdf/humanoids15_2.pdf){ .md-button }
+    [video](video/humanoids15_2.mp4){ .md-button }
 
     === "authors"
         + Camille Brasseur
@@ -192,7 +196,7 @@
 
 ??? info "Efficiently combining task and motion planning using geometric constraints"
 
-    [preprint](pdf/ijrr14.pdf)
+    [preprint](pdf/ijrr14.pdf){ .md-button }
 
     === "authors"
         + [Fabien Lagriffoul](https://scholar.google.com/citations?hl=en&user=qPiGHBsAAAAJ)
@@ -215,7 +219,8 @@
 
 ??? info "Whole body motion controller with long-term balance constraints"
 
-    [preprint](pdf/humanoids14.pdf), [video](video/humanoids14.mp4)
+    [preprint](pdf/humanoids14.pdf){ .md-button }
+    [video](video/humanoids14.mp4){ .md-button }
 
     === "authors"
         + [Alexander Sherikov](https://scholar.google.se/citations?hl=en&user=yVOvGd0AAAAJ)
@@ -234,7 +239,7 @@
 
 ??? info "Multi-objective control of robots"
 
-    [preprint](pdf/rsj14.pdf)
+    [preprint](pdf/rsj14.pdf){ .md-button }
 
     === "authors"
         + [Dimitar Dimitrov](https://scholar.google.com/citations?user=rYC8ycUAAAAJ&hl=en)
@@ -257,7 +262,7 @@
 
 ??? info "Representing movement primitives as implicit dynamical systems learned from multiple demonstrations"
 
-    [preprint](pdf/icar13.pdf)
+    [preprint](pdf/icar13.pdf){ .md-button }
 
     === "authors"
         + [Robert Krug](https://scholar.google.com/citations?hl=en&user=OZNzz9gAAAAJ)
@@ -277,7 +282,7 @@
 
 ??? info "Constraint propagation on interval bounds for dealing with geometric backtracking"
 
-    [preprint](pdf/iros12_1.pdf)
+    [preprint](pdf/iros12_1.pdf){ .md-button }
 
     === "authors"
         + [Fabien Lagriffoul](https://scholar.google.com/citations?hl=en&user=qPiGHBsAAAAJ)
@@ -297,7 +302,7 @@
 
 ??? info "On mission-dependent coordination of multiple vehicles under spatial and temporal constraints"
 
-    [preprint](pdf/iros12_2.pdf)
+    [preprint](pdf/iros12_2.pdf){ .md-button }
 
     === "authors"
         + [Federico Pecora](https://scholar.google.com/citations?user=MR_In0UAAAAJ&hl=en)
@@ -316,7 +321,7 @@
 
 ??? info "Independent contact regions based on a patch contact model"
 
-    [preprint](pdf/icra12_1.pdf)
+    [preprint](pdf/icra12_1.pdf){ .md-button }
 
     === "authors"
         + [Krzysztof Charusta](https://scholar.google.com/citations?hl=en&user=JIr76wMAAAAJ)
@@ -336,7 +341,7 @@
 
 ??? info "Generation of independent contact regions on objects reconstructed from noisy real-world range data"
 
-    [preprint](pdf/icra12_2.pdf)
+    [preprint](pdf/icra12_2.pdf){ .md-button }
 
     === "authors"
         + [Krzysztof Charusta](https://scholar.google.com/citations?hl=en&user=JIr76wMAAAAJ)
@@ -357,7 +362,7 @@
 
 ??? info "Mapping between different kinematic structures without absolute positioning during operation"
 
-    [paper](pdf/el12.pdf)
+    [paper](pdf/el12.pdf){ .md-button }
 
     === "authors"
         + [Erik Berglund](https://scholar.google.com/citations?hl=en&user=j26JqzsAAAAJ)
@@ -383,7 +388,10 @@
 
 ??? info "A sparse model predictive control formulation for walking motion generation"
 
-    [preprint](pdf/iros11_1.pdf), [presentation](pdf/iros11_1_presentation.pdf), [errata](pdf/iros11_1_errata.pdf), [implementation](http://www.sherikov.net/pages/naowalk.html)
+    [preprint](pdf/iros11_1.pdf){ .md-button }
+    [presentation](pdf/iros11_1_presentation.pdf){ .md-button }
+    [errata](pdf/iros11_1_errata.pdf){ .md-button }
+    [implementation](http://www.sherikov.net/pages/naowalk.html){ .md-button }
 
     === "authors"
         + [Dimitar Dimitrov](https://scholar.google.com/citations?user=rYC8ycUAAAAJ&hl=en)
@@ -402,7 +410,7 @@
 
 ??? info "Prioritized independent contact regions for form closure grasps"
 
-    [preprint](pdf/iros11_2.pdf)
+    [preprint](pdf/iros11_2.pdf){ .md-button }
 
     === "authors"
         + [Robert Krug](https://scholar.google.com/citations?hl=en&user=OZNzz9gAAAAJ)
@@ -422,7 +430,8 @@
 
 ??? info "Walking motion generation with online foot position adaptation based on $\ell_1$- and $\ell_\infty$-norm penalty formulations"
 
-    [preprint](pdf/icra11.pdf), [presentation](pdf/icra11_presentation.pdf)
+    [preprint](pdf/icra11.pdf){ .md-button }
+    [presentation](pdf/icra11_presentation.pdf){ .md-button }
 
     === "authors"
         + [Dimitar Dimitrov](https://scholar.google.com/citations?user=rYC8ycUAAAAJ&hl=en)
@@ -443,7 +452,7 @@
 
 ??? info "Online walking motion generation with automatic foot step placement"
 
-    [preprint](pdf/arj10.pdf)
+    [preprint](pdf/arj10.pdf){ .md-button }
 
     === "authors"
         + Andrei Herdt
@@ -468,7 +477,7 @@
 
 ??? info "On the efficient computation of independent contact regions for force closure grasps"
 
-    [preprint](pdf/iros10.pdf)
+    [preprint](pdf/iros10.pdf){ .md-button }
 
     === "authors"
         + [Robert Krug](https://scholar.google.com/citations?hl=en&user=OZNzz9gAAAAJ)
@@ -488,7 +497,7 @@
 
 ??? info "An optimized linear model predictive control solver"
 
-    [paper](pdf/LMPC_solver_bfg09_springer.pdf)
+    [paper](pdf/LMPC_solver_bfg09_springer.pdf){ .md-button }
 
     === "authors"
         + [Dimitar Dimitrov](https://scholar.google.com/citations?user=rYC8ycUAAAAJ&hl=en)
@@ -513,7 +522,7 @@
 
 ??? info "An optimized linear model predictive control solver for online walking motion generation"
 
-    [paper](pdf/icra09.pdf)
+    [paper](pdf/icra09.pdf){ .md-button }
 
     === "authors"
         + [Dimitar Dimitrov](https://scholar.google.com/citations?user=rYC8ycUAAAAJ&hl=en)
@@ -534,7 +543,7 @@
 
 ??? info "Extraction of grasp related features by human dual-hand object exploration"
 
-    [paper](pdf/icar09.pdf)
+    [paper](pdf/icar09.pdf){ .md-button }
 
     === "authors"
         + [Krzysztof Charusta](https://scholar.google.com/citations?hl=en&user=JIr76wMAAAAJ)
@@ -556,7 +565,7 @@
 
 ??? info "Online walking gait generation with adaptive foot positioning through linear model predictive control"
 
-    [paper](pdf/iros08.pdf)
+    [paper](pdf/iros08.pdf){ .md-button }
 
     === "authors"
         + Holger Diedam
@@ -577,7 +586,7 @@
 
 ??? info "On the implementation of model predictive control for on-line walking pattern generation"
 
-    [paper](pdf/icra08.pdf)
+    [paper](pdf/icra08.pdf){ .md-button }
 
     === "authors"
         + [Dimitar Dimitrov](https://scholar.google.com/citations?user=rYC8ycUAAAAJ&hl=en)
@@ -599,7 +608,7 @@
 
 ??? info "On the capture of tumbling satellite by a space robot"
 
-    [paper](pdf/iros06_1.pdf)
+    [paper](pdf/iros06_1.pdf){ .md-button }
 
     === "authors"
         + [Kazuya Yoshida](https://scholar.google.se/citations?hl=en&user=mzUOHycAAAAJ)
@@ -618,7 +627,7 @@
 
 ??? info "Utilization of holonomic distribution control for reactionless path planning"
 
-    [paper](pdf/iros06_2.pdf)
+    [paper](pdf/iros06_2.pdf){ .md-button }
 
     === "authors"
         + [Dimitar Dimitrov](https://scholar.google.com/citations?user=rYC8ycUAAAAJ&hl=en)
@@ -636,10 +645,11 @@
 
 ??? info "Dynamics and control of space manipulators during a satellite capturing operation"
 
-    [thesis](pdf/drdv_thesis.pdf) from Tohoku University (Japan), [Space Robotics Laboratory](http://www.astro.mech.tohoku.ac.jp)
+    [thesis](pdf/drdv_thesis.pdf){ .md-button }
 
     === "authors"
         + [Dimitar Dimitrov](https://scholar.google.com/citations?user=rYC8ycUAAAAJ&hl=en)
+            + Tohoku University (Japan), [Space Robotics Laboratory](http://www.astro.mech.tohoku.ac.jp)
 
     === "bibtex"
         ```bibtex
@@ -654,7 +664,7 @@
 
 ??? info "Utilization of distributed momentum control for planning approaching trajectories of a space manipulator to a target satellite"
 
-    [preprint](pdf/iSairas05.pdf)
+    [preprint](pdf/iSairas05.pdf){ .md-button }
 
     === "authors"
         + [Dimitar Dimitrov](https://scholar.google.com/citations?user=rYC8ycUAAAAJ&hl=en)
@@ -673,7 +683,7 @@
 
 ??? info "Utilization of the bias momentum approach for capturing a tumbling satellite"
 
-    [preprint](pdf/iros04_1.pdf)
+    [preprint](pdf/iros04_1.pdf){ .md-button }
 
     === "authors"
         + [Dimitar Dimitrov](https://scholar.google.com/citations?user=rYC8ycUAAAAJ&hl=en)
@@ -691,7 +701,7 @@
 
 ??? info "Momentum distribution in a space manipulator for facilitating the post-impact control"
 
-    [preprint](pdf/iros04_2.pdf)
+    [preprint](pdf/iros04_2.pdf){ .md-button }
 
     === "authors"
         + [Dimitar Dimitrov](https://scholar.google.com/citations?user=rYC8ycUAAAAJ&hl=en)

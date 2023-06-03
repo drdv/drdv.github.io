@@ -15,9 +15,10 @@ I was born in Sofia, Bulgaria (20.11.1975)
         + multi-objective formulations for margin optimization
 
     === "coding"
-        + `python`
-        + `scala`
-        + `spark`
+        + `python` (advanced skills)
+        + `scala` (production quality code)
+        + `spark` (production quality code)
+        + working with `HDFS`, `YARN`
 
 ??? info "**2017.09** - **2021.03**: [ProbaYes](http://www.probayes.com/en)"
 
@@ -35,11 +36,14 @@ I was born in Sofia, Bulgaria (20.11.1975)
         + graph analysis
         + time series analysis
         + evaluation of fuzzy controllers
+        + development of strategies for fast evaluation of boolean functions
+            + using techniques employed in compiler optimization
+            + application: quantum computing
 
     === "coding"
         + `python`
-        + `C++`
-        + `rust`
+        + `C++` (worked as consultant/contractor on code base of [Valeo](https://www.valeo.com/en))
+        + `rust` (developed rocket simulator for [MBDA](https://www.mbda-systems.com))
 
 ## Research experience
 
