@@ -72,6 +72,7 @@ I was born in Sofia, Bulgaria (20.11.1975)
 
     === "coding"
         + `c++`
+            + implemented an active-set solver for lexicographic least-squares problems
         + `matlab`
 
 ??? info "**2007.12** - **2012.09**: [Örebro University](http://www.oru.se)"
@@ -89,20 +90,11 @@ I was born in Sofia, Bulgaria (20.11.1975)
         + simulation of multibody systems
         + introduction to optimization
 
-    === "coding"
-        + `c++`
-        + `matlab`
-
 ??? info "**2012.10** - **2015.12**: [INRIA Rhône-Alpes](http://www.inria.fr/centre/grenoble)"
 
     **research scientist** ([BIPOP](http://www.inrialpes.fr/bipop/index.html) team)
 
-    === "research"
-        + model predictive control for biped robot walking motion generation
-
-    === "coding"
-        + `c++`
-        + `matlab`
+    + model predictive control for biped robot walking motion generation
 
 ## Education
 
