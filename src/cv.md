@@ -69,6 +69,7 @@ I was born in Sofia, Bulgaria (20.11.1975)
         + robust control for safe locomotion
         + minimum-time control
         + simulation of mechanical systems
+        + numerical analysis
 
     === "coding"
         + `c++`
