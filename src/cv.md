@@ -4,7 +4,7 @@ I was born in Sofia, Bulgaria (20.11.1975)
 
 ## Professional experience
 
-???+ info "**2021.03** - **present**: [Kelkoo](https://www.kelkoogroup.com)"
+??? info "**2021.03** - **2024.05**: [Kelkoo](https://www.kelkoogroup.com)"
 
     **senior data scientist** (science team)
 
@@ -48,7 +48,7 @@ I was born in Sofia, Bulgaria (20.11.1975)
 
     === "coding"
         + `python`
-            + advanced level
+            + delivered code for [many projects](#__tabbed_2_1) to clients (on Linux/Windows)
         + `C++`
             + worked as consultant/contractor on code base of [Valeo](https://www.valeo.com/en)
             + design/maintenance of `CMake` based build systems
@@ -69,6 +69,7 @@ I was born in Sofia, Bulgaria (20.11.1975)
         + robust control for safe locomotion
         + minimum-time control
         + simulation of mechanical systems
+        + numerical analysis
 
     === "coding"
         + `c++`
@@ -90,7 +91,7 @@ I was born in Sofia, Bulgaria (20.11.1975)
         + simulation of multibody systems
         + introduction to optimization
 
-??? info "**2012.10** - **2015.12**: [INRIA Rhône-Alpes](http://www.inria.fr/centre/grenoble)"
+??? info "**2006.12** - **2007.12**: [INRIA Rhône-Alpes](http://www.inria.fr/centre/grenoble)"
 
     **research scientist** ([BIPOP](http://www.inrialpes.fr/bipop/index.html) team)
 

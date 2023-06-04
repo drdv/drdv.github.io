@@ -3,3 +3,4 @@ mkdocs-glightbox
 mkdocs-material
 mkdocs-thumbnails
 python-markdown-math
+grapheme
