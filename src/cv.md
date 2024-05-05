@@ -4,7 +4,7 @@ I was born in Sofia, Bulgaria (20.11.1975)
 
 ## Professional experience
 
-???+ info "**2021.03** - **present**: [Kelkoo](https://www.kelkoogroup.com)"
+??? info "**2021.03** - **2024.05**: [Kelkoo](https://www.kelkoogroup.com)"
 
     **senior data scientist** (science team)
 
@@ -48,7 +48,7 @@ I was born in Sofia, Bulgaria (20.11.1975)
 
     === "coding"
         + `python`
-            + advanced level
+            + delivered code for [many projects](#__tabbed_2_1) to clients (on Linux/Windows)
         + `C++`
             + worked as consultant/contractor on code base of [Valeo](https://www.valeo.com/en)
             + design/maintenance of `CMake` based build systems
