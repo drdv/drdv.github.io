@@ -91,7 +91,7 @@ I was born in Sofia, Bulgaria (20.11.1975)
         + simulation of multibody systems
         + introduction to optimization
 
-??? info "**2012.10** - **2015.12**: [INRIA Rhône-Alpes](http://www.inria.fr/centre/grenoble)"
+??? info "**2006.12** - **2007.12**: [INRIA Rhône-Alpes](http://www.inria.fr/centre/grenoble)"
 
     **research scientist** ([BIPOP](http://www.inrialpes.fr/bipop/index.html) team)
 
