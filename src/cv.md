@@ -132,3 +132,7 @@ I was born in Sofia, Bulgaria (20.11.1975)
 - Japanese (conversational)
 - Russian (basic)
 - French (beginner)
+
+## Other formats
+
+- A short [pdf version](pdf/cv.pdf)
