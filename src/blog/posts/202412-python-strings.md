@@ -27,7 +27,7 @@ terminology):
 **Character**
 
 :   A primitive building block for symbols. It is common to refer to a visible (i.e., a
-    user-perceived) character as a grapheme.
+    user-perceived) character as a *grapheme*.
 
 **Code point**
 
@@ -302,7 +302,8 @@ The four cases are:
 	\end{cases}
 \end{align}
 
-where $\mu(s)$ denotes the largest code point in the string $s$. The required memory is
+where $\mu(s)$ denotes the largest code point in the string $s$. The memory required to
+store $s$ is
 
 $$
 \texttt{struct_bytes}(s) + (\texttt{len}(s) + 1) \cdot \texttt{code_point_bytes}(s),
@@ -320,8 +321,6 @@ where $\texttt{len}(s)$ is the number of code points in $s$ and, the size of the
 
 [^c_struct_size]: Assuming a `x86_64` architecture (see the `string_bytes` function for
 more details).
-
-FIXME: explain why 1 and 2 are handled separately
 
 The above logic is implemented in the `string_bytes` function below[^PyUnicode_New].
 
@@ -365,14 +364,18 @@ second case as its largest code point is 233. The string `s2`, on the other hand
 in the third case because the acute accent has a code point above 255 (so its size is
 `56 + (29 + 1) * 2 = 116` bytes).
 
-Two clear advantages of the [PEP 393](https://peps.python.org/pep-0393/) approach:
+Three clear advantages of the [PEP 393](https://peps.python.org/pep-0393/) approach:
 
 * An optimized ASCII implementation can be used for the most common (ASCII) case.
-* The constant number of bytes per code point facilitates indexing and other
-  operations.
+* The constant number of bytes per code point[^smallest_constant_representation] results
+  in constant-time indexing and facilitates other operations.
++ Can handle natively strings containing [non-BMP
+  characters](https://en.wikipedia.org/wiki/Plane_(Unicode)), i.e., code points greater than $2^{16} - 1$.
 
-On the flip-side, concatenating a single emoji to an ASCII string increases the size x 4
-(which doesn't seem to be signification nowadays).
+[^smallest_constant_representation]: The smallest possible is always chosen.
+
+On the flip-side, concatenating a single emoji to an ASCII string increases the size x
+4.
 
 ## Code units
 
@@ -406,50 +409,60 @@ flowchart TD
 * with a `utf-16` encoding there is one 16-bit code unit (`0x0103`)
 * with a `utf-32` encoding there is one 32-bit code unit (`0x01030000`).
 
-In the current implementation, storing a code point in 4-bytes (i.e., when we are in
-case 4) is done using `utf-32`, while `utf-16` is used in case 3 (where each code point
-has to be encoded in two bytes).
+### Four encodings
+
+Python uses a different encoding in each of the four cases discussed above.
+
+1. case 1 $\left(\mu(s) < 2^7\right)$: ASCII (which is equivalent to UTF-8 in this range)
+2. case 2 $\left(\mu(s) < 2^8\right)$: UCS1 (i.e., LATIN-1)
+3. case 3 $\left(\mu(s) < 2^{16}\right)$: UCS2 (i.e., UTF-16)
+4. case 4 $\left(\mu(s) \geq 2^{16}\right)$: UCS4 (i.e., UTF-32)
+
+For example, the string `#!python mess = "I♥️日本ГО©"`, has 8 code points and
+$\mu(\texttt{mess}) = 65039$, hence we are in case 3 in which UTF-16 encoding should be
+used. The code below goes through the computations and at the end compares with the
+actual memory.
 
 ``` { .python }
+mess = "I♥️日本ГО©"
+
+assert len(mess) == 8
+assert max([ord(char) for char in mess]) == 65039  # case 3: 255 < 65039 < 65536
+
+# [2:] removes the Byte Order Mark
+encoding = b''.join([char.encode("utf-16")[2:] for char in mess]).hex()
+
+assert string_bytes(mess) == 74  # 56 + (8 + 1) * 2
+assert len(encoding) == 32  # i.e., 16 bytes as it is in hex
+assert encoding == "490065260ffee5652c6713041e04a900"
+
+# --------------------------------------------------------------------------
+# this is a hack!
+# --------------------------------------------------------------------------
 import ctypes
 import sys
 
-def memory_dump(s):
-	address_of_s = id(s)  # assuming CPython
-	buffer_s = (ctypes.c_char * sys.getsizeof(s)).from_address(address_of_s)
-	print(bytes(buffer_s).hex())
+def memory_dump(string):
+	address = id(string)  # assuming CPython
+	buffer = (ctypes.c_char * sys.getsizeof(string)).from_address(address)
+	return bytes(buffer)
 
-memory_dump("Ze")
-memory_dump("Zé")
-memory_dump("Z\u0301")
-memory_dump("Z👩")
+# the -2 removes the zero termination bytes
+assert memory_dump(mess)[56:-2].hex() == encoding
+# --------------------------------------------------------------------------
 ```
 
-## Rendeting
+### Byte strings
 
-From the [docs](https://docs.python.org/3.12/howto/unicode.html): "Most Python code
-	doesn’t need to worry about glyphs; figuring out the correct glyph to display is
-	generally the job of a GUI toolkit or a terminal’s font renderer".
+By now it should be mostly clear what a python string is.
+
+Allow custom representations.
 
 ## Immutability
 
-From [PEP 393](https://peps.python.org/pep-0393/): "Objects for which both size and
-maximum character are known at creation time are called "compact"" unicode objects ...
-Resizing compact objects is not supported."
-
-hashing
-Efficiency
-Thread Safety
-Performance Optimizations
-Garbage Collection and Reference Counting
-
-
-## Byte strings
-
-## Summary
-
-In modern Python 3 (after PEP 393), Unicode strings can use different internal
-representations (like ASCII, Latin-1, UCS-2, or UCS-4), depending on the characters
-stored in the string.
+The design decision to have immutable string in python has far-reaching implication
+related e.g., to hashing, performance optimizations, garbage collection and reference
+counting, thread safety etc. In addition to all this, having immutable strings was a
+prerequisite for the approach in [PEP 393](https://peps.python.org/pep-0393/).
 
 <!-- more -->
