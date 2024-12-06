@@ -1,4 +1,5 @@
 site_name: Dimitar Dimitrov
+site_url: https://drdv.github.io/
 
 plugins:
   - blog:
@@ -26,6 +27,8 @@ theme:
         icon: material/brightness-4
         name: Switch to light mode
   features:
+    - navigation.instant
+    - navigation.instant.progress
     - content.tooltips
     - content.code.annotate
     - content.code.copy
@@ -33,12 +36,14 @@ theme:
     - navigation.footer
     # - navigation.sections
     # - navigation.tabs
+    # - navigation.tabs.sticky
+    - navigation.top
 
 nav:
-  - index: index.md
-  - cv: cv.md
-  - publications: publications.md
-  - blog:
+  - Index: index.md
+  - CV: cv.md
+  - Publications: publications.md
+  - Blog:
     - blog/index.md
 
 docs_dir: src

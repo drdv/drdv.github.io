@@ -1,6 +1,9 @@
-# Welcome to my page!
+---
+hide:
+  - toc
+---
 
-![me](img/me.jpg){align=right}
+# Welcome to my page!
 
 I have worked as a senior data scientist at [Kelkoo](https://www.kelkoogroup.com)
 (France) and a data scientist/software engineer at
@@ -10,19 +13,7 @@ I have worked as a senior data scientist at [Kelkoo](https://www.kelkoogroup.com
 been a research scientist at [INRIA](http://www.inrialpes.fr/bipop/index.html) -
 Grenoble (France), and a research scientist / lecturer at
 [AASS](https://www.oru.se/english/research/research-environments/ent/aass/) Örebro
-University (Sweden). I am passionate about programming and finding new applications of
-mathematical optimization and machine learning.
-
-## Teaching
-
-I was responsible for a number of
-[courses/seminars](http://www.aass.oru.se/Research/Learning/drdv.html) during my
-5 year stay at Örebro University.
-
-## Software
-
-Some of my hobby projects can be found on [github](https://github.com/drdv) and
-[bitbucket](https://bitbucket.org/drdv).
+University (Sweden).
 
 ## Contact
 

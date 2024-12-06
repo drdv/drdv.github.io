@@ -1,5 +1,7 @@
 # Curriculum vitae
 
+![me](img/me.jpg)
+
 I was born in Sofia, Bulgaria (20.11.1975)
 
 ## Professional experience
