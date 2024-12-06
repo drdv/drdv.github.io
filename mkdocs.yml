@@ -32,7 +32,7 @@ theme:
     - navigation.indexes
     - navigation.footer
     # - navigation.sections
-    - navigation.tabs
+    # - navigation.tabs
 
 nav:
   - index: index.md

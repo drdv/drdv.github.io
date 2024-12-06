@@ -1,15 +1,17 @@
 ---
 draft: false
-date: 2024-12-02
+date: 2024-12-06
 categories:
   - python
 slug: python-strings
 ---
 
-# Anatomy of a python string
+# Anatomy of python strings
 
 From the [docs](https://docs.python.org/3.12/library/stdtypes.html#textseq): "Strings
 are immutable sequences of Unicode code points". This requires a bit of unpacking ...
+
+<!-- more -->
 
 ## Terminology
 
@@ -42,7 +44,7 @@ character can be seen as a symbol, but the opposite is not true because there ar
 symbols that do not have an assigned code point. That is, some symbols are defined in
 terms of a sequence of characters (and thus, of code points). Such symbols are commonly
 referred to as *grapheme clusters*. An example of a grapheme cluster is 👨‍👩‍👧‍👦 (as we
-will see shortly, it [consists](#example-a-family) of 7 characters 4 of which are
+will [see](#example-a-family) shortly, it consists of 7 characters 4 of which are
 graphemes).
 
 ## Redundancy of representation
@@ -366,11 +368,12 @@ in the third case because the acute accent has a code point above 255 (so its si
 
 Three clear advantages of the [PEP 393](https://peps.python.org/pep-0393/) approach:
 
-* An optimized ASCII implementation can be used for the most common (ASCII) case.
-* The constant number of bytes per code point[^smallest_constant_representation] results
-  in constant-time indexing and facilitates other operations.
-+ Can handle natively strings containing [non-BMP
-  characters](https://en.wikipedia.org/wiki/Plane_(Unicode)), i.e., code points greater than $2^{16} - 1$.
+* an optimized ASCII implementation can be used for the most common (ASCII) case
+* the constant number of bytes per code point[^smallest_constant_representation] results
+  in constant-time indexing and facilitates other operations
++ can handle natively strings containing [non-BMP
+  characters](https://en.wikipedia.org/wiki/Plane_(Unicode)), i.e., code points greater
+  than $2^{16} - 1$.
 
 [^smallest_constant_representation]: The smallest possible is always chosen.
 
@@ -409,27 +412,29 @@ flowchart TD
 * with a `utf-16` encoding there is one 16-bit code unit (`0x0103`)
 * with a `utf-32` encoding there is one 32-bit code unit (`0x01030000`).
 
-### Four encodings
+### Four string encodings
 
 Python uses a different encoding in each of the four cases discussed above.
 
-1. case 1 $\left(\mu(s) < 2^7\right)$: ASCII (which is equivalent to UTF-8 in this range)
-2. case 2 $\left(\mu(s) < 2^8\right)$: UCS1 (i.e., LATIN-1)
-3. case 3 $\left(\mu(s) < 2^{16}\right)$: UCS2 (i.e., UTF-16)
-4. case 4 $\left(\mu(s) \geq 2^{16}\right)$: UCS4 (i.e., UTF-32)
+* case 1 $\left(\mu(s) < 2^7\right)$: ASCII (which is equivalent to UTF-8 in this range)
+* case 2 $\left(\mu(s) < 2^8\right)$: UCS1 (i.e., LATIN-1)
+* case 3 $\left(\mu(s) < 2^{16}\right)$: UCS2 (i.e., UTF-16)
+* case 4 $\left(\mu(s) \geq 2^{16}\right)$: UCS4 (i.e., UTF-32).
 
-For example, the string `#!python mess = "I♥️日本ГО©"`, has 8 code points and
+For example, the string `#!python mess` in the snippet below has 8 code points and
 $\mu(\texttt{mess}) = 65039$, hence we are in case 3 in which UTF-16 encoding should be
-used. The code below goes through the computations and at the end compares with the
-actual memory.
+used. At the end, the encoding computed manually is compared[^memory-comparison-hack]
+with the actual memory occupied by our string.
+
+[^memory-comparison-hack]: We used a `CPython` implementation of `python 3.12`.
 
 ``` { .python }
 mess = "I♥️日本ГО©"
 
 assert len(mess) == 8
-assert max([ord(char) for char in mess]) == 65039  # case 3: 255 < 65039 < 65536
+assert ord(max(mess)) == 65039  # case 3: 255 < 65039 < 65536
 
-# [2:] removes the Byte Order Mark
+# [2:] removes the Byte Order Mark (little-endian)
 encoding = b''.join([char.encode("utf-16")[2:] for char in mess]).hex()
 
 assert string_bytes(mess) == 74  # 56 + (8 + 1) * 2
@@ -437,7 +442,7 @@ assert len(encoding) == 32  # i.e., 16 bytes as it is in hex
 assert encoding == "490065260ffee5652c6713041e04a900"
 
 # --------------------------------------------------------------------------
-# this is a hack!
+# compare to groundtruth (this is a hack!)
 # --------------------------------------------------------------------------
 import ctypes
 import sys
@@ -447,22 +452,47 @@ def memory_dump(string):
 	buffer = (ctypes.c_char * sys.getsizeof(string)).from_address(address)
 	return bytes(buffer)
 
-# the -2 removes the zero termination bytes
+# [56:] removes what we called struct_bytes above (in CPython they come first)
+# [:-2] removes the zero termination bytes
 assert memory_dump(mess)[56:-2].hex() == encoding
 # --------------------------------------------------------------------------
 ```
 
-### Byte strings
+### Bytes objects
 
-By now it should be mostly clear what a python string is.
+As we have seen, the code units used to store a python string in memory depend on the
+string itself and are abstracted away from the user. While this is a good thing in many
+cases, sometimes we need more fine-grained control. [To this
+end](https://peps.python.org/pep-0358/#motivation), python provides the *"bytes" object*
+(an immutable sequences of single bytes). Actually we already used it in the previous
+example as it is the return type of
+[`str.encode`](https://docs.python.org/3.12/library/stdtypes.html#str.encode).
 
-Allow custom representations.
+Let us consider the string `#!python a_man = "a👨"`. By now we know that it is stored using
+4 bytes per code point. Using `#!python a_man.encode("utf-32")` we obtain:
+
+* `#!python "a"`: `97, 0, 0, 0`
+* `#!python "👨"`: `104, 244, 1, 0`.
+
+If we relax the constraint of constant number of bytes per code point, we can dedicate
+less space to our string. Using `#!python a_man.encode("utf-16")` we obtain:
+
+* `#!python "a"`: `97, 0`
+* `#!python "👨"`: `61, 216, 104, 220`
+
+or Using `#!python a_man.encode("utf-8")`:
+
+* `#!python "a"`: `97`
+* `#!python "👨"`: `240, 159, 145, 168`.
+
+All above representations have their applications. For example UTF-8 provides
+compatibility with ASCII and efficient data storage, while UTF-16 and UTF-32 allow for
+faster processing of a larger range of characters. Having the possibility to
+easily/efficiently change representations is convenient.
 
 ## Immutability
 
 The design decision to have immutable string in python has far-reaching implication
-related e.g., to hashing, performance optimizations, garbage collection and reference
-counting, thread safety etc. In addition to all this, having immutable strings was a
-prerequisite for the approach in [PEP 393](https://peps.python.org/pep-0393/).
-
-<!-- more -->
+related to e.g., hashing, performance optimizations, garbage collection, thread safety
+etc. In addition to all this, having immutable strings was a prerequisite for the
+approach in [PEP 393](https://peps.python.org/pep-0393/).
