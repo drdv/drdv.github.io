@@ -13,6 +13,8 @@ plugins:
       categories_toc: true
       draft_on_serve: true
 
+  - search
+
 theme:
   name: material
   palette:
