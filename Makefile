@@ -1,34 +1,32 @@
-PYTHON=python3
+PYTHON=python
 VENV_NAME=.venv
-
 VENV_ACTIVATE=${VENV_NAME}/bin/activate
 
-_BLUE=\033[34m
-_END=\033[0m
+HELP_SCRIPT=$(HOME)/local/bi/
 
-define show =
-	echo -e "${_BLUE}============================================================${_END}" && \
-	echo -e "${_BLUE}[$@] ${1}${_END}" && \
-	echo -e "${_BLUE}============================================================${_END}"
-endef
+## show this help
+help:
+	@awk -f scripts/makefile-help-target.awk $(MAKEFILE_LIST)
 
-help: ## show this help
-	@egrep -h '\s##\s' $(MAKEFILE_LIST) | awk 'BEGIN {FS = ":.*?## "}; {printf "${_BLUE}%-12s${_END} %s\n", $$1, $$2}'
-
-serve: build ## serve site locally
+## serve site locally
+serve: build
 	source ${VENV_ACTIVATE} && mkdocs serve
 
-build: clean ## build site
+## build site
+build: clean
 	source ${VENV_ACTIVATE} && mkdocs build
 
-deploy: clean ## deploy site
+##! deploy site
+deploy: clean
 	source ${VENV_ACTIVATE} && mkdocs gh-deploy
 
-setup-venv: ## setup venv with dependencies
+## setup venv with dependencies
+setup-venv:
 	${PYTHON} -m venv ${VENV_NAME} && \
 	. ${VENV_NAME}/bin/activate && \
 	pip install --upgrade pip && \
 	pip install -r .requirements.txt
 
+## clean
 clean:
 	rm -rf site
