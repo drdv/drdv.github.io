@@ -4,3 +4,4 @@ mkdocs-material
 mkdocs-thumbnails
 python-markdown-math
 grapheme
+markdown-exec
