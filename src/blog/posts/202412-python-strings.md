@@ -3,7 +3,7 @@ draft: false
 date: 2024-12-06
 categories:
   - python
-slug: python-strings
+slug: 202412-python-strings
 ---
 
 # Anatomy of python strings

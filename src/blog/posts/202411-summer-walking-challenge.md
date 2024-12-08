@@ -3,7 +3,7 @@ draft: false
 date: 2024-11-15
 categories:
   - sports
-slug: summer-walking-challenge
+slug: 202411-summer-walking-challenge
 ---
 
 # Summer walking challenge
@@ -15,22 +15,22 @@ collect some data. Here are the results ...
 
 <div class="grid" markdown>
 
-![](../summer-walking-challenge/img/generated/entire_challenge_dist_km.png)
+![](../202411-summer-walking-challenge/img/generated/entire_challenge_dist_km.png)
 /// figure-caption
 Daily distance (entire challenge)
 ///
 
-![](../summer-walking-challenge/img/generated/post_challenge_dist_km.png)
+![](../202411-summer-walking-challenge/img/generated/post_challenge_dist_km.png)
 /// figure-caption
 Daily distance (post-challenge)
 ///
 
-![](../summer-walking-challenge/img/generated/last_month_dist_km.png)
+![](../202411-summer-walking-challenge/img/generated/last_month_dist_km.png)
 /// figure-caption
 Daily distance (last month of challenge)
 ///
 
-![](../summer-walking-challenge/img/generated/last_month_step_count.png)
+![](../202411-summer-walking-challenge/img/generated/last_month_step_count.png)
 /// figure-caption
 Daily step count (last month of challenge)
 ///
@@ -73,12 +73,12 @@ day, but my daily maximum ended up being around 36 km.
 
 <div class="grid" markdown>
 
-![](../summer-walking-challenge/img/generated/rolling_31days_dist_km.png)
+![](../202411-summer-walking-challenge/img/generated/rolling_31days_dist_km.png)
 /// figure-caption
 31-day rolling distance (entire challenge)
 ///
 
-![](../summer-walking-challenge/img/generated/rolling_7days_dist_km.png)
+![](../202411-summer-walking-challenge/img/generated/rolling_7days_dist_km.png)
 /// figure-caption
 7-day rolling distance (entire challenge)
 ///
@@ -130,7 +130,7 @@ All in all, this adds up to between 4 and 7 hours of walking per day.
 
 ## Data
 
-Here is the [csv](../summer-walking-challenge/data/export_clean.csv) data used to generate the
+Here is the [csv](../202411-summer-walking-challenge/data/export_clean.csv) data used to generate the
 above figures.
 
-![](../summer-walking-challenge/img/2024_summer.png){ width=200 align=right }
+![](../202411-summer-walking-challenge/img/2024_summer.png){ width=200 align=right }
