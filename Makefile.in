@@ -1,0 +1,27 @@
+PYTHON=python
+PIP=pip
+VENV_NAME=.venv
+VENV_ACTIVATE=${VENV_NAME}/bin/activate
+
+## show this help
+help:
+	-@awk -f makefile-help-target.awk $(MAKEFILE_LIST)
+
+## show dependencies
+deps-show:
+	@pipdeptree -f -d 0 -w silence
+
+##! freeze dependencies (overwrites .requirements.txt)
+deps-freeze:
+	@pipdeptree -f -d 0 -w silence > .requirements.txt
+
+## setup venv
+setup-venv:
+	${PYTHON} -m venv ${VENV_NAME} && \
+	. ${VENV_NAME}/bin/activate && \
+	${PIP} install --upgrade pip && \
+	${PIP} install -r .requirements.txt
+
+## clean venv
+clean-venv:
+	rm -rf .venv

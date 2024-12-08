@@ -1,26 +1,12 @@
-PYTHON=python
-PIP=pip
-VENV_NAME=.venv
+include ../../../Makefile.in
 
-all:
-	echo "be reasonable, check available targets"
+## should generate all blog materials
+generate-materials: setup-venv main-python clean-venv
 
-main: setup-venv main-python clean-venv
-
+## generate figures
 main-python:
 	. ${VENV_NAME}/bin/activate && python main.py
 
-freeze:
-	@pipdeptree -f -d 0 -w silence | grep -v 'pipdeptree' > .requirements.txt
-
-setup-venv: # setup venv with dependencies
-	${PYTHON} -m venv ${VENV_NAME} && \
-	. ${VENV_NAME}/bin/activate && \
-	${PIP} install --upgrade pip && \
-	${PIP} install -r .requirements.txt
-
-clean-generated:
+##! clean generated files
+clean-generated-materials:
 	rm -rf img/generated
-
-clean-venv:
-	rm -rf .venv
