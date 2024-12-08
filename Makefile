@@ -2,11 +2,9 @@ PYTHON=python
 VENV_NAME=.venv
 VENV_ACTIVATE=${VENV_NAME}/bin/activate
 
-HELP_SCRIPT=$(HOME)/local/bi/
-
 ## show this help
 help:
-	@awk -f scripts/makefile-help-target.awk $(MAKEFILE_LIST)
+	-@awk -f makefile-help-target.awk $(MAKEFILE_LIST)
 
 ## serve site locally
 serve: build
@@ -19,6 +17,14 @@ build: clean
 ##! deploy site
 deploy: clean
 	source ${VENV_ACTIVATE} && mkdocs gh-deploy
+
+## generate data for all blogs
+generate-data:
+	cd src/blog && make main
+
+##! clean generated files for all blogs
+clean-generated:
+	cd src/blog && make clean-generated
 
 ## setup venv with dependencies
 setup-venv:

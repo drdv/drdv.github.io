@@ -3,8 +3,16 @@
 import xml.etree.ElementTree as ET
 from pathlib import Path
 
+"""Generates the figures."""
+
 import matplotlib.pyplot as plt
 import pandas as pd
+
+
+def main():
+    h = HealthData()
+    h.generate_figures("dist km")
+    h.generate_figures("step count")
 
 
 class HealthData:
@@ -12,8 +20,22 @@ class HealthData:
         self,
         clean_data_file: str = "data/export_clean.csv",
         iphone_data_file: str = "data/export.xml",
-        load_from_iphone=False,
+        load_from_iphone: bool = False,
     ):
+        """Constructor.
+
+        Parameters
+        -----------
+        clean_data_file
+            File containing a cleaned extract of the data that I need for my plots (see
+            :fun:`save_clean_data`). Normally I wouldn't need the original data anymore.
+        iphone_data_file
+            Actual data exported from my iphone. It is heavy and there is no need to
+            store it.
+        load_from_iphone
+            Specifies which data to use.
+
+        """
         if load_from_iphone:
             self.data_file = iphone_data_file
             self._df_all = self._read_data_iphone()
@@ -23,21 +45,29 @@ class HealthData:
 
         self.df = self._df_all.copy()
 
-    def show(self, unit="dist km"):
+    def generate_figures(self, unit="dist km", generation_dir="img/generated"):
+        generation_dir = Path(generation_dir)
+
         unit_label = "_".join(unit.split(" "))
 
         self.filter_df("2024-05-21", "2024-08-13")
-        self.plot_value(unit, f"img/entire_challenge_{unit_label}.png", True)
+        self.plot_value(
+            unit, generation_dir / f"entire_challenge_{unit_label}.png", True
+        )
 
         self.filter_df("2024-07-13", "2024-08-12")
-        self.plot_value(unit, f"img/last_month_{unit_label}.png")
+        self.plot_value(unit, generation_dir / f"last_month_{unit_label}.png")
 
         self.filter_df("2024-05-21", "2024-08-13")
-        self.plot_rolling_value(unit, 31, f"img/rolling_31days_{unit_label}.png")
-        self.plot_rolling_value(unit, 7, f"img/rolling_7days_{unit_label}.png")
+        self.plot_rolling_value(
+            unit, 31, generation_dir / f"rolling_31days_{unit_label}.png"
+        )
+        self.plot_rolling_value(
+            unit, 7, generation_dir / f"rolling_7days_{unit_label}.png"
+        )
 
         self.filter_df("2024-08-14", "2024-11-06")
-        self.plot_value(unit, f"img/post_challange_{unit_label}.png")
+        self.plot_value(unit, generation_dir / f"post_challenge_{unit_label}.png")
 
     def filter_df(self, start_date=None, end_date=None):
         df = self._df_all.reset_index()
@@ -135,3 +165,7 @@ class HealthData:
             file = Path(file)
             file.parent.mkdir(parents=True, exist_ok=True)
             fig.savefig(file, bbox_inches="tight", dpi=75)
+
+
+if __name__ == "__main__":
+    main()
