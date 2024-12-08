@@ -13,12 +13,12 @@ deploy: clean-site
 	source ${VENV_ACTIVATE} && mkdocs gh-deploy
 
 ## generate data for all blogs
-generate-materials:
-	cd src/blog && make generate-materials
+generate-artifacts:
+	cd src/blog && make generate-artifacts
 
-##! clean generated materials for all blogs
-clean-generated-materials:
-	cd src/blog && make clean-generated-materials
+##! clean generated artifacts for all blogs
+clean-generated-artifacts:
+	cd src/blog && make clean-generated-artifacts
 
 ## clean
 clean-site:
