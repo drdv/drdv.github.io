@@ -490,9 +490,18 @@ compatibility with ASCII and efficient data storage, while UTF-16 and UTF-32 all
 faster processing of a larger range of characters. Having the possibility to
 easily/efficiently change representations is convenient.
 
-Of course, bytes objects can be used in other contexts as well. For example, `#!python
-(1).to_bytes(4, byteorder='little')` would return the bytes representation of the
-integer `1` (in little endian).
+Bytes do not necessarily have to be associated with individual code points, as is the
+case when using `#!python str.encode`. For example, suppose we want to express the
+string `#!python "a1b1"` as a byte object, where each pair of characters represents a
+byte in hex (i.e., `0xA1` followed by `0xB1`). In this case, using `#!python
+list("a1b1".encode())` is not appropriate, as it would return `[97, 49, 98, 49]`, which
+are the ASCII codes for the characters `a`, `1`, `b`, and `1`, respectively. Instead, we
+should consider the additional structure and use `#!python list(bytes.fromhex("a1b1"))`,
+which results in `[161, 177]`.
+
+Bytes objects can also be used in other contexts. For instance, `#!python
+(1).to_bytes(4, byteorder='little')` returns the byte representation of the integer 1
+(in little-endian).
 
 ## Immutability
 
