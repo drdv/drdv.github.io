@@ -1,8 +1,8 @@
 all:
 	@echo "Be reasonable! Check available targets."
 
-generate-materials:
-	cd 202411-summer-walking-challenge && make generate-materials
+generate-artifacts:
+	cd 202411-summer-walking-challenge && make generate-artifacts
 
-clean-generated-materials:
-	cd 202411-summer-walking-challenge && make clean-generated-materials
+clean-generated-artifacts:
+	cd 202411-summer-walking-challenge && make clean-generated-artifacts

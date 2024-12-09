@@ -1130,7 +1130,7 @@ less space to our string. Using <code class="language-python highlight"><span cl
 <li><code class="language-python highlight"><span class="s2">&quot;a&quot;</span></code>: <code>97, 0</code></li>
 <li><code class="language-python highlight"><span class="s2">&quot;👨&quot;</span></code>: <code>61, 216, 104, 220</code></li>
 </ul>
-<p>or Using <code class="language-python highlight"><span class="n">a_man</span><span class="o">.</span><span class="n">encode</span><span class="p">(</span><span class="s2">&quot;utf-8&quot;</span><span class="p">)</span></code>:</p>
+<p>or using <code class="language-python highlight"><span class="n">a_man</span><span class="o">.</span><span class="n">encode</span><span class="p">(</span><span class="s2">&quot;utf-8&quot;</span><span class="p">)</span></code>:</p>
 <ul>
 <li><code class="language-python highlight"><span class="s2">&quot;a&quot;</span></code>: <code>97</code></li>
 <li><code class="language-python highlight"><span class="s2">&quot;👨&quot;</span></code>: <code>240, 159, 145, 168</code>.</li>
@@ -1139,6 +1139,8 @@ less space to our string. Using <code class="language-python highlight"><span cl
 compatibility with ASCII and efficient data storage, while UTF-16 and UTF-32 allow for
 faster processing of a larger range of characters. Having the possibility to
 easily/efficiently change representations is convenient.</p>
+<p>Of course, bytes objects can be used in other contexts as well. For example, <code class="language-python highlight"><span class="p">(</span><span class="mi">1</span><span class="p">)</span><span class="o">.</span><span class="n">to_bytes</span><span class="p">(</span><span class="mi">4</span><span class="p">,</span> <span class="n">byteorder</span><span class="o">=</span><span class="s1">&#39;little&#39;</span><span class="p">)</span></code> would return the bytes representation of the
+integer <code>1</code> (in little endian).</p>
 <h2 id="immutability">Immutability<a class="headerlink" href="#immutability" title="Permanent link">#</a></h2>
 <p>The design decision to have immutable string in python has far-reaching implication
 related to e.g., hashing, performance optimizations, garbage collection, thread safety
