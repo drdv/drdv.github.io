@@ -480,7 +480,7 @@ less space to our string. Using `#!python a_man.encode("utf-16")` we obtain:
 * `#!python "a"`: `97, 0`
 * `#!python "👨"`: `61, 216, 104, 220`
 
-or Using `#!python a_man.encode("utf-8")`:
+or using `#!python a_man.encode("utf-8")`:
 
 * `#!python "a"`: `97`
 * `#!python "👨"`: `240, 159, 145, 168`.
@@ -489,6 +489,10 @@ All above representations have their applications. For example UTF-8 provides
 compatibility with ASCII and efficient data storage, while UTF-16 and UTF-32 allow for
 faster processing of a larger range of characters. Having the possibility to
 easily/efficiently change representations is convenient.
+
+Of course, bytes objects can be used in other contexts as well. For example, `#!python
+(1).to_bytes(4, byteorder='little')` would return the bytes representation of the
+integer `1` (in little endian).
 
 ## Immutability
 
