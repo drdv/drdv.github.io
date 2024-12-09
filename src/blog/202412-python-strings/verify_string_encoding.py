@@ -20,8 +20,8 @@ class Pep393VerifyEncoding:
 
     """
 
-    def __init__(self, numb_test=100000):
-        self.numb_tests = numb_test
+    def __init__(self, numb_tests=100_000):
+        self.numb_tests = numb_tests
         self.max_code_poit = 1114112
 
         self.data = {
