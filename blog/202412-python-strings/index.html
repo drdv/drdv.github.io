@@ -1139,8 +1139,15 @@ less space to our string. Using <code class="language-python highlight"><span cl
 compatibility with ASCII and efficient data storage, while UTF-16 and UTF-32 allow for
 faster processing of a larger range of characters. Having the possibility to
 easily/efficiently change representations is convenient.</p>
-<p>Of course, bytes objects can be used in other contexts as well. For example, <code class="language-python highlight"><span class="p">(</span><span class="mi">1</span><span class="p">)</span><span class="o">.</span><span class="n">to_bytes</span><span class="p">(</span><span class="mi">4</span><span class="p">,</span> <span class="n">byteorder</span><span class="o">=</span><span class="s1">&#39;little&#39;</span><span class="p">)</span></code> would return the bytes representation of the
-integer <code>1</code> (in little endian).</p>
+<p>Bytes do not necessarily have to be associated with individual code points, as is the
+case when using <code class="language-python highlight"><span class="nb">str</span><span class="o">.</span><span class="n">encode</span></code>. For example, suppose we want to express the
+string <code class="language-python highlight"><span class="s2">&quot;a1b1&quot;</span></code> as a byte object, where each pair of characters represents a
+byte in hex (i.e., <code>0xA1</code> followed by <code>0xB1</code>). In this case, using <code class="language-python highlight"><span class="nb">list</span><span class="p">(</span><span class="s2">&quot;a1b1&quot;</span><span class="o">.</span><span class="n">encode</span><span class="p">())</span></code> is not appropriate, as it would return <code>[97, 49, 98, 49]</code>, which
+are the ASCII codes for the characters <code>a</code>, <code>1</code>, <code>b</code>, and <code>1</code>, respectively. Instead, we
+should consider the additional structure and use <code class="language-python highlight"><span class="nb">list</span><span class="p">(</span><span class="nb">bytes</span><span class="o">.</span><span class="n">fromhex</span><span class="p">(</span><span class="s2">&quot;a1b1&quot;</span><span class="p">))</span></code>,
+which results in <code>[161, 177]</code>.</p>
+<p>Bytes objects can also be used in other contexts. For instance, <code class="language-python highlight"><span class="p">(</span><span class="mi">1</span><span class="p">)</span><span class="o">.</span><span class="n">to_bytes</span><span class="p">(</span><span class="mi">4</span><span class="p">,</span> <span class="n">byteorder</span><span class="o">=</span><span class="s1">&#39;little&#39;</span><span class="p">)</span></code> returns the byte representation of the integer 1
+(in little-endian).</p>
 <h2 id="immutability">Immutability<a class="headerlink" href="#immutability" title="Permanent link">#</a></h2>
 <p>The design decision to have immutable string in python has far-reaching implication
 related to e.g., hashing, performance optimizations, garbage collection, thread safety
