@@ -1049,29 +1049,31 @@ unit</em>. For example, consider the acute accent (<code>U+0301</code>):</p>
 <pre class="mermaid"><code>flowchart TD
     %%{init: {'themeVariables': {'title': 'My Flowchart Title'}}}%%
 
-    s["0x301"]
+    s["U+0301"]
     s --&gt; utf8["UTF-8"]
     s --&gt; utf16["UTF-16"]
     s --&gt; utf32["UTF-32"]
 
     C@{ shape: framed-circle, label: "Stop" }
-    C -.-&gt; utf8-1["0xCC"]
-    C -.-&gt; utf8-2["0x81"]
+    C -.-&gt; utf8-1["CC"]
+    C -.-&gt; utf8-2["81"]
 
     utf8 -.-&gt; C
-    utf16 -.-&gt; utf16-1["0x0103"]
-    utf32 -.-&gt; utf16-2["0x01030000"]
+    utf16 -.-&gt; utf16-1["0103"]
+    utf32 -.-&gt; utf16-2["01030000"]
 
     style utf8 stroke-width:2px,stroke-dasharray: 5 5
     style utf16 stroke-width:2px,stroke-dasharray: 5 5
     style utf32 stroke-width:2px,stroke-dasharray: 5 5</code></pre>
 <ul>
 <li>with a <code>utf-8</code> encoding there are two 8-bit code units (<code>0xCC</code> and <code>0x81</code>)</li>
-<li>with a <code>utf-16</code> encoding there is one 16-bit code unit (<code>0x0103</code>)</li>
-<li>with a <code>utf-32</code> encoding there is one 32-bit code unit (<code>0x01030000</code>).</li>
+<li>with a <code>utf-16</code> encoding there is one 16-bit code unit</li>
+<li>with a <code>utf-32</code> encoding there is one 32-bit code unit .</li>
 </ul>
+<p>Note that, in the above example, the code units for <code>utf-16</code> and <code>utf-32</code> are stored
+using little-endian.</p>
 <h3 id="four-string-encodings">Four string encodings<a class="headerlink" href="#four-string-encodings" title="Permanent link">#</a></h3>
-<p>Python uses a different encoding in each of the four cases discussed above.</p>
+<p>A different encoding is used in each of the four cases discussed above.</p>
 <ul>
 <li>case 1 <script type="math/tex">\left(\mu(s) < 2^7\right)</script>: ASCII (which is equivalent to UTF-8 in this range)</li>
 <li>case 2 <script type="math/tex">\left(\mu(s) < 2^8\right)</script>: UCS1 (i.e., LATIN-1)</li>
@@ -1087,8 +1089,8 @@ with the actual memory occupied by our string.</p>
 </span><span id="__span-9-3"><a id="__codelineno-9-3" name="__codelineno-9-3" href="#__codelineno-9-3"></a><span class="k">assert</span> <span class="nb">len</span><span class="p">(</span><span class="n">mess</span><span class="p">)</span> <span class="o">==</span> <span class="mi">8</span>
 </span><span id="__span-9-4"><a id="__codelineno-9-4" name="__codelineno-9-4" href="#__codelineno-9-4"></a><span class="k">assert</span> <span class="nb">ord</span><span class="p">(</span><span class="nb">max</span><span class="p">(</span><span class="n">mess</span><span class="p">))</span> <span class="o">==</span> <span class="mi">65039</span>  <span class="c1"># case 3: 255 &lt; 65039 &lt; 65536</span>
 </span><span id="__span-9-5"><a id="__codelineno-9-5" name="__codelineno-9-5" href="#__codelineno-9-5"></a>
-</span><span id="__span-9-6"><a id="__codelineno-9-6" name="__codelineno-9-6" href="#__codelineno-9-6"></a><span class="c1"># [2:] removes the Byte Order Mark (little-endian)</span>
-</span><span id="__span-9-7"><a id="__codelineno-9-7" name="__codelineno-9-7" href="#__codelineno-9-7"></a><span class="n">encoding</span> <span class="o">=</span> <span class="sa">b</span><span class="s1">&#39;&#39;</span><span class="o">.</span><span class="n">join</span><span class="p">([</span><span class="n">char</span><span class="o">.</span><span class="n">encode</span><span class="p">(</span><span class="s2">&quot;utf-16&quot;</span><span class="p">)[</span><span class="mi">2</span><span class="p">:]</span> <span class="k">for</span> <span class="n">char</span> <span class="ow">in</span> <span class="n">mess</span><span class="p">])</span><span class="o">.</span><span class="n">hex</span><span class="p">()</span>
+</span><span id="__span-9-6"><a id="__codelineno-9-6" name="__codelineno-9-6" href="#__codelineno-9-6"></a><span class="c1"># utf-16-le stands for utf-16 with little-endian</span>
+</span><span id="__span-9-7"><a id="__codelineno-9-7" name="__codelineno-9-7" href="#__codelineno-9-7"></a><span class="n">encoding</span> <span class="o">=</span> <span class="sa">b</span><span class="s1">&#39;&#39;</span><span class="o">.</span><span class="n">join</span><span class="p">([</span><span class="n">char</span><span class="o">.</span><span class="n">encode</span><span class="p">(</span><span class="s2">&quot;utf-16-le&quot;</span><span class="p">)</span> <span class="k">for</span> <span class="n">char</span> <span class="ow">in</span> <span class="n">mess</span><span class="p">])</span><span class="o">.</span><span class="n">hex</span><span class="p">()</span>
 </span><span id="__span-9-8"><a id="__codelineno-9-8" name="__codelineno-9-8" href="#__codelineno-9-8"></a>
 </span><span id="__span-9-9"><a id="__codelineno-9-9" name="__codelineno-9-9" href="#__codelineno-9-9"></a><span class="k">assert</span> <span class="n">string_bytes</span><span class="p">(</span><span class="n">mess</span><span class="p">)</span> <span class="o">==</span> <span class="mi">74</span>  <span class="c1"># 56 + (8 + 1) * 2</span>
 </span><span id="__span-9-10"><a id="__codelineno-9-10" name="__codelineno-9-10" href="#__codelineno-9-10"></a><span class="k">assert</span> <span class="nb">len</span><span class="p">(</span><span class="n">encoding</span><span class="p">)</span> <span class="o">==</span> <span class="mi">32</span>  <span class="c1"># i.e., 16 bytes as it is in hex</span>
