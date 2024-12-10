@@ -97,7 +97,7 @@ class Pep393VerifyEncoding:
 
             e1 = self.memory_dump(s)[56:-1].hex()
             e2 = s.encode("latin-1").hex()
-            e3 = s.encode("utf-16")[2:].hex()  # [2:] removes BOM
+            e3 = s.encode("utf-16-le").hex()
             e3 = e3[:2] + e3[-4:-2]
             assert e1 == e2
             assert e1 == e3
@@ -112,7 +112,7 @@ class Pep393VerifyEncoding:
             s = chr(i1) + chr(i2)
 
             e1 = self.memory_dump(s)[56:-2].hex()
-            e2 = s.encode("utf-16")[2:].hex()  # [2:] removes BOM
+            e2 = s.encode("utf-16-le").hex()
             assert e1 == e2
 
     def verify_case4(self):
@@ -125,7 +125,7 @@ class Pep393VerifyEncoding:
             s = chr(i1) + chr(i2)
 
             e1 = self.memory_dump(s)[56:-4].hex()
-            e2 = s.encode("utf-32")[4:].hex()  # [4:] removes BOM
+            e2 = s.encode("utf-32-le").hex()
             assert e1 == e2
 
     @staticmethod

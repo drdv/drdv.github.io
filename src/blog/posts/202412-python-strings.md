@@ -389,18 +389,18 @@ unit*. For example, consider the acute accent (`U+0301`):
 flowchart TD
 	%%{init: {'themeVariables': {'title': 'My Flowchart Title'}}}%%
 
-	s["0x301"]
+	s["U+0301"]
 	s --> utf8["UTF-8"]
 	s --> utf16["UTF-16"]
 	s --> utf32["UTF-32"]
 
 	C@{ shape: framed-circle, label: "Stop" }
-	C -.-> utf8-1["0xCC"]
-	C -.-> utf8-2["0x81"]
+	C -.-> utf8-1["CC"]
+	C -.-> utf8-2["81"]
 
 	utf8 -.-> C
-	utf16 -.-> utf16-1["0x0103"]
-	utf32 -.-> utf16-2["0x01030000"]
+	utf16 -.-> utf16-1["0103"]
+	utf32 -.-> utf16-2["01030000"]
 
 	style utf8 stroke-width:2px,stroke-dasharray: 5 5
 	style utf16 stroke-width:2px,stroke-dasharray: 5 5
@@ -409,12 +409,15 @@ flowchart TD
 
 
 * with a `utf-8` encoding there are two 8-bit code units (`0xCC` and `0x81`)
-* with a `utf-16` encoding there is one 16-bit code unit (`0x0103`)
-* with a `utf-32` encoding there is one 32-bit code unit (`0x01030000`).
+* with a `utf-16` encoding there is one 16-bit code unit
+* with a `utf-32` encoding there is one 32-bit code unit .
+
+Note that, in the above example, the code units for `utf-16` and `utf-32` are stored
+using little-endian.
 
 ### Four string encodings
 
-Python uses a different encoding in each of the four cases discussed above.
+A different encoding is used in each of the four cases discussed above.
 
 * case 1 $\left(\mu(s) < 2^7\right)$: ASCII (which is equivalent to UTF-8 in this range)
 * case 2 $\left(\mu(s) < 2^8\right)$: UCS1 (i.e., LATIN-1)
@@ -434,8 +437,8 @@ mess = "I♥️日本ГО©"
 assert len(mess) == 8
 assert ord(max(mess)) == 65039  # case 3: 255 < 65039 < 65536
 
-# [2:] removes the Byte Order Mark (little-endian)
-encoding = b''.join([char.encode("utf-16")[2:] for char in mess]).hex()
+# utf-16-le stands for utf-16 with little-endian
+encoding = b''.join([char.encode("utf-16-le") for char in mess]).hex()
 
 assert string_bytes(mess) == 74  # 56 + (8 + 1) * 2
 assert len(encoding) == 32  # i.e., 16 bytes as it is in hex
