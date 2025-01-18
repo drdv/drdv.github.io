@@ -3,9 +3,12 @@ PIP=pip
 VENV_NAME=.venv
 VENV_ACTIVATE=${VENV_NAME}/bin/activate
 
-## show this help
-help:
-	-@awk -f makefile-doc.awk $(MAKEFILE_LIST)
+help: URL := github.com/drdv/makefile-doc/releases/latest/download/makefile-doc.awk
+help: DIR := $(HOME)/.local/share/makefile-doc
+help: SCR := $(DIR)/makefile-doc.awk
+help: ## show this help
+	@test -f $(SCR) || wget -q -P $(DIR) $(URL)
+	@awk -f $(SCR) $(MAKEFILE_LIST)
 
 ## show dependencies
 deps-show:
