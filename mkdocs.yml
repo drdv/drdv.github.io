@@ -48,16 +48,23 @@ nav:
   - Blog:
     - blog/index.md
 
+not_in_nav: |
+    /blog/202411-summer-walking-challenge/README.md
+    /blog/202412-python-strings/README.md
+
 docs_dir: src
 
 extra_javascript:
-  - https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS-MML_HTMLorMML
+  - javascripts/mathjax.js
+  - https://unpkg.com/mathjax@3/es5/tex-mml-chtml.js
 
 markdown_extensions:
   - def_list
   - footnotes
-  - mdx_math:
-      enable_dollar_delimiter: True
+
+  - pymdownx.arithmatex:
+      generic: true
+
   - toc:
       permalink: "#"
 

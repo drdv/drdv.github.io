@@ -295,6 +295,7 @@ The largest code point for the `s2` string corresponds to the combining acute ac
 while for the `s1` string it corresponds to `é`.
 
 The four cases are:
+
 \begin{align}
 	\texttt{code_point_bytes}(s) = \begin{cases}
 		1, & \text{if $\mu(s) < 2^7$}.\\

@@ -1,6 +1,0 @@
-markdown-exec==1.10.0
-mkdocs-glightbox==0.4.0
-mkdocs-material==9.5.47
-mkdocs-thumbnails==0.0.10
-pipdeptree==2.24.0
-python-markdown-math==0.8

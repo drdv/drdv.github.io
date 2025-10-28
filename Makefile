@@ -1,25 +1,31 @@
 include Makefile.in
 
-## serve site locally
+BLOG_DIR := src/blog
+MAKEFLAGS := --no-print-directory
+
+## Serve site locally
 serve: build
-	source ${VENV_ACTIVATE} && mkdocs serve
+	@$(RUN) mkdocs serve --livereload -o
 
-## build site
-build: clean-site
-	source ${VENV_ACTIVATE} && mkdocs build
+## Build site
+build: clean-site artifacts-generate
+	@$(RUN) mkdocs build
 
-##! deploy site
+##! Deploy site
 deploy: clean-site
-	source ${VENV_ACTIVATE} && mkdocs gh-deploy
+	@${RUN} mkdocs gh-deploy
 
-## generate data for all blogs
-generate-artifacts:
-	cd src/blog && make generate-artifacts
+## Generate artifacts for all blogs
+artifacts-generate:
+	@cd $(BLOG_DIR) && $(MAKE) artifacts-generate
 
-##! clean generated artifacts for all blogs
-clean-generated-artifacts:
-	cd src/blog && make clean-generated-artifacts
+## Clean generated artifacts for all blogs
+artifacts-clean:
+	@cd $(BLOG_DIR) && $(MAKE) artifacts-clean
 
-## clean
+## Clean site
 clean-site:
-	rm -rf site
+	@rm -rf site
+
+## Clean all
+clean: clean-site artifacts-clean

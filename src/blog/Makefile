@@ -1,8 +1,9 @@
-all:
-	@echo "Be reasonable! Check available targets."
+include ../../Makefile.in
 
-generate-artifacts:
-	cd 202411-summer-walking-challenge && make generate-artifacts
+## Generate artifacts for all blogs
+artifacts-generate:
+	@cd 202411-summer-walking-challenge && $(MAKE) --no-print-directory artifacts-generate
 
-clean-generated-artifacts:
-	cd 202411-summer-walking-challenge && make clean-generated-artifacts
+## Clean generated artifacts for all blogs
+artifacts-clean:
+	@cd 202411-summer-walking-challenge && $(MAKE) --no-print-directory artifacts-clean

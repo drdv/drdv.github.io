@@ -1,12 +1,15 @@
 include ../../../Makefile.in
 
-## generates all blog artifacts
-generate-artifacts: setup-venv main-python clean-venv
+OUT_DIR := img/generated
 
-## generate figures
-main-python:
-	. ${VENV_NAME}/bin/activate && python main.py
+## Generate artifacts
+artifacts-generate: DEPS := pandas,matplotlib
+artifacts-generate: $(OUT_DIR)/.done
 
-##! clean generated files
-clean-generated-artifacts:
-	rm -rf img/generated
+## Clean generated artifacts
+artifacts-clean:
+	@rm -rf $(OUT_DIR)
+
+$(OUT_DIR)/.done: main.py
+	@$(RUN) main.py -o $(OUT_DIR)
+	@touch $@

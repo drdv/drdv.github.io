@@ -1,1 +1,6 @@
 site
+src/blog/202412-python-strings/data
+src/blog/202412-python-strings/*.ipynb
+src/blog/202411-summer-walking-challenge/img/generated
+__pycache__
+.ipynb_checkpoints
