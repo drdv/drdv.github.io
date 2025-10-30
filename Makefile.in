@@ -1,3 +1,5 @@
+BLOG_DIR := src/blog
+MAKEFLAGS := --no-print-directory
 RUN = uv run --with=$(DEPS)
 
 help: URL := github.com/drdv/makefile-doc/releases/latest/download/makefile-doc.awk

@@ -1,8 +1,5 @@
 include Makefile.in
 
-BLOG_DIR := src/blog
-MAKEFLAGS := --no-print-directory
-
 ## Serve site locally
 serve: build
 	@$(RUN) mkdocs serve --livereload -o
