@@ -3,7 +3,7 @@
 [download](snippets/gpg.pub){ .md-button }
 
 ``` title="curl -O https://drdv.github.io/snippets/gpg.pub"
---8<-- "gpg.pub"
+--8<-- "snippets/gpg.pub"
 ```
 
 

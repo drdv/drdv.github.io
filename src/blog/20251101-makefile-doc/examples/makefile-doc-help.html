@@ -1,0 +1,46 @@
+<head>
+  <style type="text/css">
+    .color-attention { color: #dc322f; }
+    .color-section { color: #859900; }
+    .color-deprecated { color: #b58900; }
+    .color-default { color: #268bd2; }
+    .color-warning { color: #d33682; }
+    .color-backticks { color: #b58900; }
+  </style>
+</head>
+<div class="makefile-doc-fg makefile-doc-bg">
+<pre>
+-----------------------
+Available targets:
+-----------------------
+<span class="color-default">help           </span>   show this help
+<span class="color-default">test           </span>   run all tests
+<span class="color-default">test-all-awk   </span>   run all tests with all supported awk variants
+<span class="color-default">cover.html     </span>   run the tests with goawk and generate a coverage report
+<span class="color-default">lint           </span>   lint the code using gawk
+<span class="color-default">check-variables</span>   verify for unintended global variables
+<span class="color-attention">clean-bin      </span>   remove all downloaded awk variants
+<span class="color-attention">release        </span>   create github release at latest tag
+<span class="color-section">
+------ Individual tests ------
+</span>
+<span class="color-default">test-          </span>   Recipes:
+                  ---------
+                  backticks
+                  connected
+                  debug
+                  default
+                  deprecated
+                  ...
+
+-----------------------
+Command-line arguments:
+-----------------------
+<span class="color-default">AWK            </span>   supported awk variants: {<span class="color-backticks">awk</span>, <span class="color-backticks">mawk</span>, <span class="color-backticks">nawk</span>, <span class="color-backticks">bawk</span>, <span class="color-backticks">wak</span>, <span class="color-backticks">goawk</span>}
+<span class="color-default">OUTPUT_FORMAT  </span>   {ansi, html}
+<span class="color-default">DEBUG          </span>   if set, debug info is generated in an org file
+<span class="color-default">UPDATE_RECIPE  </span>   if set, the expected value of a test recipe is updated
+                  e.g., <span class="color-backticks">make test-default UPDATE_RECIPE=1</span>
+-----------------------
+</pre>
+</div>
