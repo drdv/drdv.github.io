@@ -5,11 +5,11 @@
       
       
       
-        <link rel="canonical" href="https://drdv.github.io/blog/202411-summer-walking-challenge/">
+        <link rel="canonical" href="https://drdv.github.io/blog/202511-makefile-doc/">
       
       
+        <link rel="prev" href="../202412-python-strings/">
       
-        <link rel="next" href="../202412-python-strings/">
       
       
       <link rel="icon" href="../../assets/images/favicon.png">
@@ -17,7 +17,7 @@
     
     
       
-        <title>Summer walking challenge - Dimitar Dimitrov</title>
+        <title>Documenting Makefiles - Dimitar Dimitrov</title>
       
     
     
@@ -81,7 +81,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#summer-walking-challenge" class="md-skip">
+        <a href="#documenting-makefiles" class="md-skip">
           Skip to content
         </a>
       
@@ -117,7 +117,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Summer walking challenge
+              Documenting Makefiles
             
           </span>
         </div>
@@ -641,50 +641,6 @@
     
   
   
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#the-challenge" class="md-nav__link">
-    <span class="md-ellipsis">
-      The challenge
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#a-typical-day" class="md-nav__link">
-    <span class="md-ellipsis">
-      A typical day
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#lessons-learned" class="md-nav__link">
-    <span class="md-ellipsis">
-      Lessons learned
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#data" class="md-nav__link">
-    <span class="md-ellipsis">
-      Data
-    </span>
-  </a>
-  
-</li>
-      
-    </ul>
-  
 </nav>
                   </div>
                 </div>
@@ -720,7 +676,7 @@
                     <li class="md-nav__item">
                       <div class="md-nav__link">
                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 19H5V8h14m-3-7v2H8V1H6v2H5c-1.11 0-2 .89-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V5a2 2 0 0 0-2-2h-1V1m-1 11h-5v5h5z"></path></svg>
-                        <time datetime="2024-11-15 00:00:00+00:00" class="md-ellipsis">November 15, 2024</time>
+                        <time datetime="2025-11-01 00:00:00+00:00" class="md-ellipsis">November 1, 2025</time>
                       </div>
                     </li>
                     
@@ -731,7 +687,7 @@
                           <span class="md-ellipsis">
                             in
                             
-                              <a href="../category/sports/">sports</a></span>
+                              <a href="../category/utils/">utils</a></span>
                         </div>
                       </li>
                     
@@ -754,123 +710,135 @@
 
 
 
-<h1 id="summer-walking-challenge">Summer walking challenge<a class="headerlink" href="#summer-walking-challenge" title="Permanent link">#</a></h1>
-<p>Walking has always been an important part of my routine. This summer I decided to
-collect some data. Here are the results ...</p>
+<h1 id="documenting-makefiles">Documenting Makefiles<a class="headerlink" href="#documenting-makefiles" title="Permanent link">#</a></h1>
+<p>After having spent years documenting my <code>Makefile</code>s using (a variation of)
+ <a href="https://gist.github.com/prwhite/8168133">this</a> <code>awk</code> one-liner, I decided to factor
+ things out in a library <a href="https://github.com/drdv/makefile-doc">makefile-doc</a>. This
+ turned out to be a nice small project with <code>awk</code>. The following is a short overview.</p>
 <!-- more -->
 
-<div class="grid">
-<figure id="__figure-caption_1">
-<p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="img/generated/entire_challenge_dist_km.png" data-desc-position="bottom"><img alt="" src="img/generated/entire_challenge_dist_km.png"></a></p>
-<figcaption>
-<p><span class="caption-prefix">Figure 1.</span> Daily distance (entire challenge)</p>
-</figcaption>
-</figure>
-<figure id="__figure-caption_2">
-<p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="img/generated/post_challenge_dist_km.png" data-desc-position="bottom"><img alt="" src="img/generated/post_challenge_dist_km.png"></a></p>
-<figcaption>
-<p><span class="caption-prefix">Figure 2.</span> Daily distance (post-challenge)</p>
-</figcaption>
-</figure>
-<figure id="__figure-caption_3">
-<p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="img/generated/last_month_dist_km.png" data-desc-position="bottom"><img alt="" src="img/generated/last_month_dist_km.png"></a></p>
-<figcaption>
-<p><span class="caption-prefix">Figure 3.</span> Daily distance (last month of challenge)</p>
-</figcaption>
-</figure>
-<figure id="__figure-caption_4">
-<p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="img/generated/last_month_step_count.png" data-desc-position="bottom"><img alt="" src="img/generated/last_month_step_count.png"></a></p>
-<figcaption>
-<p><span class="caption-prefix">Figure 4.</span> Daily step count (last month of challenge)</p>
-</figcaption>
-</figure>
+<p>As an example, consider the documentation of the
+<a href="https://github.com/drdv/makefile-doc/blob/4f7b7315017232242fe6d1730c384a5f8ce8e873/Makefile"><code>Makefile</code></a>
+(at tag <code>v1.3</code>) of <a href="https://github.com/drdv/makefile-doc">makefile-doc</a>:</p>
+<div>
+
+  <style type="text/css">
+    .color-attention { color: #dc322f; }
+    .color-section { color: #859900; }
+    .color-deprecated { color: #b58900; }
+    .color-default { color: #268bd2; }
+    .color-warning { color: #d33682; }
+    .color-backticks { color: #b58900; }
+  </style>
+
+<div class="makefile-doc-fg makefile-doc-bg">
+<pre>-----------------------
+Available targets:
+-----------------------
+<span class="color-default">help           </span>   show this help
+<span class="color-default">test           </span>   run all tests
+<span class="color-default">test-all-awk   </span>   run all tests with all supported awk variants
+<span class="color-default">cover.html     </span>   run the tests with goawk and generate a coverage report
+<span class="color-default">lint           </span>   lint the code using gawk
+<span class="color-default">check-variables</span>   verify for unintended global variables
+<span class="color-attention">clean-bin      </span>   remove all downloaded awk variants
+<span class="color-attention">release        </span>   create github release at latest tag
+<span class="color-section">
+------ Individual tests ------
+</span>
+<span class="color-default">test-          </span>   Recipes:
+                  ---------
+                  backticks
+                  connected
+                  debug
+                  default
+                  deprecated
+                  ...
+
+-----------------------
+Command-line arguments:
+-----------------------
+<span class="color-default">AWK            </span>   supported awk variants: {<span class="color-backticks">awk</span>, <span class="color-backticks">mawk</span>, <span class="color-backticks">nawk</span>, <span class="color-backticks">bawk</span>, <span class="color-backticks">wak</span>, <span class="color-backticks">goawk</span>}
+<span class="color-default">OUTPUT_FORMAT  </span>   {ansi, html}
+<span class="color-default">DEBUG          </span>   if set, debug info is generated in an org file
+<span class="color-default">UPDATE_RECIPE  </span>   if set, the expected value of a test recipe is updated
+                  e.g., <span class="color-backticks">make test-default UPDATE_RECIPE=1</span>
+-----------------------
+</pre>
 </div>
-<h2 id="the-challenge">The challenge<a class="headerlink" href="#the-challenge" title="Permanent link">#</a></h2>
-<p>On May 21st, I decided to consistently carry my phone with me while walking, not with
-the intention of walking more than usual, but simply to satisfy my curiosity and track
-the distance. As it turned out, however, I was on a journey to prove, yet again, the
-Heisenberg Uncertainty Principle (that observation alters the phenomenon being
-observed). Before long, I had set targets for myself, and 85 days later, I had walked
-1900 km.</p>
-<p><em>Figure 1</em> above shows the distance walked per day (in km), along with the dates when I
-bought a new pair of walking shoes and when I had to discard them. <em>Figures 3 &amp; 4</em> zoom
-in on the final month of the challenge, during which I averaged 28 km per day (roughly
-45K steps). It's interesting to observe my pace in the 85 days following the end of the
-challenge, as shown in <em>Figure 2</em> (clearly, I couldn't reduce my walking right away).</p>
-<p>By far the most interesting for me is <em>Figure 5</em>, every point on which represents
-average distance walked (right axis) and total distance covered (left axis) in the past
-31 days. For example, the first point indicates that I have walked 500 km between May
-21st and June 20th (which is around 16 km per day on average). The point on August 12th
-is a summary of what is depicted in <em>Figure 3</em> and so on. The linear increase in pace is
-something I didn't aim for. I remember challenging myself to reach, at first, 20 km for
-the past month, later the target moved to 25 and towards the end 28. I briefly
-considered pushing for an average of 30 km, but after discarding my walking shoes on
-August 13th (which, by that point, were in terrible condition), I had difficulty
-adjusting to a new pair. I also felt tired, so I decided to end the challenge. Adding
-just two more km per day may not seem like a big deal but, trust me, it requires a level
-of consistency that's tough to maintain, while my kids kept insisting to go camping.
-Figure 6 is similar to Figure 5, but the rolling period is one week instead of 31 days
-(as can be seen, I did manage to hit an average of 30 km per day over the course of a
-week).</p>
-<p>Somewhere in the middle of all this, I aimed to cover a marathon distance in a single
-day, but my daily maximum ended up being around 36 km.</p>
-<div class="grid">
-<figure id="__figure-caption_5">
-<p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="img/generated/rolling_31days_dist_km.png" data-desc-position="bottom"><img alt="" src="img/generated/rolling_31days_dist_km.png"></a></p>
-<figcaption>
-<p><span class="caption-prefix">Figure 5.</span> 31-day rolling distance (entire challenge)</p>
-</figcaption>
-</figure>
-<figure id="__figure-caption_6">
-<p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="img/generated/rolling_7days_dist_km.png" data-desc-position="bottom"><img alt="" src="img/generated/rolling_7days_dist_km.png"></a></p>
-<figcaption>
-<p><span class="caption-prefix">Figure 6.</span> 7-day rolling distance (entire challenge)</p>
-</figcaption>
-</figure>
+
 </div>
-<h2 id="a-typical-day">A typical day<a class="headerlink" href="#a-typical-day" title="Permanent link">#</a></h2>
-<p>I wake up around 6:30 and start the day with about half an hour of reading. Then I
-stretch and take a few moments to plan what I want to accomplish, aside from my walks. I
-have breakfast at 7:30, then head out for my first walk of the day at 8:00, which
-typically lasts about an hour and a half. From 10:00 to 11:00, I focus on other tasks,
-then have an apple and go for another walk, usually lasting an hour. Lunch is around
-12:30 and by 14:00 I'm out again until about 15:00. Afterwards, I take a 30-minute nap
-and work on other tasks until 17:00 when I have another apple and head out for one more
-hour. Dinner is around 18:30, followed by my longest walk of the day, which typically
-lasts about two hours.</p>
-<p>I mostly walk on flat terrain but occasionally I go hiking. There are three outdoor
-exercise parks near my place, and I pass by one almost every day. I usually stop to do
-push-ups and pull-ups, which fit perfectly into my walking routine.</p>
-<p>All in all, this adds up to between 4 and 7 hours of walking per day.</p>
-<h2 id="lessons-learned">Lessons learned<a class="headerlink" href="#lessons-learned" title="Permanent link">#</a></h2>
+
+<p>I find it useful to document both targets and variables. This can be done using <code>##</code>,
+<code>##!</code> and <code>##%</code> placed either above them or inline<sup id="fnref:1"><a class="footnote-ref" href="#fn:1">1</a></sup>. The syntax is:</p>
+<div class="language-Makefile highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="c">##% A variable</span>
+</span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a><span class="nv">VAR</span><span class="w"> </span><span class="o">:=</span><span class="w"> </span><span class="m">1</span>
+</span><span id="__span-0-3"><a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a>
+</span><span id="__span-0-4"><a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a><span class="c">## Top-level docs take precedense</span>
+</span><span id="__span-0-5"><a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a><span class="c">## and could stretch over multiple lines</span>
+</span><span id="__span-0-6"><a id="__codelineno-0-6" name="__codelineno-0-6" href="#__codelineno-0-6"></a><span class="nf">t1</span><span class="o">:</span><span class="w"> </span><span class="c">## This is not shown</span>
+</span><span id="__span-0-7"><a id="__codelineno-0-7" name="__codelineno-0-7" href="#__codelineno-0-7"></a>
+</span><span id="__span-0-8"><a id="__codelineno-0-8" name="__codelineno-0-8" href="#__codelineno-0-8"></a><span class="c">##@ This defines a section</span>
+</span><span id="__span-0-9"><a id="__codelineno-0-9" name="__codelineno-0-9" href="#__codelineno-0-9"></a>
+</span><span id="__span-0-10"><a id="__codelineno-0-10" name="__codelineno-0-10" href="#__codelineno-0-10"></a><span class="nf">t2</span><span class="o">:</span><span class="w"> </span><span class="c">##! This is the doc for t2</span>
+</span></code></pre></div>
+<p>Explicitly listing (in an automated way) the possible values for command-line arguments
+is helpful. For example, currently there are 6 supported variants of awk as can be seen
+from the documentation of the command-line argument <code>AWK</code>. In a simmilar manner one can
+see how individual tests can be run, using <code>make test-</code> followed by a particular recipe
+(the number of entries and their formatting can be specified using several parameters).</p>
+<p>To use <code>makefile-doc</code>, simply place the following at the top of your <code>Makefile</code> (for
+more details see the project
+<a href="https://github.com/drdv/makefile-doc?tab=readme-ov-file#awk-script-for-makefile-docs">README</a>):</p>
+<div class="language-Makefile highlight"><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="nf">help</span><span class="o">:</span><span class="w"> </span><span class="n">URL</span> := <span class="n">github</span>.<span class="n">com</span>/<span class="n">drdv</span>/<span class="n">makefile</span>-<span class="n">doc</span>/<span class="n">releases</span>/<span class="n">latest</span>/<span class="n">download</span>/<span class="n">makefile</span>-<span class="n">doc</span>.<span class="n">awk</span>
+</span><span id="__span-1-2"><a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a><span class="nf">help</span><span class="o">:</span><span class="w"> </span><span class="n">DIR</span> := <span class="k">$(</span><span class="nv">HOME</span><span class="k">)</span>/.<span class="n">local</span>/<span class="n">share</span>/<span class="n">makefile</span>-<span class="n">doc</span>
+</span><span id="__span-1-3"><a id="__codelineno-1-3" name="__codelineno-1-3" href="#__codelineno-1-3"></a><span class="nf">help</span><span class="o">:</span><span class="w"> </span><span class="n">SCR</span> := <span class="k">$(</span><span class="nv">DIR</span><span class="k">)</span>/<span class="n">makefile</span>-<span class="n">doc</span>.<span class="n">awk</span>
+</span><span id="__span-1-4"><a id="__codelineno-1-4" name="__codelineno-1-4" href="#__codelineno-1-4"></a><span class="nf">help</span><span class="o">:</span><span class="w"> </span><span class="c">## show this help</span>
+</span><span id="__span-1-5"><a id="__codelineno-1-5" name="__codelineno-1-5" href="#__codelineno-1-5"></a><span class="w">    </span>@test<span class="w"> </span>-f<span class="w"> </span><span class="k">$(</span>SCR<span class="k">)</span><span class="w"> </span><span class="o">||</span><span class="w"> </span>wget<span class="w"> </span>-q<span class="w"> </span>-P<span class="w"> </span><span class="k">$(</span>DIR<span class="k">)</span><span class="w"> </span><span class="k">$(</span>URL<span class="k">)</span>
+</span><span id="__span-1-6"><a id="__codelineno-1-6" name="__codelineno-1-6" href="#__codelineno-1-6"></a><span class="w">    </span>@awk<span class="w"> </span><span class="k">$(</span>VFLAGS<span class="k">)</span><span class="w"> </span>-f<span class="w"> </span><span class="k">$(</span>SCR<span class="k">)</span><span class="w"> </span><span class="k">$(</span>MAKEFILE_LIST<span class="k">)</span>
+</span></code></pre></div>
+<p>The variable <code>VFLAGS</code> can be left empty or can be used to pass options to the
+<code>makefile-doc.awk</code> script via the standard <code>-v OPTION=VALUE</code> flag of <code>awk</code>. This is
+pretty much it, the rest is exploring some of the options and finding what works for
+you. As an example, the project's <code>Makefile</code> uses the following options:</p>
+<div class="language-Makefile highlight"><pre><span></span><code><span id="__span-2-1"><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a><span class="nf">help</span><span class="o">:</span><span class="w"> </span><span class="n">VFLAGS</span> := \
+</span><span id="__span-2-2"><a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a>    -<span class="n">v</span> <span class="n">SUB</span>='<span class="k">$(</span><span class="nv">TESTS_SUB</span><span class="k">)</span>;<span class="k">$(</span><span class="nv">AWK_SUB</span><span class="k">)</span>' \
+</span><span id="__span-2-3"><a id="__codelineno-2-3" name="__codelineno-2-3" href="#__codelineno-2-3"></a>    -<span class="n">v</span> <span class="n">DEBUG</span>=<span class="k">$(</span><span class="nv">DEBUG</span><span class="k">)</span> \
+</span><span id="__span-2-4"><a id="__codelineno-2-4" name="__codelineno-2-4" href="#__codelineno-2-4"></a>    -<span class="n">v</span> <span class="n">COLOR_BACKTICKS</span>=33 \
+</span><span id="__span-2-5"><a id="__codelineno-2-5" name="__codelineno-2-5" href="#__codelineno-2-5"></a>    -<span class="n">v</span> <span class="n">OUTPUT_FORMAT</span>=<span class="k">$(</span><span class="nv">OUTPUT_FORMAT</span><span class="k">)</span>`
+</span></code></pre></div>
+<p>The above HTML docs have been generated using <code>make OUTPUT_FORMAT=HTML</code> (output to Latex
+is supported as well). The <code>SUB</code> option specifies substitutions and value formatting.
+For example, the listing of the supported <code>awk</code> variants is generated using</p>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-3-1"><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a>AWK_SUB := &lt;L:0,M:0,I:{,T:},S:\\,&gt;AWK:$(SUPPORTED_AWK_VARIANTS)
+</span></code></pre></div>
+<p>The actual values come from the variable <code>$(SUPPORTED_AWK_VARIANTS)</code>, while the
+following parameters control the formatting:</p>
 <ul>
-<li>Nutrition plays a key role in sustaining such an effort over time. I had to pay close
-  attention especially to my protein intake in order to avoid loosing too much weight.
-  Although I normally don't eat much meat, I found myself craving it daily - and, of
-  course, I ate.</li>
-<li>Combining walking with strength training makes me feel amazing - just walking alone
-  isn't enough.</li>
-<li>During the challenge I used my bike only once (and I don't own a car), so much like
-  Forrest Gump, if I was going somewhere - I was walking. This gave me time to reflect
-  on ideas and communicate with people. Communication while walking is quite a bit more
-  pleasant for me compared to doing it while e.g., eating at a restaurant.</li>
-<li>Walking 28 km per day isn't really necessary - 10 to 12 km is probably enough to reap
-  most of the benefits. However, there's something magical about finding <strong>your</strong> rhythm
-  and completely dedicating yourself to it.</li>
-<li>It is possible to meditate while walking.</li>
-<li>Overall, I found my early morning walk to be the most beneficial, as it set my mood
-  for the day, while my after-dinner walk helped me calm down and improved my sleep.</li>
-<li>Walking helped me with my knees.</li>
-<li>I found myself walking for three reasons: (1) because I needed it badly, (2) because I
-  had to go somewhere, and (3) because I wanted to hit a target distance. The latter one
-  doesn't seem very meaningful now.</li>
-<li>It would have been better to use at least two pairs of good walking shoes. The ones I
-  bought weren't well-suited for walking on asphalt.</li>
+<li><code>L:0</code> - list the values starting from the current line</li>
+<li><code>M:0</code> - list the values on a single line (as opposed to <code>M:1</code> for multi-line listing)</li>
+<li><code>I:{</code> and <code>T:}</code> define the initial and terminal delimiters</li>
+<li><code>S:\\,</code> is the separator (note that the comma has to be escaped).</li>
 </ul>
-<h2 id="data">Data<a class="headerlink" href="#data" title="Permanent link">#</a></h2>
-<p>Here is the <a href="data/export_clean.csv">csv</a> data used to generate the
-above figures.</p>
-<p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="img/2024_summer.png" data-desc-position="bottom"><img align="right" alt="" src="img/2024_summer.png" width="200"></a></p>
+<p>The format of a substitution is <code>[&lt;p1:v1,...&gt;]NAME[:LABEL]:[VALUES]</code>. For the above
+example we have:</p>
+<ul>
+<li><code>[&lt;p1:v1,...&gt;]</code> <span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path d="M8.22 2.97a.75.75 0 0 1 1.06 0l4.25 4.25a.75.75 0 0 1 0 1.06l-4.25 4.25a.75.75 0 0 1-1.042-.018.75.75 0 0 1-.018-1.042l2.97-2.97H3.75a.75.75 0 0 1 0-1.5h7.44L8.22 4.03a.75.75 0 0 1 0-1.06"></path></svg></span> <code>&lt;L:0,M:0,I:{,T:},S:\\,&gt;</code></li>
+<li><code>NAME</code> <span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path d="M8.22 2.97a.75.75 0 0 1 1.06 0l4.25 4.25a.75.75 0 0 1 0 1.06l-4.25 4.25a.75.75 0 0 1-1.042-.018.75.75 0 0 1-.018-1.042l2.97-2.97H3.75a.75.75 0 0 1 0-1.5h7.44L8.22 4.03a.75.75 0 0 1 0-1.06"></path></svg></span> <code>AWK</code></li>
+<li><code>[VALUES]</code> <span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path d="M8.22 2.97a.75.75 0 0 1 1.06 0l4.25 4.25a.75.75 0 0 1 0 1.06l-4.25 4.25a.75.75 0 0 1-1.042-.018.75.75 0 0 1-.018-1.042l2.97-2.97H3.75a.75.75 0 0 1 0-1.5h7.44L8.22 4.03a.75.75 0 0 1 0-1.06"></path></svg></span> <code>$(SUPPORTED_AWK_VARIANTS)</code>.</li>
+</ul>
+<p>Only the optional <code>[:LABEL]</code> is omitted. It is normally used to rename targets specified
+in terms of variables -- as is the case with the individual test targets above (where
+<code>[:LABEL]</code><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path d="M8.22 2.97a.75.75 0 0 1 1.06 0l4.25 4.25a.75.75 0 0 1 0 1.06l-4.25 4.25a.75.75 0 0 1-1.042-.018.75.75 0 0 1-.018-1.042l2.97-2.97H3.75a.75.75 0 0 1 0-1.5h7.44L8.22 4.03a.75.75 0 0 1 0-1.06"></path></svg></span> <code>test-</code> because the actual target name is
+<code>$(TESTS)::</code> and it is not very informative at the level of the documentation).</p>
+<div class="footnote">
+<hr>
+<ol>
+<li id="fn:1">
+<p>The meaning of the three tokens is entirely up to you.&nbsp;<a class="footnote-backref" href="#fnref:1" title="Jump back to footnote 1 in the text">↩</a></p>
+</li>
+</ol>
+</div>
 
 
 
@@ -912,22 +880,22 @@ above figures.</p>
       
       <nav class="md-footer__inner md-grid" aria-label="Footer">
         
-        
           
-          <a href="../202412-python-strings/" class="md-footer__link md-footer__link--next" aria-label="Next: Anatomy of python strings">
+          <a href="../202412-python-strings/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Anatomy of python strings">
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"></path></svg>
+            </div>
             <div class="md-footer__title">
               <span class="md-footer__direction">
-                Next
+                Previous
               </span>
               <div class="md-ellipsis">
                 Anatomy of python strings
               </div>
             </div>
-            <div class="md-footer__button md-icon">
-              
-              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11z"></path></svg>
-            </div>
           </a>
+        
         
       </nav>
     

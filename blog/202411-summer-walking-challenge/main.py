@@ -1,5 +1,6 @@
 """Visualize my walking data from my iphone's health app."""
 
+import argparse
 import xml.etree.ElementTree as ET
 from pathlib import Path
 
@@ -9,10 +10,22 @@ import matplotlib.pyplot as plt
 import pandas as pd
 
 
-def main():
+def get_parser():
+    parser = argparse.ArgumentParser(description="Visualize health data.")
+    parser.add_argument(
+        "-o",
+        "--out-dir",
+        default="img/generated",
+        help="Output directory",
+    )
+
+    return parser
+
+
+def main(args):
     h = HealthData()
-    h.generate_figures("dist km")
-    h.generate_figures("step count")
+    h.generate_figures(out_dir=args.out_dir, unit="dist km")
+    h.generate_figures(out_dir=args.out_dir, unit="step count")
 
 
 class HealthData:
@@ -45,29 +58,23 @@ class HealthData:
 
         self.df = self._df_all.copy()
 
-    def generate_figures(self, unit="dist km", generation_dir="img/generated"):
-        generation_dir = Path(generation_dir)
+    def generate_figures(self, out_dir, unit="dist km"):
+        out_dir = Path(out_dir)
 
         unit_label = "_".join(unit.split(" "))
 
         self.filter_df("2024-05-21", "2024-08-13")
-        self.plot_value(
-            unit, generation_dir / f"entire_challenge_{unit_label}.png", True
-        )
+        self.plot_value(unit, out_dir / f"entire_challenge_{unit_label}.png", True)
 
         self.filter_df("2024-07-13", "2024-08-12")
-        self.plot_value(unit, generation_dir / f"last_month_{unit_label}.png")
+        self.plot_value(unit, out_dir / f"last_month_{unit_label}.png")
 
         self.filter_df("2024-05-21", "2024-08-13")
-        self.plot_rolling_value(
-            unit, 31, generation_dir / f"rolling_31days_{unit_label}.png"
-        )
-        self.plot_rolling_value(
-            unit, 7, generation_dir / f"rolling_7days_{unit_label}.png"
-        )
+        self.plot_rolling_value(unit, 31, out_dir / f"rolling_31days_{unit_label}.png")
+        self.plot_rolling_value(unit, 7, out_dir / f"rolling_7days_{unit_label}.png")
 
         self.filter_df("2024-08-14", "2024-11-06")
-        self.plot_value(unit, generation_dir / f"post_challenge_{unit_label}.png")
+        self.plot_value(unit, out_dir / f"post_challenge_{unit_label}.png")
 
     def filter_df(self, start_date=None, end_date=None):
         df = self._df_all.reset_index()
@@ -168,4 +175,4 @@ class HealthData:
 
 
 if __name__ == "__main__":
-    main()
+    main(get_parser().parse_args())

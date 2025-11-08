@@ -1,11 +1,19 @@
 """Download and display emoji (just to search and choose a few).
 
-How to use (in a jupyter notebook cell):
+How to use:
 
-```python
-eh = EmojiHandler(download=True)
-eh.show()
-```
+.. code-block:: bash
+
+    $ uv run --with=pandas,requests,jupyterlab jupyter-lab
+
+Then in a jupyterlab cell:
+
+.. code-block:: python
+
+    from emoji import EmojiHandler
+
+    eh = EmojiHandler(download=True)
+    eh.show()
 
 """
 

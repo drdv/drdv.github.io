@@ -1,7 +1,4 @@
-
-<!doctype html>
-<html lang="en" class="no-js">
-  <head>
+<!DOCTYPE html><html lang="en" class="no-js"><head>
     
       <meta charset="utf-8">
       <meta name="viewport" content="width=device-width,initial-scale=1">
@@ -14,9 +11,11 @@
         <link rel="prev" href="../202411-summer-walking-challenge/">
       
       
+        <link rel="next" href="../202511-makefile-doc/">
+      
       
       <link rel="icon" href="../../assets/images/favicon.png">
-      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.5.47">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.22">
     
     
       
@@ -24,7 +23,7 @@
       
     
     
-      <link rel="stylesheet" href="../../assets/stylesheets/main.6f8fc17f.min.css">
+      <link rel="stylesheet" href="../../assets/stylesheets/main.84d31ad4.min.css">
       
         
         <link rel="stylesheet" href="../../assets/stylesheets/palette.06af60db.min.css">
@@ -41,10 +40,12 @@
         
         
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&amp;display=fallback">
         <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
       
     
+    
+      <link rel="stylesheet" href="../../css/extra.css">
     
     <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
@@ -53,16 +54,17 @@
     
     
     
-   <link href="../../assets/stylesheets/glightbox.min.css" rel="stylesheet"/><style>
-    html.glightbox-open { overflow: initial; height: 100%; }
-    .gslide-title { margin-top: 0px; user-select: text; }
-    .gslide-desc { color: #666; user-select: text; }
-    .gslide-image img { background: white; }
-    .gscrollbar-fixer { padding-right: 15px; }
-    .gdesc-inner { font-size: 0.75rem; }
-    body[data-md-color-scheme="slate"] .gdesc-inner { background: var(--md-default-bg-color);}
-    body[data-md-color-scheme="slate"] .gslide-title { color: var(--md-default-fg-color);}
-    body[data-md-color-scheme="slate"] .gslide-desc { color: var(--md-default-fg-color);}</style> <script src="../../assets/javascripts/glightbox.min.js"></script></head>
+  <link href="../../assets/stylesheets/glightbox.min.css" rel="stylesheet"><script src="../../assets/javascripts/glightbox.min.js"></script><style id="glightbox-style">
+            html.glightbox-open { overflow: initial; height: 100%; }
+            .gslide-title { margin-top: 0px; user-select: text; }
+            .gslide-desc { color: #666; user-select: text; }
+            .gslide-image img { background: white; }
+            .gscrollbar-fixer { padding-right: 15px; }
+            .gdesc-inner { font-size: 0.75rem; }
+            body[data-md-color-scheme="slate"] .gdesc-inner { background: var(--md-default-bg-color); }
+            body[data-md-color-scheme="slate"] .gslide-title { color: var(--md-default-fg-color); }
+            body[data-md-color-scheme="slate"] .gslide-desc { color: var(--md-default-fg-color); }
+        </style></head>
   
   
     
@@ -100,12 +102,12 @@
     <a href="../.." title="Dimitar Dimitrov" class="md-header__button md-logo" aria-label="Dimitar Dimitrov" data-md-component="logo">
       
   
-  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"></path></svg>
 
     </a>
     <label class="md-header__button md-icon" for="__drawer">
       
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"></path></svg>
     </label>
     <div class="md-header__title" data-md-component="header-title">
       <div class="md-header__ellipsis">
@@ -130,20 +132,20 @@
     
     
     
-    <input class="md-option" data-md-color-media="" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_0">
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo" aria-label="Switch to dark mode" type="radio" name="__palette" id="__palette_0">
     
       <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_1" hidden>
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a4 4 0 0 0-4 4 4 4 0 0 0 4 4 4 4 0 0 0 4-4 4 4 0 0 0-4-4m0 10a6 6 0 0 1-6-6 6 6 0 0 1 6-6 6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a4 4 0 0 0-4 4 4 4 0 0 0 4 4 4 4 0 0 0 4-4 4 4 0 0 0-4-4m0 10a6 6 0 0 1-6-6 6 6 0 0 1 6-6 6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"></path></svg>
       </label>
     
   
     
     
     
-    <input class="md-option" data-md-color-media="" data-md-color-scheme="slate" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_1">
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="slate" data-md-color-primary="indigo" data-md-color-accent="indigo" aria-label="Switch to light mode" type="radio" name="__palette" id="__palette_1">
     
       <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_0" hidden>
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 18c-.89 0-1.74-.2-2.5-.55C11.56 16.5 13 14.42 13 12s-1.44-4.5-3.5-5.45C10.26 6.2 11.11 6 12 6a6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 18c-.89 0-1.74-.2-2.5-.55C11.56 16.5 13 14.42 13 12s-1.44-4.5-3.5-5.45C10.26 6.2 11.11 6 12 6a6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"></path></svg>
       </label>
     
   
@@ -155,26 +157,28 @@
     
     
     
-      <label class="md-header__button md-icon" for="__search">
-        
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
-      </label>
-      <div class="md-search" data-md-component="search" role="dialog">
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"></path></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
   <label class="md-search__overlay" for="__search"></label>
   <div class="md-search__inner" role="search">
     <form class="md-search__form" name="search">
       <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
       <label class="md-search__icon md-icon" for="__search">
         
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"></path></svg>
         
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"></path></svg>
       </label>
       <nav class="md-search__options" aria-label="Search">
         
         <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
           
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"></path></svg>
         </button>
       </nav>
       
@@ -191,6 +195,7 @@
     </div>
   </div>
 </div>
+      
     
     
   </nav>
@@ -223,7 +228,7 @@
     <a href="../.." title="Dimitar Dimitrov" class="md-nav__button md-logo" aria-label="Dimitar Dimitrov" data-md-component="logo">
       
   
-  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"></path></svg>
 
     </a>
     Dimitar Dimitrov
@@ -241,8 +246,10 @@
       <a href="../.." class="md-nav__link">
         
   
+  
   <span class="md-ellipsis">
     Index
+    
   </span>
   
 
@@ -261,8 +268,10 @@
       <a href="../../cv/" class="md-nav__link">
         
   
+  
   <span class="md-ellipsis">
     CV
+    
   </span>
   
 
@@ -281,8 +290,10 @@
       <a href="../../publications/" class="md-nav__link">
         
   
+  
   <span class="md-ellipsis">
     Publications
+    
   </span>
   
 
@@ -301,8 +312,10 @@
       <a href="../../gpg/" class="md-nav__link">
         
   
+  
   <span class="md-ellipsis">
     GPG
+    
   </span>
   
 
@@ -333,6 +346,7 @@
     
     
     
+    
     <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
         
@@ -340,13 +354,14 @@
         <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" checked>
         
           
-          
           <div class="md-nav__link md-nav__container">
             <a href="../" class="md-nav__link ">
               
   
+  
   <span class="md-ellipsis">
     Blog
+    
   </span>
   
 
@@ -379,6 +394,9 @@
       
         
       
+        
+      
+    
     
     
     
@@ -386,14 +404,16 @@
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5_2" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5_2">
         
           
           <label class="md-nav__link" for="__nav_5_2" id="__nav_5_2_label" tabindex="0">
             
   
+  
   <span class="md-ellipsis">
     archive
+    
   </span>
   
 
@@ -416,11 +436,38 @@
   
   
     <li class="md-nav__item">
+      <a href="../archive/2025/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    2025
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    
+  
+  
+    <li class="md-nav__item">
       <a href="../archive/2024/" class="md-nav__link">
         
   
+  
   <span class="md-ellipsis">
     2024
+    
   </span>
   
 
@@ -451,6 +498,9 @@
       
         
       
+        
+      
+    
     
     
     
@@ -458,14 +508,16 @@
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5_3" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5_3">
         
           
           <label class="md-nav__link" for="__nav_5_3" id="__nav_5_3_label" tabindex="0">
             
   
+  
   <span class="md-ellipsis">
     categories
+    
   </span>
   
 
@@ -491,8 +543,10 @@
       <a href="../category/python/" class="md-nav__link">
         
   
+  
   <span class="md-ellipsis">
     python
+    
   </span>
   
 
@@ -514,8 +568,35 @@
       <a href="../category/sports/" class="md-nav__link">
         
   
+  
   <span class="md-ellipsis">
     sports
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    
+  
+  
+    <li class="md-nav__item">
+      <a href="../category/utils/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    utils
+    
   </span>
   
 
@@ -550,7 +631,7 @@
               
                 
               
-              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc">
                 <div class="md-sidebar__scrollwrap">
                   <div class="md-sidebar__inner">
                     
@@ -690,7 +771,7 @@
             <div class="md-post__back">
               <div class="md-nav__title md-nav__container">
                 <a href="../" class="md-nav__link">
-                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"></path></svg>
                   <span class="md-ellipsis">
                     Back to index
                   </span>
@@ -709,7 +790,7 @@
                   <ul class="md-nav__list">
                     <li class="md-nav__item">
                       <div class="md-nav__link">
-                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 19H5V8h14m-3-7v2H8V1H6v2H5c-1.11 0-2 .89-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V5a2 2 0 0 0-2-2h-1V1m-1 11h-5v5h5z"/></svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 19H5V8h14m-3-7v2H8V1H6v2H5c-1.11 0-2 .89-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V5a2 2 0 0 0-2-2h-1V1m-1 11h-5v5h5z"></path></svg>
                         <time datetime="2024-12-06 00:00:00+00:00" class="md-ellipsis">December 6, 2024</time>
                       </div>
                     </li>
@@ -717,7 +798,7 @@
                     
                       <li class="md-nav__item">
                         <div class="md-nav__link">
-                          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9 3v15h3V3zm3 2 4 13 3-1-4-13zM5 5v13h3V5zM3 19v2h18v-2z"/></svg>
+                          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9 3v15h3V3zm3 2 4 13 3-1-4-13zM5 5v13h3V5zM3 19v2h18v-2z"></path></svg>
                           <span class="md-ellipsis">
                             in
                             
@@ -730,6 +811,7 @@
                 </nav>
               </li>
             </ul>
+            
           </nav>
           
         </div>
@@ -738,6 +820,9 @@
     <article class="md-content__inner md-typeset">
       
         
+  
+
+
 
 
 <h1 id="anatomy-of-python-strings">Anatomy of python strings<a class="headerlink" href="#anatomy-of-python-strings" title="Permanent link">#</a></h1>
@@ -764,7 +849,7 @@ user-perceived) character as a <em>grapheme</em>.</p>
 </dd>
 <dt><strong>Code point</strong></dt>
 <dd>
-<p>Unicode code points are unsigned integers<sup id="fnref:hex"><a class="footnote-ref" href="#fn:hex">1</a></sup> that map one to one with (primitive)
+<p>Unicode code points are unsigned integers<sup id="fnref:hex"><a class="footnote-ref" href="#fn:hex">7</a></sup> that map one to one with (primitive)
 characters. That is, to each character in the Unicode character set there is a
 corresponding integer code point as its index.</p>
 </dd>
@@ -801,8 +886,8 @@ equivalence</a>). First, it has a
 dedicated code point (which defines it as a "primitive" grapheme). Second, it can be
 represented as a combination of e and an acute accent (which makes it a grapheme cluster
 as well).</p>
-<div class="language-python highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="n">s1</span> <span class="o">=</span> <span class="s2">&quot;é&quot;</span>  <span class="c1"># using one code point (U+00E9)</span>
-</span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a><span class="n">s2</span> <span class="o">=</span> <span class="s2">&quot;é&quot;</span>  <span class="c1"># using two code points (equivalent to s2 = &quot;e\u0301&quot;)</span>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="n">s1</span> <span class="o">=</span> <span class="s2">"é"</span>  <span class="c1"># using one code point (U+00E9)</span>
+</span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a><span class="n">s2</span> <span class="o">=</span> <span class="s2">"é"</span>  <span class="c1"># using two code points (equivalent to s2 = "e\u0301")</span>
 </span><span id="__span-0-3"><a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a>
 </span><span id="__span-0-4"><a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a><span class="k">assert</span> <span class="n">s1</span> <span class="o">!=</span> <span class="n">s2</span>
 </span><span id="__span-0-5"><a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a><span class="k">assert</span> <span class="nb">len</span><span class="p">(</span><span class="n">s1</span><span class="p">)</span> <span class="o">==</span> <span class="mi">1</span>
@@ -810,14 +895,14 @@ as well).</p>
 </span><span id="__span-0-7"><a id="__codelineno-0-7" name="__codelineno-0-7" href="#__codelineno-0-7"></a>
 </span><span id="__span-0-8"><a id="__codelineno-0-8" name="__codelineno-0-8" href="#__codelineno-0-8"></a><span class="k">for</span> <span class="n">char</span> <span class="ow">in</span> <span class="n">s2</span><span class="p">:</span>
 </span><span id="__span-0-9"><a id="__codelineno-0-9" name="__codelineno-0-9" href="#__codelineno-0-9"></a>    <span class="n">code_point</span> <span class="o">=</span> <span class="nb">ord</span><span class="p">(</span><span class="n">char</span><span class="p">)</span>
-</span><span id="__span-0-10"><a id="__codelineno-0-10" name="__codelineno-0-10" href="#__codelineno-0-10"></a>    <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;</span><span class="si">{</span><span class="n">code_point</span><span class="si">}</span><span class="s2"> (</span><span class="si">{</span><span class="nb">hex</span><span class="p">(</span><span class="n">code_point</span><span class="p">)</span><span class="si">}</span><span class="s2">)&quot;</span><span class="p">)</span>
+</span><span id="__span-0-10"><a id="__codelineno-0-10" name="__codelineno-0-10" href="#__codelineno-0-10"></a>    <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"</span><span class="si">{</span><span class="n">code_point</span><span class="si">}</span><span class="s2"> (</span><span class="si">{</span><span class="nb">hex</span><span class="p">(</span><span class="n">code_point</span><span class="p">)</span><span class="si">}</span><span class="s2">)"</span><span class="p">)</span>
 </span></code></pre></div>
 <div class="result">
 <p class="annotate">Output: (1)</p>
 <ol>
 <li>
 <p><code>M-x describe-char</code> in <code>emacs</code> gives:</p>
-<div class="tabbed-set tabbed-alternate" data-tabs="1:2"><input checked="checked" id="__tabbed_1_1" name="__tabbed_1" type="radio" /><input id="__tabbed_1_2" name="__tabbed_1" type="radio" /><div class="tabbed-labels"><label for="__tabbed_1_1">on é (one code point)</label><label for="__tabbed_1_2">on é (two code points)</label></div>
+<div class="tabbed-set tabbed-alternate" data-tabs="1:2"><input checked="checked" id="__tabbed_1_1" name="__tabbed_1" type="radio"><input id="__tabbed_1_2" name="__tabbed_1" type="radio"><div class="tabbed-labels"><label for="__tabbed_1_1">on é (one code point)</label><label for="__tabbed_1_2">on é (two code points)</label></div>
 <div class="tabbed-content">
 <div class="tabbed-block">
 <div class="language-text no-copy highlight"><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="hll">             position: 1 of 1 (0%), column: 0
@@ -827,7 +912,7 @@ as well).</p>
 </span><span id="__span-1-5"><a id="__codelineno-1-5" name="__codelineno-1-5" href="#__codelineno-1-5"></a>               script: latin
 </span><span id="__span-1-6"><a id="__codelineno-1-6" name="__codelineno-1-6" href="#__codelineno-1-6"></a>               syntax: w    which means: word
 </span><span id="__span-1-7"><a id="__codelineno-1-7" name="__codelineno-1-7" href="#__codelineno-1-7"></a>             category: .:Base, L:Strong L2R, c:Chinese, j:Japanese, l:Latin, v:Viet
-</span><span id="__span-1-8"><a id="__codelineno-1-8" name="__codelineno-1-8" href="#__codelineno-1-8"></a>             to input: type &quot;C-x 8 RET e9&quot; or &quot;C-x 8 RET LATIN SMALL LETTER E WITH ACUTE&quot;
+</span><span id="__span-1-8"><a id="__codelineno-1-8" name="__codelineno-1-8" href="#__codelineno-1-8"></a>             to input: type "C-x 8 RET e9" or "C-x 8 RET LATIN SMALL LETTER E WITH ACUTE"
 </span><span id="__span-1-9"><a id="__codelineno-1-9" name="__codelineno-1-9" href="#__codelineno-1-9"></a>          buffer code: #xC3 #xA9
 </span><span id="__span-1-10"><a id="__codelineno-1-10" name="__codelineno-1-10" href="#__codelineno-1-10"></a>            file code: #xC3 #xA9 (encoded by coding system utf-8-unix)
 </span><span id="__span-1-11"><a id="__codelineno-1-11" name="__codelineno-1-11" href="#__codelineno-1-11"></a>              display: terminal code #xC3 #xA9
@@ -836,7 +921,7 @@ as well).</p>
 </span><span id="__span-1-14"><a id="__codelineno-1-14" name="__codelineno-1-14" href="#__codelineno-1-14"></a><span class="hll">  name: LATIN SMALL LETTER E WITH ACUTE
 </span></span><span id="__span-1-15"><a id="__codelineno-1-15" name="__codelineno-1-15" href="#__codelineno-1-15"></a>  old-name: LATIN SMALL LETTER E ACUTE
 </span><span id="__span-1-16"><a id="__codelineno-1-16" name="__codelineno-1-16" href="#__codelineno-1-16"></a>  general-category: Ll (Letter, Lowercase)
-</span><span id="__span-1-17"><a id="__codelineno-1-17" name="__codelineno-1-17" href="#__codelineno-1-17"></a><span class="hll">  decomposition: (101 769) (&#39;e&#39; &#39; &#39;)
+</span><span id="__span-1-17"><a id="__codelineno-1-17" name="__codelineno-1-17" href="#__codelineno-1-17"></a><span class="hll">  decomposition: (101 769) ('e' ' ')
 </span></span></code></pre></div>
 </div>
 <div class="tabbed-block">
@@ -847,19 +932,19 @@ as well).</p>
 </span><span id="__span-2-5"><a id="__codelineno-2-5" name="__codelineno-2-5" href="#__codelineno-2-5"></a>               script: latin
 </span><span id="__span-2-6"><a id="__codelineno-2-6" name="__codelineno-2-6" href="#__codelineno-2-6"></a>               syntax: w    which means: word
 </span><span id="__span-2-7"><a id="__codelineno-2-7" name="__codelineno-2-7" href="#__codelineno-2-7"></a>             category: .:Base, L:Strong L2R, a:ASCII, l:Latin, r:Roman
-</span><span id="__span-2-8"><a id="__codelineno-2-8" name="__codelineno-2-8" href="#__codelineno-2-8"></a>             to input: type &quot;C-x 8 RET 65&quot; or &quot;C-x 8 RET LATIN SMALL LETTER E&quot;
+</span><span id="__span-2-8"><a id="__codelineno-2-8" name="__codelineno-2-8" href="#__codelineno-2-8"></a>             to input: type "C-x 8 RET 65" or "C-x 8 RET LATIN SMALL LETTER E"
 </span><span id="__span-2-9"><a id="__codelineno-2-9" name="__codelineno-2-9" href="#__codelineno-2-9"></a>          buffer code: #x65
 </span><span id="__span-2-10"><a id="__codelineno-2-10" name="__codelineno-2-10" href="#__codelineno-2-10"></a>            file code: #x65 (encoded by coding system utf-8-unix)
-</span><span id="__span-2-11"><a id="__codelineno-2-11" name="__codelineno-2-11" href="#__codelineno-2-11"></a>              display: composed to form &quot;e &quot; (see below)
+</span><span id="__span-2-11"><a id="__codelineno-2-11" name="__codelineno-2-11" href="#__codelineno-2-11"></a>              display: composed to form "e " (see below)
 </span><span id="__span-2-12"><a id="__codelineno-2-12" name="__codelineno-2-12" href="#__codelineno-2-12"></a>
-</span><span id="__span-2-13"><a id="__codelineno-2-13" name="__codelineno-2-13" href="#__codelineno-2-13"></a><span class="hll">Composed with the following character(s) &quot; &quot; by these characters:
+</span><span id="__span-2-13"><a id="__codelineno-2-13" name="__codelineno-2-13" href="#__codelineno-2-13"></a><span class="hll">Composed with the following character(s) " " by these characters:
 </span></span><span id="__span-2-14"><a id="__codelineno-2-14" name="__codelineno-2-14" href="#__codelineno-2-14"></a><span class="hll"> e (#x65) LATIN SMALL LETTER E
 </span></span><span id="__span-2-15"><a id="__codelineno-2-15" name="__codelineno-2-15" href="#__codelineno-2-15"></a><span class="hll">   (#x301) COMBINING ACUTE ACCENT
 </span></span><span id="__span-2-16"><a id="__codelineno-2-16" name="__codelineno-2-16" href="#__codelineno-2-16"></a>
 </span><span id="__span-2-17"><a id="__codelineno-2-17" name="__codelineno-2-17" href="#__codelineno-2-17"></a>Character code properties: customize what to show
 </span><span id="__span-2-18"><a id="__codelineno-2-18" name="__codelineno-2-18" href="#__codelineno-2-18"></a>  name: LATIN SMALL LETTER E
 </span><span id="__span-2-19"><a id="__codelineno-2-19" name="__codelineno-2-19" href="#__codelineno-2-19"></a>  general-category: Ll (Letter, Lowercase)
-</span><span id="__span-2-20"><a id="__codelineno-2-20" name="__codelineno-2-20" href="#__codelineno-2-20"></a>  decomposition: (101) (&#39;e&#39;)
+</span><span id="__span-2-20"><a id="__codelineno-2-20" name="__codelineno-2-20" href="#__codelineno-2-20"></a>  decomposition: (101) ('e')
 </span></code></pre></div>
 </div>
 </div>
@@ -913,16 +998,16 @@ as well).</p>
 which is reflected by the code points used to form them. In the representation of the
 middle one (depicted on the lower levels), there are 4 primitive graphemes glued
 together with the <a href="https://en.wikipedia.org/wiki/Zero-width_joiner">zero-width joiner</a>
-character <code>U+200d</code>. We can use <code class="language-python highlight"><span class="nb">list</span><span class="p">(</span><span class="s2">&quot;👨‍👩‍👧‍👦&quot;</span><span class="p">)</span></code> to get a list of characters
+character <code>U+200d</code>. We can use <code class="language-python highlight"><span class="nb">list</span><span class="p">(</span><span class="s2">"👨‍👩‍👧‍👦"</span><span class="p">)</span></code> to get a list of characters
 associated with the code points that form 👨‍👩‍👧‍👦.</p>
 <h2 id="indexing">Indexing<a class="headerlink" href="#indexing" title="Permanent link">#</a></h2>
-<p>Consider the string <code class="language-python highlight"><span class="n">sentense</span> <span class="o">=</span> <span class="s2">&quot;This 👨‍👩‍👧‍👦 is my family!&quot;</span></code>. As python
+<p>Consider the string <code class="language-python highlight"><span class="n">sentense</span> <span class="o">=</span> <span class="s2">"This 👨‍👩‍👧‍👦 is my family!"</span></code>. As python
 strings are (stored as) sequences of code points, <code class="language-python highlight"><span class="n">sentense</span><span class="p">[:</span><span class="mi">6</span><span class="p">]</span></code> would give
-<code class="language-python highlight"><span class="s2">&quot;This 👨&quot;</span></code> because 👨 corresponds to the first (also called a <em>base</em>) code
-point of 👨‍👩‍👧‍👦. As can be expected <code class="language-python highlight"><span class="n">sentense</span><span class="p">[:</span><span class="mi">8</span><span class="p">]</span></code> returns <code class="language-python highlight"><span class="s2">&quot;This</span><span class="err">👨‍👩</span><span class="s2">&quot;</span></code>, where the zero-width joiner is not visible<sup id="fnref:rendering"><a class="footnote-ref" href="#fn:rendering">2</a></sup>.</p>
+<code class="language-python highlight"><span class="s2">"This 👨"</span></code> because 👨 corresponds to the first (also called a <em>base</em>) code
+point of 👨‍👩‍👧‍👦. As can be expected <code class="language-python highlight"><span class="n">sentense</span><span class="p">[:</span><span class="mi">8</span><span class="p">]</span></code> returns <code class="language-python highlight"><span class="s2">"This</span><span class="err">👨‍👩</span><span class="s2">"</span></code>, where the zero-width joiner is not visible<sup id="fnref:rendering"><a class="footnote-ref" href="#fn:rendering">1</a></sup>.</p>
 <p>The situation can get tricky with symbols that may have different Unicode
-representations. For example <code class="language-python highlight"><span class="nb">len</span><span class="p">(</span><span class="s2">&quot;L&#39;idée a été réévaluée.&quot;</span><span class="p">)</span></code> is 23, while
-<code class="language-python highlight"><span class="nb">len</span><span class="p">(</span><span class="s2">&quot;L&#39;idée a été réévaluée.&quot;</span><span class="p">)</span></code> is 29 because all symbols é in the latter
+representations. For example <code class="language-python highlight"><span class="nb">len</span><span class="p">(</span><span class="s2">"L'idée a été réévaluée."</span><span class="p">)</span></code> is 23, while
+<code class="language-python highlight"><span class="nb">len</span><span class="p">(</span><span class="s2">"L'idée a été réévaluée."</span><span class="p">)</span></code> is 29 because all symbols é in the latter
 string are encoded using two code points. One can imagine strings with a mix of
 representations for the same symbols which can be difficult to handle in an ad hoc
 manner.</p>
@@ -932,10 +1017,10 @@ identifying sequences of code points that are meant to form a particular symbol 
 grapheme cluster). Finding <a href="https://unicode.org/reports/tr29/#Grapheme_Cluster_Boundaries">symbol
 boundaries</a> is a common
 problem e.g., in text editors and terminal emulators. As an example, consider the
-following functionality from the <code>grapheme</code><sup id="fnref:grapheme-install"><a class="footnote-ref" href="#fn:grapheme-install">3</a></sup> package:</p>
-<div class="language-python highlight"><pre><span></span><code><span id="__span-4-1"><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a><span class="kn">import</span> <span class="nn">grapheme</span>
+following functionality from the <code>grapheme</code><sup id="fnref:grapheme-install"><a class="footnote-ref" href="#fn:grapheme-install">2</a></sup> package:</p>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-4-1"><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a><span class="kn">import</span><span class="w"> </span><span class="nn">grapheme</span>
 </span><span id="__span-4-2"><a id="__codelineno-4-2" name="__codelineno-4-2" href="#__codelineno-4-2"></a>
-</span><span id="__span-4-3"><a id="__codelineno-4-3" name="__codelineno-4-3" href="#__codelineno-4-3"></a><span class="n">sentense</span> <span class="o">=</span> <span class="s2">&quot;This 👨‍👩‍👧‍👦 is my family!&quot;</span>
+</span><span id="__span-4-3"><a id="__codelineno-4-3" name="__codelineno-4-3" href="#__codelineno-4-3"></a><span class="n">sentense</span> <span class="o">=</span> <span class="s2">"This 👨‍👩‍👧‍👦 is my family!"</span>
 </span><span id="__span-4-4"><a id="__codelineno-4-4" name="__codelineno-4-4" href="#__codelineno-4-4"></a>
 </span><span id="__span-4-5"><a id="__codelineno-4-5" name="__codelineno-4-5" href="#__codelineno-4-5"></a><span class="k">assert</span> <span class="nb">len</span><span class="p">(</span><span class="n">sentense</span><span class="p">)</span> <span class="o">==</span> <span class="mi">26</span>
 </span><span id="__span-4-6"><a id="__codelineno-4-6" name="__codelineno-4-6" href="#__codelineno-4-6"></a><span class="k">assert</span> <span class="n">grapheme</span><span class="o">.</span><span class="n">length</span><span class="p">(</span><span class="n">sentense</span><span class="p">)</span> <span class="o">==</span> <span class="mi">20</span>
@@ -946,16 +1031,16 @@ following functionality from the <code>grapheme</code><sup id="fnref:grapheme-in
 normalize a string. That is, to detect symbols for which alternative Unicode encodings
 exist and to convert them to a given <a href="https://www.unicode.org/reports/tr15">canonical</a>
 form.</p>
-<div class="language-python annotate highlight"><pre><span></span><code><span id="__span-5-1"><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a><span class="kn">import</span> <span class="nn">unicodedata</span>
+<div class="language-python annotate highlight"><pre><span></span><code><span id="__span-5-1"><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a><span class="kn">import</span><span class="w"> </span><span class="nn">unicodedata</span>
 </span><span id="__span-5-2"><a id="__codelineno-5-2" name="__codelineno-5-2" href="#__codelineno-5-2"></a>
-</span><span id="__span-5-3"><a id="__codelineno-5-3" name="__codelineno-5-3" href="#__codelineno-5-3"></a><span class="n">s1</span> <span class="o">=</span> <span class="s2">&quot;L&#39;idée a été réévaluée.&quot;</span>
+</span><span id="__span-5-3"><a id="__codelineno-5-3" name="__codelineno-5-3" href="#__codelineno-5-3"></a><span class="n">s1</span> <span class="o">=</span> <span class="s2">"L'idée a été réévaluée."</span>
 </span><span id="__span-5-4"><a id="__codelineno-5-4" name="__codelineno-5-4" href="#__codelineno-5-4"></a><span class="k">assert</span> <span class="nb">len</span><span class="p">(</span><span class="n">s1</span><span class="p">)</span> <span class="o">==</span> <span class="mi">23</span>
 </span><span id="__span-5-5"><a id="__codelineno-5-5" name="__codelineno-5-5" href="#__codelineno-5-5"></a>
-</span><span id="__span-5-6"><a id="__codelineno-5-6" name="__codelineno-5-6" href="#__codelineno-5-6"></a><span class="c1"># each &quot;é&quot; becomes &quot;e\u0301&quot;</span>
-</span><span id="__span-5-7"><a id="__codelineno-5-7" name="__codelineno-5-7" href="#__codelineno-5-7"></a><span class="n">s2</span> <span class="o">=</span> <span class="n">unicodedata</span><span class="o">.</span><span class="n">normalize</span><span class="p">(</span><span class="s2">&quot;NFD&quot;</span><span class="p">,</span> <span class="n">s1</span><span class="p">)</span> <span class="c1"># canonical decomposition</span>
+</span><span id="__span-5-6"><a id="__codelineno-5-6" name="__codelineno-5-6" href="#__codelineno-5-6"></a><span class="c1"># each "é" becomes "e\u0301"</span>
+</span><span id="__span-5-7"><a id="__codelineno-5-7" name="__codelineno-5-7" href="#__codelineno-5-7"></a><span class="n">s2</span> <span class="o">=</span> <span class="n">unicodedata</span><span class="o">.</span><span class="n">normalize</span><span class="p">(</span><span class="s2">"NFD"</span><span class="p">,</span> <span class="n">s1</span><span class="p">)</span> <span class="c1"># canonical decomposition</span>
 </span><span id="__span-5-8"><a id="__codelineno-5-8" name="__codelineno-5-8" href="#__codelineno-5-8"></a><span class="k">assert</span> <span class="nb">len</span><span class="p">(</span><span class="n">s2</span><span class="p">)</span> <span class="o">==</span> <span class="mi">29</span> <span class="c1"># (1)!</span>
 </span><span id="__span-5-9"><a id="__codelineno-5-9" name="__codelineno-5-9" href="#__codelineno-5-9"></a>
-</span><span id="__span-5-10"><a id="__codelineno-5-10" name="__codelineno-5-10" href="#__codelineno-5-10"></a><span class="n">s3</span> <span class="o">=</span> <span class="n">unicodedata</span><span class="o">.</span><span class="n">normalize</span><span class="p">(</span><span class="s2">&quot;NFC&quot;</span><span class="p">,</span> <span class="n">s2</span><span class="p">)</span> <span class="c1"># canonical composition</span>
+</span><span id="__span-5-10"><a id="__codelineno-5-10" name="__codelineno-5-10" href="#__codelineno-5-10"></a><span class="n">s3</span> <span class="o">=</span> <span class="n">unicodedata</span><span class="o">.</span><span class="n">normalize</span><span class="p">(</span><span class="s2">"NFC"</span><span class="p">,</span> <span class="n">s2</span><span class="p">)</span> <span class="c1"># canonical composition</span>
 </span><span id="__span-5-11"><a id="__codelineno-5-11" name="__codelineno-5-11" href="#__codelineno-5-11"></a><span class="k">assert</span> <span class="nb">len</span><span class="p">(</span><span class="n">s3</span><span class="p">)</span> <span class="o">==</span> <span class="mi">23</span>
 </span><span id="__span-5-12"><a id="__codelineno-5-12" name="__codelineno-5-12" href="#__codelineno-5-12"></a><span class="k">assert</span> <span class="n">s1</span> <span class="o">==</span> <span class="n">s3</span>
 </span><span id="__span-5-13"><a id="__codelineno-5-13" name="__codelineno-5-13" href="#__codelineno-5-13"></a><span class="k">assert</span> <span class="n">s1</span> <span class="o">!=</span> <span class="n">s2</span>
@@ -971,15 +1056,15 @@ points (ranging from <code>0</code> to <code>1114111</code>) are to be stored in
 393</a>, python addresses the memory storage problem in
 a pragmatic way by handling <strong>four cases</strong> which depend only on one parameter: the
 largest code point occurring in the string.</p>
-<div class="language-python highlight"><pre><span></span><code><span id="__span-6-1"><a id="__codelineno-6-1" name="__codelineno-6-1" href="#__codelineno-6-1"></a><span class="kn">import</span> <span class="nn">sys</span>
-</span><span id="__span-6-2"><a id="__codelineno-6-2" name="__codelineno-6-2" href="#__codelineno-6-2"></a><span class="kn">import</span> <span class="nn">unicodedata</span>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-6-1"><a id="__codelineno-6-1" name="__codelineno-6-1" href="#__codelineno-6-1"></a><span class="kn">import</span><span class="w"> </span><span class="nn">sys</span>
+</span><span id="__span-6-2"><a id="__codelineno-6-2" name="__codelineno-6-2" href="#__codelineno-6-2"></a><span class="kn">import</span><span class="w"> </span><span class="nn">unicodedata</span>
 </span><span id="__span-6-3"><a id="__codelineno-6-3" name="__codelineno-6-3" href="#__codelineno-6-3"></a>
-</span><span id="__span-6-4"><a id="__codelineno-6-4" name="__codelineno-6-4" href="#__codelineno-6-4"></a><span class="n">s1</span> <span class="o">=</span> <span class="s2">&quot;L&#39;idée a été réévaluée.&quot;</span>
-</span><span id="__span-6-5"><a id="__codelineno-6-5" name="__codelineno-6-5" href="#__codelineno-6-5"></a><span class="n">s2</span> <span class="o">=</span> <span class="n">unicodedata</span><span class="o">.</span><span class="n">normalize</span><span class="p">(</span><span class="s2">&quot;NFD&quot;</span><span class="p">,</span> <span class="n">s1</span><span class="p">)</span>
+</span><span id="__span-6-4"><a id="__codelineno-6-4" name="__codelineno-6-4" href="#__codelineno-6-4"></a><span class="n">s1</span> <span class="o">=</span> <span class="s2">"L'idée a été réévaluée."</span>
+</span><span id="__span-6-5"><a id="__codelineno-6-5" name="__codelineno-6-5" href="#__codelineno-6-5"></a><span class="n">s2</span> <span class="o">=</span> <span class="n">unicodedata</span><span class="o">.</span><span class="n">normalize</span><span class="p">(</span><span class="s2">"NFD"</span><span class="p">,</span> <span class="n">s1</span><span class="p">)</span>
 </span><span id="__span-6-6"><a id="__codelineno-6-6" name="__codelineno-6-6" href="#__codelineno-6-6"></a>
 </span><span id="__span-6-7"><a id="__codelineno-6-7" name="__codelineno-6-7" href="#__codelineno-6-7"></a><span class="n">m1</span><span class="p">,</span> <span class="n">m2</span> <span class="o">=</span> <span class="nb">max</span><span class="p">(</span><span class="n">s1</span><span class="p">),</span> <span class="nb">max</span><span class="p">(</span><span class="n">s2</span><span class="p">)</span>
-</span><span id="__span-6-8"><a id="__codelineno-6-8" name="__codelineno-6-8" href="#__codelineno-6-8"></a><span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;[s1]: </span><span class="si">{</span><span class="nb">ord</span><span class="p">(</span><span class="n">m1</span><span class="p">)</span><span class="si">}</span><span class="s2"> ( </span><span class="si">{</span><span class="n">m1</span><span class="si">}</span><span class="s2"> ) #bytes = </span><span class="si">{</span><span class="n">sys</span><span class="o">.</span><span class="n">getsizeof</span><span class="p">(</span><span class="n">s1</span><span class="p">)</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
-</span><span id="__span-6-9"><a id="__codelineno-6-9" name="__codelineno-6-9" href="#__codelineno-6-9"></a><span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;[s2]: </span><span class="si">{</span><span class="nb">ord</span><span class="p">(</span><span class="n">m2</span><span class="p">)</span><span class="si">}</span><span class="s2"> ( </span><span class="si">{</span><span class="n">m2</span><span class="si">}</span><span class="s2">  ) #bytes = </span><span class="si">{</span><span class="n">sys</span><span class="o">.</span><span class="n">getsizeof</span><span class="p">(</span><span class="n">s2</span><span class="p">)</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+</span><span id="__span-6-8"><a id="__codelineno-6-8" name="__codelineno-6-8" href="#__codelineno-6-8"></a><span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"[s1]: </span><span class="si">{</span><span class="nb">ord</span><span class="p">(</span><span class="n">m1</span><span class="p">)</span><span class="si">}</span><span class="s2"> ( </span><span class="si">{</span><span class="n">m1</span><span class="si">}</span><span class="s2"> ) #bytes = </span><span class="si">{</span><span class="n">sys</span><span class="o">.</span><span class="n">getsizeof</span><span class="p">(</span><span class="n">s1</span><span class="p">)</span><span class="si">}</span><span class="s2">"</span><span class="p">)</span>
+</span><span id="__span-6-9"><a id="__codelineno-6-9" name="__codelineno-6-9" href="#__codelineno-6-9"></a><span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"[s2]: </span><span class="si">{</span><span class="nb">ord</span><span class="p">(</span><span class="n">m2</span><span class="p">)</span><span class="si">}</span><span class="s2"> ( </span><span class="si">{</span><span class="n">m2</span><span class="si">}</span><span class="s2">  ) #bytes = </span><span class="si">{</span><span class="n">sys</span><span class="o">.</span><span class="n">getsizeof</span><span class="p">(</span><span class="n">s2</span><span class="p">)</span><span class="si">}</span><span class="s2">"</span><span class="p">)</span>
 </span></code></pre></div>
 <div class="result">
 <p>Output:</p>
@@ -989,37 +1074,32 @@ largest code point occurring in the string.</p>
 </div>
 <p>The largest code point for the <code>s2</code> string corresponds to the combining acute accent,
 while for the <code>s1</code> string it corresponds to <code>é</code>.</p>
-<p>The four cases are:
-<script type="math/tex; mode=display">\begin{align}
+<p>The four cases are:</p>
+<div class="arithmatex">\[\begin{align}
     \texttt{code_point_bytes}(s) = \begin{cases}
-        1, & \text{if $\mu(s) < 2^7$}.\\
-        1, & \text{if $\mu(s) < 2^8$}.\\
-        2, & \text{if $\mu(s) < 2^{16}$}.\\
-        4, & \text{otherwise}.
+        1, &amp; \text{if $\mu(s) &lt; 2^7$}.\\
+        1, &amp; \text{if $\mu(s) &lt; 2^8$}.\\
+        2, &amp; \text{if $\mu(s) &lt; 2^{16}$}.\\
+        4, &amp; \text{otherwise}.
     \end{cases}
-\end{align}</script>
-</p>
-<p>where <script type="math/tex">\mu(s)</script> denotes the largest code point in the string <script type="math/tex">s</script>. The memory required to
-store <script type="math/tex">s</script> is</p>
-<p>
-<script type="math/tex; mode=display">
+\end{align}\]</div>
+<p>where <span class="arithmatex">\(\mu(s)\)</span> denotes the largest code point in the string <span class="arithmatex">\(s\)</span>. The memory required to
+store <span class="arithmatex">\(s\)</span> is</p>
+<div class="arithmatex">\[
 \texttt{struct_bytes}(s) + (\texttt{len}(s) + 1) \cdot \texttt{code_point_bytes}(s),
-</script>
-</p>
-<p>where <script type="math/tex">\texttt{len}(s)</script> is the number of code points in <script type="math/tex">s</script> and, the size of the
-<code>C-struct</code> that holds the data is given by<sup id="fnref:c_struct_size"><a class="footnote-ref" href="#fn:c_struct_size">4</a></sup></p>
-<p>
-<script type="math/tex; mode=display">\begin{align}
+\]</div>
+<p>where <span class="arithmatex">\(\texttt{len}(s)\)</span> is the number of code points in <span class="arithmatex">\(s\)</span> and, the size of the
+<code>C-struct</code> that holds the data is given by<sup id="fnref:c_struct_size"><a class="footnote-ref" href="#fn:c_struct_size">3</a></sup></p>
+<div class="arithmatex">\[\begin{align}
     \texttt{struct_bytes}(s) = \begin{cases}
-        40, & \text{if $\mu(s) < 2^7$}.\\
-        56, & \text{otherwise}.
+        40, &amp; \text{if $\mu(s) &lt; 2^7$}.\\
+        56, &amp; \text{otherwise}.
     \end{cases}
-\end{align}</script>
-</p>
-<p>The above logic is implemented in the <code>string_bytes</code> function below<sup id="fnref:PyUnicode_New"><a class="footnote-ref" href="#fn:PyUnicode_New">5</a></sup>.</p>
+\end{align}\]</div>
+<p>The above logic is implemented in the <code>string_bytes</code> function below<sup id="fnref:PyUnicode_New"><a class="footnote-ref" href="#fn:PyUnicode_New">4</a></sup>.</p>
 <details class="info">
-<summary><code class="language-python highlight"><span class="k">def</span> <span class="nf">string_bytes</span><span class="p">(</span><span class="n">s</span><span class="p">):</span></code></summary>
-<div class="language-python highlight"><pre><span></span><code><span id="__span-8-1"><a id="__codelineno-8-1" name="__codelineno-8-1" href="#__codelineno-8-1"></a><span class="k">def</span> <span class="nf">string_bytes</span><span class="p">(</span><span class="n">s</span><span class="p">):</span>
+<summary><code class="language-python highlight"><span class="k">def</span><span class="w"> </span><span class="nf">string_bytes</span><span class="p">(</span><span class="n">s</span><span class="p">):</span></code></summary>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-8-1"><a id="__codelineno-8-1" name="__codelineno-8-1" href="#__codelineno-8-1"></a><span class="k">def</span><span class="w"> </span><span class="nf">string_bytes</span><span class="p">(</span><span class="n">s</span><span class="p">):</span>
 </span><span id="__span-8-2"><a id="__codelineno-8-2" name="__codelineno-8-2" href="#__codelineno-8-2"></a>    <span class="n">numb_code_points</span><span class="p">,</span> <span class="n">max_code_points</span> <span class="o">=</span> <span class="nb">len</span><span class="p">(</span><span class="n">s</span><span class="p">),</span> <span class="nb">ord</span><span class="p">(</span><span class="nb">max</span><span class="p">(</span><span class="n">s</span><span class="p">))</span>
 </span><span id="__span-8-3"><a id="__codelineno-8-3" name="__codelineno-8-3" href="#__codelineno-8-3"></a>
 </span><span id="__span-8-4"><a id="__codelineno-8-4" name="__codelineno-8-4" href="#__codelineno-8-4"></a>    <span class="c1"># C-structs in cpython/Objects/unicodeobject.c</span>
@@ -1059,7 +1139,7 @@ in the third case because the acute accent has a code point above 255 (so its si
   in constant-time indexing and facilitates other operations</li>
 <li>can handle natively strings containing <a href="https://en.wikipedia.org/wiki/Plane_(Unicode)">non-BMP
   characters</a>, i.e., code points greater
-  than <script type="math/tex">2^{16} - 1</script>.</li>
+  than <span class="arithmatex">\(2^{16} - 1\)</span>.</li>
 </ul>
 <p>On the flip-side, concatenating a single emoji to an ASCII string increases the size x
 4.</p>
@@ -1095,34 +1175,34 @@ using little-endian.</p>
 <h3 id="four-string-encodings">Four string encodings<a class="headerlink" href="#four-string-encodings" title="Permanent link">#</a></h3>
 <p>A different encoding is used in each of the four cases discussed above.</p>
 <ul>
-<li>case 1 <script type="math/tex">\left(\mu(s) < 2^7\right)</script>: ASCII (which is equivalent to UTF-8 in this range)</li>
-<li>case 2 <script type="math/tex">\left(\mu(s) < 2^8\right)</script>: UCS1 (i.e., LATIN-1)</li>
-<li>case 3 <script type="math/tex">\left(\mu(s) < 2^{16}\right)</script>: UCS2 (i.e., UTF-16)</li>
-<li>case 4 <script type="math/tex">\left(\mu(s) \geq 2^{16}\right)</script>: UCS4 (i.e., UTF-32).</li>
+<li>case 1 <span class="arithmatex">\(\left(\mu(s) &lt; 2^7\right)\)</span>: ASCII (which is equivalent to UTF-8 in this range)</li>
+<li>case 2 <span class="arithmatex">\(\left(\mu(s) &lt; 2^8\right)\)</span>: UCS1 (i.e., LATIN-1)</li>
+<li>case 3 <span class="arithmatex">\(\left(\mu(s) &lt; 2^{16}\right)\)</span>: UCS2 (i.e., UTF-16)</li>
+<li>case 4 <span class="arithmatex">\(\left(\mu(s) \geq 2^{16}\right)\)</span>: UCS4 (i.e., UTF-32).</li>
 </ul>
 <p>For example, the string <code class="language-python highlight"><span class="n">mess</span></code> in the snippet below has 8 code points and
-<script type="math/tex">\mu(\texttt{mess}) = 65039</script>, hence we are in case 3 in which UTF-16 encoding should be
-used. At the end, the encoding computed manually is compared<sup id="fnref:memory-comparison-hack"><a class="footnote-ref" href="#fn:memory-comparison-hack">7</a></sup>
+<span class="arithmatex">\(\mu(\texttt{mess}) = 65039\)</span>, hence we are in case 3 in which UTF-16 encoding should be
+used. At the end, the encoding computed manually is compared<sup id="fnref:memory-comparison-hack"><a class="footnote-ref" href="#fn:memory-comparison-hack">5</a></sup>
 with the actual memory occupied by our string.</p>
-<div class="language-python highlight"><pre><span></span><code><span id="__span-9-1"><a id="__codelineno-9-1" name="__codelineno-9-1" href="#__codelineno-9-1"></a><span class="n">mess</span> <span class="o">=</span> <span class="s2">&quot;I♥️日本ГО©&quot;</span>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-9-1"><a id="__codelineno-9-1" name="__codelineno-9-1" href="#__codelineno-9-1"></a><span class="n">mess</span> <span class="o">=</span> <span class="s2">"I♥️日本ГО©"</span>
 </span><span id="__span-9-2"><a id="__codelineno-9-2" name="__codelineno-9-2" href="#__codelineno-9-2"></a>
 </span><span id="__span-9-3"><a id="__codelineno-9-3" name="__codelineno-9-3" href="#__codelineno-9-3"></a><span class="k">assert</span> <span class="nb">len</span><span class="p">(</span><span class="n">mess</span><span class="p">)</span> <span class="o">==</span> <span class="mi">8</span>
 </span><span id="__span-9-4"><a id="__codelineno-9-4" name="__codelineno-9-4" href="#__codelineno-9-4"></a><span class="k">assert</span> <span class="nb">ord</span><span class="p">(</span><span class="nb">max</span><span class="p">(</span><span class="n">mess</span><span class="p">))</span> <span class="o">==</span> <span class="mi">65039</span>  <span class="c1"># case 3: 255 &lt; 65039 &lt; 65536</span>
 </span><span id="__span-9-5"><a id="__codelineno-9-5" name="__codelineno-9-5" href="#__codelineno-9-5"></a>
 </span><span id="__span-9-6"><a id="__codelineno-9-6" name="__codelineno-9-6" href="#__codelineno-9-6"></a><span class="c1"># utf-16-le stands for utf-16 with little-endian</span>
-</span><span id="__span-9-7"><a id="__codelineno-9-7" name="__codelineno-9-7" href="#__codelineno-9-7"></a><span class="n">encoding</span> <span class="o">=</span> <span class="sa">b</span><span class="s1">&#39;&#39;</span><span class="o">.</span><span class="n">join</span><span class="p">([</span><span class="n">char</span><span class="o">.</span><span class="n">encode</span><span class="p">(</span><span class="s2">&quot;utf-16-le&quot;</span><span class="p">)</span> <span class="k">for</span> <span class="n">char</span> <span class="ow">in</span> <span class="n">mess</span><span class="p">])</span><span class="o">.</span><span class="n">hex</span><span class="p">()</span>
+</span><span id="__span-9-7"><a id="__codelineno-9-7" name="__codelineno-9-7" href="#__codelineno-9-7"></a><span class="n">encoding</span> <span class="o">=</span> <span class="sa">b</span><span class="s1">''</span><span class="o">.</span><span class="n">join</span><span class="p">([</span><span class="n">char</span><span class="o">.</span><span class="n">encode</span><span class="p">(</span><span class="s2">"utf-16-le"</span><span class="p">)</span> <span class="k">for</span> <span class="n">char</span> <span class="ow">in</span> <span class="n">mess</span><span class="p">])</span><span class="o">.</span><span class="n">hex</span><span class="p">()</span>
 </span><span id="__span-9-8"><a id="__codelineno-9-8" name="__codelineno-9-8" href="#__codelineno-9-8"></a>
 </span><span id="__span-9-9"><a id="__codelineno-9-9" name="__codelineno-9-9" href="#__codelineno-9-9"></a><span class="k">assert</span> <span class="n">string_bytes</span><span class="p">(</span><span class="n">mess</span><span class="p">)</span> <span class="o">==</span> <span class="mi">74</span>  <span class="c1"># 56 + (8 + 1) * 2</span>
 </span><span id="__span-9-10"><a id="__codelineno-9-10" name="__codelineno-9-10" href="#__codelineno-9-10"></a><span class="k">assert</span> <span class="nb">len</span><span class="p">(</span><span class="n">encoding</span><span class="p">)</span> <span class="o">==</span> <span class="mi">32</span>  <span class="c1"># i.e., 16 bytes as it is in hex</span>
-</span><span id="__span-9-11"><a id="__codelineno-9-11" name="__codelineno-9-11" href="#__codelineno-9-11"></a><span class="k">assert</span> <span class="n">encoding</span> <span class="o">==</span> <span class="s2">&quot;490065260ffee5652c6713041e04a900&quot;</span>
+</span><span id="__span-9-11"><a id="__codelineno-9-11" name="__codelineno-9-11" href="#__codelineno-9-11"></a><span class="k">assert</span> <span class="n">encoding</span> <span class="o">==</span> <span class="s2">"490065260ffee5652c6713041e04a900"</span>
 </span><span id="__span-9-12"><a id="__codelineno-9-12" name="__codelineno-9-12" href="#__codelineno-9-12"></a>
 </span><span id="__span-9-13"><a id="__codelineno-9-13" name="__codelineno-9-13" href="#__codelineno-9-13"></a><span class="c1"># --------------------------------------------------------------------------</span>
 </span><span id="__span-9-14"><a id="__codelineno-9-14" name="__codelineno-9-14" href="#__codelineno-9-14"></a><span class="c1"># compare to groundtruth (this is a hack!)</span>
 </span><span id="__span-9-15"><a id="__codelineno-9-15" name="__codelineno-9-15" href="#__codelineno-9-15"></a><span class="c1"># --------------------------------------------------------------------------</span>
-</span><span id="__span-9-16"><a id="__codelineno-9-16" name="__codelineno-9-16" href="#__codelineno-9-16"></a><span class="kn">import</span> <span class="nn">ctypes</span>
-</span><span id="__span-9-17"><a id="__codelineno-9-17" name="__codelineno-9-17" href="#__codelineno-9-17"></a><span class="kn">import</span> <span class="nn">sys</span>
+</span><span id="__span-9-16"><a id="__codelineno-9-16" name="__codelineno-9-16" href="#__codelineno-9-16"></a><span class="kn">import</span><span class="w"> </span><span class="nn">ctypes</span>
+</span><span id="__span-9-17"><a id="__codelineno-9-17" name="__codelineno-9-17" href="#__codelineno-9-17"></a><span class="kn">import</span><span class="w"> </span><span class="nn">sys</span>
 </span><span id="__span-9-18"><a id="__codelineno-9-18" name="__codelineno-9-18" href="#__codelineno-9-18"></a>
-</span><span id="__span-9-19"><a id="__codelineno-9-19" name="__codelineno-9-19" href="#__codelineno-9-19"></a><span class="k">def</span> <span class="nf">memory_dump</span><span class="p">(</span><span class="n">string</span><span class="p">):</span>
+</span><span id="__span-9-19"><a id="__codelineno-9-19" name="__codelineno-9-19" href="#__codelineno-9-19"></a><span class="k">def</span><span class="w"> </span><span class="nf">memory_dump</span><span class="p">(</span><span class="n">string</span><span class="p">):</span>
 </span><span id="__span-9-20"><a id="__codelineno-9-20" name="__codelineno-9-20" href="#__codelineno-9-20"></a>    <span class="n">address</span> <span class="o">=</span> <span class="nb">id</span><span class="p">(</span><span class="n">string</span><span class="p">)</span>  <span class="c1"># assuming CPython</span>
 </span><span id="__span-9-21"><a id="__codelineno-9-21" name="__codelineno-9-21" href="#__codelineno-9-21"></a>    <span class="n">buffer</span> <span class="o">=</span> <span class="p">(</span><span class="n">ctypes</span><span class="o">.</span><span class="n">c_char</span> <span class="o">*</span> <span class="n">sys</span><span class="o">.</span><span class="n">getsizeof</span><span class="p">(</span><span class="n">string</span><span class="p">))</span><span class="o">.</span><span class="n">from_address</span><span class="p">(</span><span class="n">address</span><span class="p">)</span>
 </span><span id="__span-9-22"><a id="__codelineno-9-22" name="__codelineno-9-22" href="#__codelineno-9-22"></a>    <span class="k">return</span> <span class="nb">bytes</span><span class="p">(</span><span class="n">buffer</span><span class="p">)</span>
@@ -1140,22 +1220,22 @@ end</a>, python provides the <em>"bytes" object</em>
 (an immutable sequences of single bytes). Actually we already used it in the previous
 example as it is the return type of
 <a href="https://docs.python.org/3.12/library/stdtypes.html#str.encode"><code>str.encode</code></a>.</p>
-<p>Let us consider the string <code class="language-python highlight"><span class="n">a_man</span> <span class="o">=</span> <span class="s2">&quot;a👨&quot;</span></code>. By now we know that it is stored using
-4 bytes per code point. Using <code class="language-python highlight"><span class="n">a_man</span><span class="o">.</span><span class="n">encode</span><span class="p">(</span><span class="s2">&quot;utf-32&quot;</span><span class="p">)</span></code> we obtain:</p>
+<p>Let us consider the string <code class="language-python highlight"><span class="n">a_man</span> <span class="o">=</span> <span class="s2">"a👨"</span></code>. By now we know that it is stored using
+4 bytes per code point. Using <code class="language-python highlight"><span class="n">a_man</span><span class="o">.</span><span class="n">encode</span><span class="p">(</span><span class="s2">"utf-32"</span><span class="p">)</span></code> we obtain:</p>
 <ul>
-<li><code class="language-python highlight"><span class="s2">&quot;a&quot;</span></code>: <code>97, 0, 0, 0</code></li>
-<li><code class="language-python highlight"><span class="s2">&quot;👨&quot;</span></code>: <code>104, 244, 1, 0</code>.</li>
+<li><code class="language-python highlight"><span class="s2">"a"</span></code>: <code>97, 0, 0, 0</code></li>
+<li><code class="language-python highlight"><span class="s2">"👨"</span></code>: <code>104, 244, 1, 0</code>.</li>
 </ul>
 <p>If we relax the constraint of constant number of bytes per code point, we can dedicate
-less space to our string. Using <code class="language-python highlight"><span class="n">a_man</span><span class="o">.</span><span class="n">encode</span><span class="p">(</span><span class="s2">&quot;utf-16&quot;</span><span class="p">)</span></code> we obtain:</p>
+less space to our string. Using <code class="language-python highlight"><span class="n">a_man</span><span class="o">.</span><span class="n">encode</span><span class="p">(</span><span class="s2">"utf-16"</span><span class="p">)</span></code> we obtain:</p>
 <ul>
-<li><code class="language-python highlight"><span class="s2">&quot;a&quot;</span></code>: <code>97, 0</code></li>
-<li><code class="language-python highlight"><span class="s2">&quot;👨&quot;</span></code>: <code>61, 216, 104, 220</code></li>
+<li><code class="language-python highlight"><span class="s2">"a"</span></code>: <code>97, 0</code></li>
+<li><code class="language-python highlight"><span class="s2">"👨"</span></code>: <code>61, 216, 104, 220</code></li>
 </ul>
-<p>or using <code class="language-python highlight"><span class="n">a_man</span><span class="o">.</span><span class="n">encode</span><span class="p">(</span><span class="s2">&quot;utf-8&quot;</span><span class="p">)</span></code>:</p>
+<p>or using <code class="language-python highlight"><span class="n">a_man</span><span class="o">.</span><span class="n">encode</span><span class="p">(</span><span class="s2">"utf-8"</span><span class="p">)</span></code>:</p>
 <ul>
-<li><code class="language-python highlight"><span class="s2">&quot;a&quot;</span></code>: <code>97</code></li>
-<li><code class="language-python highlight"><span class="s2">&quot;👨&quot;</span></code>: <code>240, 159, 145, 168</code>.</li>
+<li><code class="language-python highlight"><span class="s2">"a"</span></code>: <code>97</code></li>
+<li><code class="language-python highlight"><span class="s2">"👨"</span></code>: <code>240, 159, 145, 168</code>.</li>
 </ul>
 <p>All above representations have their applications. For example UTF-8 provides
 compatibility with ASCII and efficient data storage, while UTF-16 and UTF-32 allow for
@@ -1163,12 +1243,12 @@ faster processing of a larger range of characters. Having the possibility to
 easily/efficiently change representations is convenient.</p>
 <p>Bytes do not necessarily have to be associated with individual code points, as is the
 case when using <code class="language-python highlight"><span class="nb">str</span><span class="o">.</span><span class="n">encode</span></code>. For example, suppose we want to express the
-string <code class="language-python highlight"><span class="s2">&quot;a1b1&quot;</span></code> as a byte object, where each pair of characters represents a
-byte in hex (i.e., <code>0xA1</code> followed by <code>0xB1</code>). In this case, using <code class="language-python highlight"><span class="nb">list</span><span class="p">(</span><span class="s2">&quot;a1b1&quot;</span><span class="o">.</span><span class="n">encode</span><span class="p">())</span></code> is not appropriate, as it would return <code>[97, 49, 98, 49]</code>, which
+string <code class="language-python highlight"><span class="s2">"a1b1"</span></code> as a byte object, where each pair of characters represents a
+byte in hex (i.e., <code>0xA1</code> followed by <code>0xB1</code>). In this case, using <code class="language-python highlight"><span class="nb">list</span><span class="p">(</span><span class="s2">"a1b1"</span><span class="o">.</span><span class="n">encode</span><span class="p">())</span></code> is not appropriate, as it would return <code>[97, 49, 98, 49]</code>, which
 are the ASCII codes for the characters <code>a</code>, <code>1</code>, <code>b</code>, and <code>1</code>, respectively. Instead, we
-should consider the additional structure and use <code class="language-python highlight"><span class="nb">list</span><span class="p">(</span><span class="nb">bytes</span><span class="o">.</span><span class="n">fromhex</span><span class="p">(</span><span class="s2">&quot;a1b1&quot;</span><span class="p">))</span></code>,
+should consider the additional structure and use <code class="language-python highlight"><span class="nb">list</span><span class="p">(</span><span class="nb">bytes</span><span class="o">.</span><span class="n">fromhex</span><span class="p">(</span><span class="s2">"a1b1"</span><span class="p">))</span></code>,
 which results in <code>[161, 177]</code>.</p>
-<p>Bytes objects can also be used in other contexts. For instance, <code class="language-python highlight"><span class="p">(</span><span class="mi">1</span><span class="p">)</span><span class="o">.</span><span class="n">to_bytes</span><span class="p">(</span><span class="mi">4</span><span class="p">,</span> <span class="n">byteorder</span><span class="o">=</span><span class="s1">&#39;little&#39;</span><span class="p">)</span></code> returns the byte representation of the integer 1
+<p>Bytes objects can also be used in other contexts. For instance, <code class="language-python highlight"><span class="p">(</span><span class="mi">1</span><span class="p">)</span><span class="o">.</span><span class="n">to_bytes</span><span class="p">(</span><span class="mi">4</span><span class="p">,</span> <span class="n">byteorder</span><span class="o">=</span><span class="s1">'little'</span><span class="p">)</span></code> returns the byte representation of the integer 1
 (in little-endian).</p>
 <h2 id="immutability">Immutability<a class="headerlink" href="#immutability" title="Permanent link">#</a></h2>
 <p>The design decision to have immutable string in python has far-reaching implication
@@ -1176,30 +1256,30 @@ related to e.g., hashing, performance optimizations, garbage collection, thread 
 etc. In addition to all this, having immutable strings was a prerequisite for the
 approach in <a href="https://peps.python.org/pep-0393/">PEP 393</a>.</p>
 <div class="footnote">
-<hr />
+<hr>
 <ol>
-<li id="fn:hex">
-<p>Often expressed as a hexadecimal number.&#160;<a class="footnote-backref" href="#fnref:hex" title="Jump back to footnote 1 in the text">&#8617;</a></p>
-</li>
 <li id="fn:rendering">
-<p>The string might be rendered as <code class="language-python highlight"><span class="s2">&quot;This 👨</span><span class="se">\u200d</span><span class="s2">👩&quot;</span></code>.&#160;<a class="footnote-backref" href="#fnref:rendering" title="Jump back to footnote 2 in the text">&#8617;</a></p>
+<p>The string might be rendered as <code class="language-python highlight"><span class="s2">"This 👨</span><span class="se">\u200d</span><span class="s2">👩"</span></code>.&nbsp;<a class="footnote-backref" href="#fnref:rendering" title="Jump back to footnote 1 in the text">↩</a></p>
 </li>
 <li id="fn:grapheme-install">
-<p><code>pip install grapheme</code>&#160;<a class="footnote-backref" href="#fnref:grapheme-install" title="Jump back to footnote 3 in the text">&#8617;</a></p>
+<p><code>pip install grapheme</code>&nbsp;<a class="footnote-backref" href="#fnref:grapheme-install" title="Jump back to footnote 2 in the text">↩</a></p>
 </li>
 <li id="fn:c_struct_size">
 <p>Assuming a <code>x86_64</code> architecture (see the <code>string_bytes</code> function for
-more details).&#160;<a class="footnote-backref" href="#fnref:c_struct_size" title="Jump back to footnote 4 in the text">&#8617;</a></p>
+more details).&nbsp;<a class="footnote-backref" href="#fnref:c_struct_size" title="Jump back to footnote 3 in the text">↩</a></p>
 </li>
 <li id="fn:PyUnicode_New">
 <p>Based on <code class="language-c highlight"><span class="n">PyObject</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="n">PyUnicode_New</span><span class="p">(</span><span class="n">Py_ssize_t</span><span class="w"> </span><span class="n">size</span><span class="p">,</span><span class="w"> </span><span class="n">Py_UCS4</span><span class="w"> </span><span class="n">maxchar</span><span class="p">)</span></code>
-in <code>unicodeobject.c</code>.&#160;<a class="footnote-backref" href="#fnref:PyUnicode_New" title="Jump back to footnote 5 in the text">&#8617;</a></p>
-</li>
-<li id="fn:smallest_constant_representation">
-<p>The smallest possible is always chosen.&#160;<a class="footnote-backref" href="#fnref:smallest_constant_representation" title="Jump back to footnote 6 in the text">&#8617;</a></p>
+in <code>unicodeobject.c</code>.&nbsp;<a class="footnote-backref" href="#fnref:PyUnicode_New" title="Jump back to footnote 4 in the text">↩</a></p>
 </li>
 <li id="fn:memory-comparison-hack">
-<p>We used a <code>CPython</code> implementation of <code>python 3.12</code>.&#160;<a class="footnote-backref" href="#fnref:memory-comparison-hack" title="Jump back to footnote 7 in the text">&#8617;</a></p>
+<p>We used a <code>CPython</code> implementation of <code>python 3.12</code>.&nbsp;<a class="footnote-backref" href="#fnref:memory-comparison-hack" title="Jump back to footnote 5 in the text">↩</a></p>
+</li>
+<li id="fn:smallest_constant_representation">
+<p>The smallest possible is always chosen.&nbsp;<a class="footnote-backref" href="#fnref:smallest_constant_representation" title="Jump back to footnote 6 in the text">↩</a></p>
+</li>
+<li id="fn:hex">
+<p>Often expressed as a hexadecimal number.&nbsp;<a class="footnote-backref" href="#fnref:hex" title="Jump back to footnote 7 in the text">↩</a></p>
 </li>
 </ol>
 </div>
@@ -1230,7 +1310,7 @@ in <code>unicodeobject.c</code>.&#160;<a class="footnote-backref" href="#fnref:P
         
           <button type="button" class="md-top md-icon" data-md-component="top" hidden>
   
-  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"></path></svg>
   Back to top
 </button>
         
@@ -1242,13 +1322,13 @@ in <code>unicodeobject.c</code>.&#160;<a class="footnote-backref" href="#fnref:P
       
         
       
-      <nav class="md-footer__inner md-grid" aria-label="Footer" >
+      <nav class="md-footer__inner md-grid" aria-label="Footer">
         
           
           <a href="../202411-summer-walking-challenge/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Summer walking challenge">
             <div class="md-footer__button md-icon">
               
-              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"></path></svg>
             </div>
             <div class="md-footer__title">
               <span class="md-footer__direction">
@@ -1260,6 +1340,22 @@ in <code>unicodeobject.c</code>.&#160;<a class="footnote-backref" href="#fnref:P
             </div>
           </a>
         
+        
+          
+          <a href="../202511-makefile-doc/" class="md-footer__link md-footer__link--next" aria-label="Next: Documenting Makefiles">
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Next
+              </span>
+              <div class="md-ellipsis">
+                Documenting Makefiles
+              </div>
+            </div>
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11z"></path></svg>
+            </div>
+          </a>
         
       </nav>
     
@@ -1286,15 +1382,19 @@ in <code>unicodeobject.c</code>.&#160;<a class="footnote-backref" href="#fnref:P
     </div>
     
     
-    <script id="__config" type="application/json">{"base": "../..", "features": ["content.tooltips", "content.code.annotate", "content.code.copy", "navigation.indexes", "navigation.footer", "navigation.top"], "search": "../../assets/javascripts/workers/search.6ce7567c.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
     
-    
-      <script src="../../assets/javascripts/bundle.83f73b43.min.js"></script>
       
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+      <script id="__config" type="application/json">{"base": "../..", "features": ["content.tooltips", "content.code.annotate", "content.code.copy", "navigation.indexes", "navigation.footer", "navigation.top"], "search": "../../assets/javascripts/workers/search.973d3a69.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.f55a23d4.min.js"></script>
+      
+        <script src="../../javascripts/mathjax.js"></script>
+      
+        <script src="https://unpkg.com/mathjax@3/es5/tex-mml-chtml.js"></script>
       
     
-  <script id="init-glightbox">const lightbox = GLightbox({"touchNavigation": true, "loop": false, "zoomable": true, "draggable": true, "openEffect": "zoom", "closeEffect": "zoom", "slideEffect": "slide"});
-document$.subscribe(() => { lightbox.reload() });
-</script></body>
-</html>
+  
+<script id="init-glightbox">const lightbox = GLightbox({"touchNavigation": true, "loop": false, "zoomable": true, "draggable": true, "openEffect": "zoom", "closeEffect": "zoom", "slideEffect": "slide"});
+document$.subscribe(()=>{ lightbox.reload(); });
+</script></body></html>
