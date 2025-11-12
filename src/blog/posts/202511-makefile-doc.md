@@ -20,7 +20,7 @@ As an example, consider the documentation of the
 (at tag `v1.3`) of [makefile-doc](https://github.com/drdv/makefile-doc):
 
 <div>
---8<-- "blog/20251101-makefile-doc/examples/makefile-doc-help.html"
+--8<-- "blog/202511-makefile-doc/examples/makefile-doc-help.html"
 </div>
 
 I find it useful to document both targets and variables. This can be done using `##`,
