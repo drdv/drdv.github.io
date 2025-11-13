@@ -2,7 +2,7 @@
 draft: false
 date: 2025-11-01
 categories:
-  - utils
+  - GNU Make
 slug: 202511-makefile-doc
 ---
 
