@@ -1,4 +1,4 @@
-include ../../../Makefile.in
+include ../../../Makefile.inc
 
 OUT_DIR := img/generated
 

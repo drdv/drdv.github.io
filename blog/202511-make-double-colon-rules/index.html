@@ -5,28 +5,26 @@
       
       
       
-        <link rel="canonical" href="https://drdv.github.io/blog/category/utils/">
+        <link rel="canonical" href="https://drdv.github.io/blog/202511-make-double-colon-rules/">
       
       
-        <link rel="prev" href="../sports/">
+        <link rel="prev" href="../202511-makefile-doc/">
       
       
-        <link rel="next" href="../../archive/2025/">
       
-      
-      <link rel="icon" href="../../../assets/images/favicon.png">
+      <link rel="icon" href="../../assets/images/favicon.png">
       <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.22">
     
     
       
-        <title>utils - Dimitar Dimitrov</title>
+        <title>Make modelling: double-colon rules - Dimitar Dimitrov</title>
       
     
     
-      <link rel="stylesheet" href="../../../assets/stylesheets/main.84d31ad4.min.css">
+      <link rel="stylesheet" href="../../assets/stylesheets/main.84d31ad4.min.css">
       
         
-        <link rel="stylesheet" href="../../../assets/stylesheets/palette.06af60db.min.css">
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.06af60db.min.css">
       
       
 
@@ -45,16 +43,14 @@
       
     
     
-      <link rel="stylesheet" href="../../../css/extra.css">
-    
-    <script>__md_scope=new URL("../../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
 
     
     
     
-  <link href="../../../assets/stylesheets/glightbox.min.css" rel="stylesheet"><script src="../../../assets/javascripts/glightbox.min.js"></script><style id="glightbox-style">
+  <link href="../../assets/stylesheets/glightbox.min.css" rel="stylesheet"><script src="../../assets/javascripts/glightbox.min.js"></script><style id="glightbox-style">
             html.glightbox-open { overflow: initial; height: 100%; }
             .gslide-title { margin-top: 0px; user-select: text; }
             .gslide-desc { color: #666; user-select: text; }
@@ -83,7 +79,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#utils" class="md-skip">
+        <a href="#make-modelling-double-colon-rules" class="md-skip">
           Skip to content
         </a>
       
@@ -99,7 +95,7 @@
 
 <header class="md-header md-header--shadow" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="Header">
-    <a href="../../.." title="Dimitar Dimitrov" class="md-header__button md-logo" aria-label="Dimitar Dimitrov" data-md-component="logo">
+    <a href="../.." title="Dimitar Dimitrov" class="md-header__button md-logo" aria-label="Dimitar Dimitrov" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"></path></svg>
@@ -119,7 +115,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              utils
+              Make modelling: double-colon rules
             
           </span>
         </div>
@@ -214,7 +210,9 @@
           
             
               
-              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation">
+                
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" hidden>
                 <div class="md-sidebar__scrollwrap">
                   <div class="md-sidebar__inner">
                     
@@ -223,7 +221,7 @@
 
 <nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href="../../.." title="Dimitar Dimitrov" class="md-nav__button md-logo" aria-label="Dimitar Dimitrov" data-md-component="logo">
+    <a href="../.." title="Dimitar Dimitrov" class="md-nav__button md-logo" aria-label="Dimitar Dimitrov" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"></path></svg>
@@ -241,7 +239,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../.." class="md-nav__link">
+      <a href="../.." class="md-nav__link">
         
   
   
@@ -263,7 +261,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../cv/" class="md-nav__link">
+      <a href="../../cv/" class="md-nav__link">
         
   
   
@@ -285,7 +283,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../publications/" class="md-nav__link">
+      <a href="../../publications/" class="md-nav__link">
         
   
   
@@ -307,7 +305,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../gpg/" class="md-nav__link">
+      <a href="../../gpg/" class="md-nav__link">
         
   
   
@@ -353,7 +351,7 @@
         
           
           <div class="md-nav__link md-nav__container">
-            <a href="../../" class="md-nav__link ">
+            <a href="../" class="md-nav__link ">
               
   
   
@@ -434,7 +432,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../archive/2025/" class="md-nav__link">
+      <a href="../archive/2025/" class="md-nav__link">
         
   
   
@@ -459,7 +457,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../archive/2024/" class="md-nav__link">
+      <a href="../archive/2024/" class="md-nav__link">
         
   
   
@@ -487,10 +485,8 @@
                 
   
   
-    
   
   
-  
     
     
       
@@ -504,11 +500,11 @@
     
     
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5_3" checked>
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5_3">
         
           
           <label class="md-nav__link" for="__nav_5_3" id="__nav_5_3_label" tabindex="0">
@@ -524,7 +520,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_5_3_label" aria-expanded="true">
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_5_3_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_5_3">
             <span class="md-nav__icon md-icon"></span>
             categories
@@ -540,7 +536,32 @@
   
   
     <li class="md-nav__item">
-      <a href="../python/" class="md-nav__link">
+      <a href="../category/gnu-make/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    GNU Make
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    
+  
+  
+    <li class="md-nav__item">
+      <a href="../category/python/" class="md-nav__link">
         
   
   
@@ -565,7 +586,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../sports/" class="md-nav__link">
+      <a href="../category/sports/" class="md-nav__link">
         
   
   
@@ -576,84 +597,6 @@
   
 
       </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-    
-  
-  
-    
-      
-    
-  
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          
-  
-  
-  <span class="md-ellipsis">
-    utils
-    
-  </span>
-  
-
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
-        
-  
-  
-  <span class="md-ellipsis">
-    utils
-    
-  </span>
-  
-
-      </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#documenting-makefiles" class="md-nav__link">
-    <span class="md-ellipsis">
-      Documenting Makefiles
-    </span>
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
     </li>
   
 
@@ -682,6 +625,8 @@
             
             
               
+                
+              
               <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc">
                 <div class="md-sidebar__scrollwrap">
                   <div class="md-sidebar__inner">
@@ -694,23 +639,6 @@
     
   
   
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#documenting-makefiles" class="md-nav__link">
-    <span class="md-ellipsis">
-      Documenting Makefiles
-    </span>
-  </a>
-  
-</li>
-      
-    </ul>
-  
 </nav>
                   </div>
                 </div>
@@ -718,59 +646,151 @@
             
           
           
-  <div class="md-content" data-md-component="content">
-    <div class="md-content__inner">
-      <header class="md-typeset">
-        <h1 id="utils">utils<a class="headerlink" href="#utils" title="Permanent link">#</a></h1>
-      </header>
-      
-        <article class="md-post md-post--excerpt">
-  <header class="md-post__header">
-    
-    <div class="md-post__meta md-meta">
-      <ul class="md-meta__list">
-        <li class="md-meta__item">
-          <time datetime="2025-11-01 00:00:00+00:00">November 1, 2025</time></li>
-        
-          <li class="md-meta__item">
-            in
+  <div class="md-content md-content--post" data-md-component="content">
+    <div class="md-sidebar md-sidebar--post" data-md-component="sidebar" data-md-type="navigation">
+      <div class="md-sidebar__scrollwrap">
+        <div class="md-sidebar__inner md-post">
+          <nav class="md-nav md-nav--primary">
+            <div class="md-post__back">
+              <div class="md-nav__title md-nav__container">
+                <a href="../" class="md-nav__link">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"></path></svg>
+                  <span class="md-ellipsis">
+                    Back to index
+                  </span>
+                </a>
+              </div>
+            </div>
             
-              <a href="./" class="md-meta__link">utils</a></li>
-        
-        
-      </ul>
-      
-    </div>
-  </header>
-  <div class="md-post__content md-typeset">
-    <h2 id="documenting-makefiles"><a class="toclink" href="../../202511-makefile-doc/">Documenting Makefiles</a></h2>
-<p>After having spent years documenting my <code>Makefile</code>s using (a variation of)
- <a href="https://gist.github.com/prwhite/8168133">this</a> <code>awk</code> one-liner, I decided to factor
- things out in a library <a href="https://github.com/drdv/makefile-doc">makefile-doc</a>. This
- turned out to be a nice small project with <code>awk</code>. The following is a short overview.</p>
-
-    
-      <nav class="md-post__action">
-        <a href="../../202511-makefile-doc/">
-          Continue reading
-        </a>
-      </nav>
-    
-  </div>
-</article>
-      
-      
-        
+            <ul class="md-post__meta md-nav__list">
+              <li class="md-nav__item md-nav__item--section">
+                <div class="md-post__title">
+                  <span class="md-ellipsis">
+                    Metadata
+                  </span>
+                </div>
+                <nav class="md-nav">
+                  <ul class="md-nav__list">
+                    <li class="md-nav__item">
+                      <div class="md-nav__link">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 19H5V8h14m-3-7v2H8V1H6v2H5c-1.11 0-2 .89-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V5a2 2 0 0 0-2-2h-1V1m-1 11h-5v5h5z"></path></svg>
+                        <time datetime="2025-11-13 00:00:00+00:00" class="md-ellipsis">November 13, 2025</time>
+                      </div>
+                    </li>
+                    
+                    
+                      <li class="md-nav__item">
+                        <div class="md-nav__link">
+                          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9 3v15h3V3zm3 2 4 13 3-1-4-13zM5 5v13h3V5zM3 19v2h18v-2z"></path></svg>
+                          <span class="md-ellipsis">
+                            in
+                            
+                              <a href="../category/gnu-make/">GNU Make</a></span>
+                        </div>
+                      </li>
+                    
+                    
+                  </ul>
+                </nav>
+              </li>
+            </ul>
+            
+          </nav>
           
-
-
-
-<nav class="md-pagination">
-  
-</nav>
-        
-      
+        </div>
+      </div>
     </div>
+    <article class="md-content__inner md-typeset">
+      
+        
+  
+
+
+
+
+<h1 id="make-modelling-double-colon-rules"><code>Make</code> modelling: double-colon rules<a class="headerlink" href="#make-modelling-double-colon-rules" title="Permanent link">#</a></h1>
+<p>Consider an integration testing setup where the command to test appears on the first
+line of a text file, followed by the expected output. I used to run all tests using:</p>
+<div class="language-Makefile highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="nv">TESTS</span><span class="w"> </span><span class="o">:=</span><span class="w"> </span>test-html<span class="w"> </span>test-latex<span class="w"> </span>test-semicolon<span class="w"> </span>...
+</span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a>
+</span><span id="__span-0-3"><a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a><span class="nf">.PHONY</span><span class="o">:</span><span class="w"> </span><span class="k">$(</span><span class="nv">TESTS</span><span class="k">)</span>
+</span><span id="__span-0-4"><a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a><span class="nf">$(TESTS)</span><span class="o">:</span><span class="w"> </span><span class="n">COMMAND</span> = <span class="k">$(</span><span class="nv">shell</span> <span class="nv">head</span> <span class="nv">-n</span> <span class="nv">1</span> <span class="k">$(</span><span class="nv">TEST_DIR</span>/<span class="k">$</span>@<span class="k">))</span>
+</span><span id="__span-0-5"><a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a><span class="nf">$(TESTS)</span><span class="o">:</span><span class="w"> </span><span class="n">EXPECTED</span> = ... <span class="k">$(</span><span class="nv">TEST_DIR</span>/<span class="k">$</span>@<span class="k">)</span>
+</span><span id="__span-0-6"><a id="__codelineno-0-6" name="__codelineno-0-6" href="#__codelineno-0-6"></a><span class="nf">$(TESTS)</span><span class="o">:</span><span class="w"> </span><span class="n">RESULT</span> = ...
+</span><span id="__span-0-7"><a id="__codelineno-0-7" name="__codelineno-0-7" href="#__codelineno-0-7"></a><span class="nf">$(TESTS)</span><span class="o">:</span>
+</span><span id="__span-0-8"><a id="__codelineno-0-8" name="__codelineno-0-8" href="#__codelineno-0-8"></a><span class="w">    </span>compare<span class="w"> </span><span class="k">$(</span>EXPECTED<span class="k">)</span><span class="w"> </span>with<span class="w"> </span><span class="k">$(</span>RESULT<span class="k">)</span>
+</span></code></pre></div>
+<p>but the other day I had the following problem: one of the tests required additional
+post-processing.</p>
+<!-- more -->
+
+<p>Long story short: I switched to using <a href="https://www.gnu.org/software/make/manual/html_node/Double_002dColon.html">double-colon
+rules</a>:</p>
+<div class="language-Makefile highlight"><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="nf">$(TESTS)</span><span class="o">::</span><span class="w"> </span><span class="n">COMMAND</span> = ... <span class="k">$(</span><span class="nv">TEST_DIR</span>/<span class="k">$</span>@<span class="k">)</span>
+</span><span id="__span-1-2"><a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a><span class="nf">$(TESTS)</span><span class="o">::</span><span class="w"> </span><span class="n">EXPECTED</span> = ... <span class="k">$(</span><span class="nv">TEST_DIR</span>/<span class="k">$</span>@<span class="k">)</span>
+</span><span id="__span-1-3"><a id="__codelineno-1-3" name="__codelineno-1-3" href="#__codelineno-1-3"></a><span class="nf">$(TESTS)</span><span class="o">::</span><span class="w"> </span><span class="n">RESULT</span> = ...
+</span><span id="__span-1-4"><a id="__codelineno-1-4" name="__codelineno-1-4" href="#__codelineno-1-4"></a><span class="nf">$(TESTS)</span><span class="o">::</span>
+</span><span id="__span-1-5"><a id="__codelineno-1-5" name="__codelineno-1-5" href="#__codelineno-1-5"></a><span class="w">    </span>compare<span class="w"> </span><span class="k">$(</span>EXPECTED<span class="k">)</span><span class="w"> </span>with<span class="w"> </span><span class="k">$(</span>RESULT<span class="k">)</span>
+</span><span id="__span-1-6"><a id="__codelineno-1-6" name="__codelineno-1-6" href="#__codelineno-1-6"></a>
+</span><span id="__span-1-7"><a id="__codelineno-1-7" name="__codelineno-1-7" href="#__codelineno-1-7"></a><span class="nf">test-latex</span><span class="o">::</span>
+</span><span id="__span-1-8"><a id="__codelineno-1-8" name="__codelineno-1-8" href="#__codelineno-1-8"></a><span class="w">    </span>post-processing
+</span></code></pre></div>
+<p>The key difference from normal (single-colon) rules is that, instead of having just one,
+we can associate multiple recipes with a target, which are executed sequentially in the
+order they are defined.</p>
+<p>There might be downsides I am not aware of, but this seems like a convenient and
+extensible solution to the above problem. I no longer need to come up with new target
+names or reorganise tests to ensure that all post-processing steps are executed. All I
+have to do is "register" additional recipes with a target -- much like hooks -- which
+<code>Make</code> runs automatically whenever needed. The "whenever needed" part can be controlled
+by means of specifying dependencies to my <code>test-latex::</code> target.</p>
+<p>The docs say:</p>
+<blockquote>
+<p>Double-colon rules are somewhat obscure and not often very useful; they provide a
+mechanism for cases in which the method used to update a target differs depending on
+which prerequisite files caused the update, and such cases are rare.</p>
+</blockquote>
+<p>This might be true when the target is a real file but in the context of <code>.PHONY</code> targets
+(where the side-effect is the intended effect), double-colon rules provide a useful
+mechanism that let me let <code>Make</code> do its job.</p>
+<p>And another quote from the docs:</p>
+<blockquote>
+<p>Double-colon rules with the same target are in fact completely separate from one
+another. Each double-colon rule is processed individually, just as rules with different
+targets are processed.</p>
+</blockquote>
+<p>Maybe I am parsing this the wrong way but different targets can have different
+target-specific variables, while all target-specific variables used in the recipes of
+double-colon rules (associated with the same target) are shared:</p>
+<p></p><div class="language-Makefile highlight"><pre><span></span><code><span id="__span-2-1"><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a><span class="nf">t</span><span class="o">::</span><span class="w"> </span><span class="n">A</span> = 1
+</span><span id="__span-2-2"><a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a><span class="nf">t</span><span class="o">::</span>; @<span class="n">echo</span> <span class="k">$(</span><span class="nv">A</span><span class="k">)</span>
+</span><span id="__span-2-3"><a id="__codelineno-2-3" name="__codelineno-2-3" href="#__codelineno-2-3"></a><span class="nf">t</span><span class="o">::</span><span class="w"> </span><span class="n">A</span> = 2
+</span><span id="__span-2-4"><a id="__codelineno-2-4" name="__codelineno-2-4" href="#__codelineno-2-4"></a><span class="nf">t</span><span class="o">::</span>; @<span class="n">echo</span> <span class="k">$(</span><span class="nv">A</span><span class="k">)</span>
+</span><span id="__span-2-5"><a id="__codelineno-2-5" name="__codelineno-2-5" href="#__codelineno-2-5"></a><span class="nf">t</span><span class="o">::</span><span class="w"> </span><span class="n">A</span> = 3
+</span></code></pre></div>
+outputs<p></p>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-3-1"><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a>3
+</span><span id="__span-3-2"><a id="__codelineno-3-2" name="__codelineno-3-2" href="#__codelineno-3-2"></a>3
+</span></code></pre></div>
+
+
+
+
+
+
+
+  
+  
+
+
+
+
+  
+
+
+
+      
+    </article>
   </div>
 
           
@@ -789,10 +809,12 @@
   
     
       
+        
+      
       <nav class="md-footer__inner md-grid" aria-label="Footer">
         
           
-          <a href="../sports/" class="md-footer__link md-footer__link--prev" aria-label="Previous: sports">
+          <a href="../202511-makefile-doc/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Documenting Makefiles">
             <div class="md-footer__button md-icon">
               
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"></path></svg>
@@ -802,27 +824,11 @@
                 Previous
               </span>
               <div class="md-ellipsis">
-                sports
+                Documenting Makefiles
               </div>
             </div>
           </a>
         
-        
-          
-          <a href="../../archive/2025/" class="md-footer__link md-footer__link--next" aria-label="Next: 2025">
-            <div class="md-footer__title">
-              <span class="md-footer__direction">
-                Next
-              </span>
-              <div class="md-ellipsis">
-                2025
-              </div>
-            </div>
-            <div class="md-footer__button md-icon">
-              
-              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11z"></path></svg>
-            </div>
-          </a>
         
       </nav>
     
@@ -851,12 +857,12 @@
     
     
       
-      <script id="__config" type="application/json">{"base": "../../..", "features": ["content.tooltips", "content.code.annotate", "content.code.copy", "navigation.indexes", "navigation.footer", "navigation.top"], "search": "../../../assets/javascripts/workers/search.973d3a69.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+      <script id="__config" type="application/json">{"base": "../..", "features": ["content.tooltips", "content.code.annotate", "content.code.copy", "navigation.indexes", "navigation.footer", "navigation.top"], "search": "../../assets/javascripts/workers/search.973d3a69.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
     
     
-      <script src="../../../assets/javascripts/bundle.f55a23d4.min.js"></script>
+      <script src="../../assets/javascripts/bundle.f55a23d4.min.js"></script>
       
-        <script src="../../../javascripts/mathjax.js"></script>
+        <script src="../../javascripts/mathjax.js"></script>
       
         <script src="https://unpkg.com/mathjax@3/es5/tex-mml-chtml.js"></script>
       
