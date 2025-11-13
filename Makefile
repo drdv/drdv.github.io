@@ -1,4 +1,4 @@
-include Makefile.in
+include Makefile.inc
 
 ## Serve site locally
 serve: build

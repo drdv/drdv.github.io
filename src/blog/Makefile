@@ -1,4 +1,4 @@
-include ../../Makefile.in
+include ../../Makefile.inc
 
 ## Generate artifacts for all blogs
 artifacts-generate:
