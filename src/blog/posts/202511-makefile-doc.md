@@ -67,7 +67,6 @@ you. As an example, the project's `Makefile` uses the following options:
 ```Makefile
 help: VFLAGS := \
 	-v SUB='$(TESTS_SUB);$(AWK_SUB)' \
-	-v DEBUG=$(DEBUG) \
 	-v COLOR_BACKTICKS=33 \
 	-v OUTPUT_FORMAT=$(OUTPUT_FORMAT)`
 ```
