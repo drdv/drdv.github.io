@@ -1,9 +1,20 @@
 include ../../Makefile.inc
 
-## Generate artifacts for all blogs
-artifacts-generate:
-	@cd 202411-summer-walking-challenge && $(MAKE) artifacts-generate
+POST_DIRS := 202411-summer-walking-challenge
 
-## Clean generated artifacts for all blogs
-artifacts-clean:
-	@cd 202411-summer-walking-challenge && $(MAKE) artifacts-clean
+POST_TARGETS_ALL := $(POST_DIRS:%=%-all)
+POST_TARGETS_CLEAN := $(POST_DIRS:%=%-clean)
+
+.PHONY: all clean $(POST_TARGETS_ALL) $(POST_TARGETS_CLEAN)
+
+## Generate artifacts for all posts
+all: $(POST_TARGETS_ALL)
+
+## Clean artifacts for all posts
+clean: $(POST_TARGETS_CLEAN)
+
+$(POST_TARGETS_ALL):
+	@$(MAKE) -C ${@:-all=} all
+
+$(POST_TARGETS_CLEAN):
+	@$(MAKE) -C ${@:-clean=} clean
