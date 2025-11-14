@@ -59,8 +59,8 @@ The docs say:
 > which prerequisite files caused the update, and such cases are rare.
 
 This might be true when the target is a real file but in the context of `.PHONY` targets
-(where the side-effect is the intended effect), double-colon rules provide a useful
-mechanism that let me let `Make` do its job.
+(where the side-effect is the intended effect), double-colon rules seem to provide a
+useful mechanism that let me let `Make` do its job.
 
 And another quote from the docs:
 
@@ -69,7 +69,7 @@ And another quote from the docs:
 > targets are processed.
 
 Maybe I am parsing this the wrong way but different targets can have different
-target-specific variables, while all target-specific variables used in the recipes of
+target-specific variables, while target-specific variables used in the recipes of
 double-colon rules (associated with the same target) are shared:
 
 ```Makefile

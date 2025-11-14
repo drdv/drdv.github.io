@@ -1,15 +1,17 @@
 include ../../../Makefile.inc
 
-OUT_DIR := img/generated
+ARTIFACTS := artifacts
+
+.PHONY: all clean
 
 ## Generate artifacts
-artifacts-generate: DEPS := pandas,matplotlib
-artifacts-generate: $(OUT_DIR)/.done
+all: DEPS := pandas,matplotlib
+all: $(ARTIFACTS)/.done
 
-## Clean generated artifacts
-artifacts-clean:
-	@rm -rf $(OUT_DIR)
+## Clean artifacts
+clean:
+	@rm -rf $(ARTIFACTS)
 
-$(OUT_DIR)/.done: main.py
-	@$(RUN) main.py -o $(OUT_DIR)
+$(ARTIFACTS)/.done: main.py
+	@$(RUN) main.py -o $(ARTIFACTS)
 	@touch $@

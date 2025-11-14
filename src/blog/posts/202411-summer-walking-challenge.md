@@ -15,22 +15,22 @@ collect some data. Here are the results ...
 
 <div class="grid" markdown>
 
-![](../202411-summer-walking-challenge/img/generated/entire_challenge_dist_km.png)
+![](../202411-summer-walking-challenge/artifacts/entire_challenge_dist_km.png)
 /// figure-caption
 Daily distance (entire challenge)
 ///
 
-![](../202411-summer-walking-challenge/img/generated/post_challenge_dist_km.png)
+![](../202411-summer-walking-challenge/artifacts/post_challenge_dist_km.png)
 /// figure-caption
 Daily distance (post-challenge)
 ///
 
-![](../202411-summer-walking-challenge/img/generated/last_month_dist_km.png)
+![](../202411-summer-walking-challenge/artifacts/last_month_dist_km.png)
 /// figure-caption
 Daily distance (last month of challenge)
 ///
 
-![](../202411-summer-walking-challenge/img/generated/last_month_step_count.png)
+![](../202411-summer-walking-challenge/artifacts/last_month_step_count.png)
 /// figure-caption
 Daily step count (last month of challenge)
 ///
@@ -73,12 +73,12 @@ day, but my daily maximum ended up being around 36 km.
 
 <div class="grid" markdown>
 
-![](../202411-summer-walking-challenge/img/generated/rolling_31days_dist_km.png)
+![](../202411-summer-walking-challenge/artifacts/rolling_31days_dist_km.png)
 /// figure-caption
 31-day rolling distance (entire challenge)
 ///
 
-![](../202411-summer-walking-challenge/img/generated/rolling_7days_dist_km.png)
+![](../202411-summer-walking-challenge/artifacts/rolling_7days_dist_km.png)
 /// figure-caption
 7-day rolling distance (entire challenge)
 ///
