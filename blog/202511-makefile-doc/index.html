@@ -803,9 +803,8 @@ pretty much it, the rest is exploring some of the options and finding what works
 you. As an example, the project's <code>Makefile</code> uses the following options:</p>
 <div class="language-Makefile highlight"><pre><span></span><code><span id="__span-2-1"><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a><span class="nf">help</span><span class="o">:</span><span class="w"> </span><span class="n">VFLAGS</span> := \
 </span><span id="__span-2-2"><a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a>    -<span class="n">v</span> <span class="n">SUB</span>='<span class="k">$(</span><span class="nv">TESTS_SUB</span><span class="k">)</span>;<span class="k">$(</span><span class="nv">AWK_SUB</span><span class="k">)</span>' \
-</span><span id="__span-2-3"><a id="__codelineno-2-3" name="__codelineno-2-3" href="#__codelineno-2-3"></a>    -<span class="n">v</span> <span class="n">DEBUG</span>=<span class="k">$(</span><span class="nv">DEBUG</span><span class="k">)</span> \
-</span><span id="__span-2-4"><a id="__codelineno-2-4" name="__codelineno-2-4" href="#__codelineno-2-4"></a>    -<span class="n">v</span> <span class="n">COLOR_BACKTICKS</span>=33 \
-</span><span id="__span-2-5"><a id="__codelineno-2-5" name="__codelineno-2-5" href="#__codelineno-2-5"></a>    -<span class="n">v</span> <span class="n">OUTPUT_FORMAT</span>=<span class="k">$(</span><span class="nv">OUTPUT_FORMAT</span><span class="k">)</span>`
+</span><span id="__span-2-3"><a id="__codelineno-2-3" name="__codelineno-2-3" href="#__codelineno-2-3"></a>    -<span class="n">v</span> <span class="n">COLOR_BACKTICKS</span>=33 \
+</span><span id="__span-2-4"><a id="__codelineno-2-4" name="__codelineno-2-4" href="#__codelineno-2-4"></a>    -<span class="n">v</span> <span class="n">OUTPUT_FORMAT</span>=<span class="k">$(</span><span class="nv">OUTPUT_FORMAT</span><span class="k">)</span>`
 </span></code></pre></div>
 <p>The above HTML docs have been generated using <code>make OUTPUT_FORMAT=HTML</code> (output to Latex
 is supported as well). The <code>SUB</code> option specifies substitutions and value formatting.
