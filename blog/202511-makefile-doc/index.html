@@ -641,6 +641,32 @@
     
   
   
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#substitutions" class="md-nav__link">
+    <span class="md-ellipsis">
+      Substitutions
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#theme" class="md-nav__link">
+    <span class="md-ellipsis">
+      Theme
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
 </nav>
                   </div>
                 </div>
@@ -680,6 +706,13 @@
                       </div>
                     </li>
                     
+                      <li class="md-nav__item">
+                        <div class="md-nav__link">
+                          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M15 13h1.5v2.82l2.44 1.41-.75 1.3L15 16.69zm4-5H5v11h4.67c-.43-.91-.67-1.93-.67-3a7 7 0 0 1 7-7c1.07 0 2.09.24 3 .67zM5 21a2 2 0 0 1-2-2V5c0-1.11.89-2 2-2h1V1h2v2h8V1h2v2h1a2 2 0 0 1 2 2v6.1c1.24 1.26 2 2.99 2 4.9a7 7 0 0 1-7 7c-1.91 0-3.64-.76-4.9-2zm11-9.85A4.85 4.85 0 0 0 11.15 16c0 2.68 2.17 4.85 4.85 4.85A4.85 4.85 0 0 0 20.85 16c0-2.68-2.17-4.85-4.85-4.85"></path></svg>
+                          <time datetime="2025-11-16 00:00:00+00:00" class="md-ellipsis">November 16, 2025</time>
+                        </div>
+                      </li>
+                    
                     
                       <li class="md-nav__item">
                         <div class="md-nav__link">
@@ -718,8 +751,8 @@
 <!-- more -->
 
 <p>As an example, consider the documentation of the
-<a href="https://github.com/drdv/makefile-doc/blob/4f7b7315017232242fe6d1730c384a5f8ce8e873/Makefile"><code>Makefile</code></a>
-(at tag <code>v1.3</code>) of <a href="https://github.com/drdv/makefile-doc">makefile-doc</a>:</p>
+<a href="https://github.com/drdv/makefile-doc/blob/670fd3f5ebeec70b61bd492504d27cb2a255945f/Makefile"><code>Makefile</code></a>
+(at tag <code>v1.4</code>) of <a href="https://github.com/drdv/makefile-doc">makefile-doc</a>:</p>
 <div>
 
   <style type="text/css">
@@ -735,34 +768,35 @@
 <pre>-----------------------
 Available targets:
 -----------------------
-<span class="color-default">help           </span>   show this help
-<span class="color-default">test           </span>   run all tests
-<span class="color-default">test-all-awk   </span>   run all tests with all supported awk variants
-<span class="color-default">cover.html     </span>   run the tests with goawk and generate a coverage report
-<span class="color-default">lint           </span>   lint the code using gawk
-<span class="color-default">check-variables</span>   verify for unintended global variables
-<span class="color-attention">clean-bin      </span>   remove all downloaded awk variants
-<span class="color-attention">release        </span>   create github release at latest tag
+<span class="color-default">help         </span>   Show this help
+<span class="color-default">test         </span>   Run integration tests
+<span class="color-default">utest        </span>   Run unit tests
+<span class="color-default">test-all     </span>   Run integration tests with all supported awk variants
+<span class="color-default">utest-all    </span>   Run unit tests with all supported awk variants
+<span class="color-default">coverage.html</span>   Run integration/unit tests with <span class="color-backticks">goawk</span> and generate a coverage report
+<span class="color-default">lint         </span>   Lint the code using <span class="color-backticks">gawk</span>
+<span class="color-attention">clean-bin    </span>   Remove all downloaded awk variants
+<span class="color-default">clean        </span>   Remove coverage reports
+<span class="color-attention">release      </span>   Create github release at latest tag
 <span class="color-section">
------- Individual tests ------
+------ Individual integration tests ------
 </span>
-<span class="color-default">test-          </span>   Recipes:
-                  ---------
-                  backticks
-                  connected
-                  debug
-                  default
-                  deprecated
-                  ...
+<span class="color-default">test-        </span>   Recipes:
+                ---------
+                backslash-comments
+                backslash-recipe
+                backticks
+                default
+                deprecated
+                ...
 
 -----------------------
 Command-line arguments:
 -----------------------
-<span class="color-default">AWK            </span>   supported awk variants: {<span class="color-backticks">awk</span>, <span class="color-backticks">mawk</span>, <span class="color-backticks">nawk</span>, <span class="color-backticks">bawk</span>, <span class="color-backticks">wak</span>, <span class="color-backticks">goawk</span>}
-<span class="color-default">OUTPUT_FORMAT  </span>   {ansi, html}
-<span class="color-default">DEBUG          </span>   if set, debug info is generated in an org file
-<span class="color-default">UPDATE_RECIPE  </span>   if set, the expected value of a test recipe is updated
-                  e.g., <span class="color-backticks">make test-default UPDATE_RECIPE=1</span>
+<span class="color-default">AWK          </span>   Supported awk variants: {<span class="color-backticks">awk</span>, <span class="color-backticks">mawk</span>, <span class="color-backticks">nawk</span>, <span class="color-backticks">bawk</span>, <span class="color-backticks">wak</span>, <span class="color-backticks">goawk</span>}
+<span class="color-default">OUTPUT_FORMAT</span>   {ansi, html}
+<span class="color-default">UPDATE_RECIPE</span>   If set, the expected value of a test recipe is updated
+                e.g., <span class="color-backticks">make test-default UPDATE_RECIPE=1</span>
 -----------------------
 </pre>
 </div>
@@ -803,11 +837,14 @@ pretty much it, the rest is exploring some of the options and finding what works
 you. As an example, the project's <code>Makefile</code> uses the following options:</p>
 <div class="language-Makefile highlight"><pre><span></span><code><span id="__span-2-1"><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a><span class="nf">help</span><span class="o">:</span><span class="w"> </span><span class="n">VFLAGS</span> := \
 </span><span id="__span-2-2"><a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a>    -<span class="n">v</span> <span class="n">SUB</span>='<span class="k">$(</span><span class="nv">TESTS_SUB</span><span class="k">)</span>;<span class="k">$(</span><span class="nv">AWK_SUB</span><span class="k">)</span>' \
-</span><span id="__span-2-3"><a id="__codelineno-2-3" name="__codelineno-2-3" href="#__codelineno-2-3"></a>    -<span class="n">v</span> <span class="n">COLOR_BACKTICKS</span>=33 \
-</span><span id="__span-2-4"><a id="__codelineno-2-4" name="__codelineno-2-4" href="#__codelineno-2-4"></a>    -<span class="n">v</span> <span class="n">OUTPUT_FORMAT</span>=<span class="k">$(</span><span class="nv">OUTPUT_FORMAT</span><span class="k">)</span>`
+</span><span id="__span-2-3"><a id="__codelineno-2-3" name="__codelineno-2-3" href="#__codelineno-2-3"></a>    -<span class="n">v</span> <span class="n">EXPORT_THEME</span>=<span class="k">$(</span><span class="nv">EXPORT_THEME</span><span class="k">)</span> \
+</span><span id="__span-2-4"><a id="__codelineno-2-4" name="__codelineno-2-4" href="#__codelineno-2-4"></a>    -<span class="n">v</span> <span class="n">COLOR_BACKTICKS</span>=33 \
+</span><span id="__span-2-5"><a id="__codelineno-2-5" name="__codelineno-2-5" href="#__codelineno-2-5"></a>    -<span class="n">v</span> <span class="n">OUTPUT_FORMAT</span>=<span class="k">$(</span><span class="nv">OUTPUT_FORMAT</span><span class="k">)</span>`
 </span></code></pre></div>
 <p>The above HTML docs have been generated using <code>make OUTPUT_FORMAT=HTML</code> (output to Latex
-is supported as well). The <code>SUB</code> option specifies substitutions and value formatting.
+is supported as well).</p>
+<h2 id="substitutions">Substitutions<a class="headerlink" href="#substitutions" title="Permanent link">#</a></h2>
+<p>The <code>SUB</code> option specifies substitutions and value formatting.
 For example, the listing of the supported <code>awk</code> variants is generated using</p>
 <div class="language-text highlight"><pre><span></span><code><span id="__span-3-1"><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a>AWK_SUB := &lt;L:0,M:0,I:{,T:},S:\\,&gt;AWK:$(SUPPORTED_AWK_VARIANTS)
 </span></code></pre></div>
@@ -829,12 +866,25 @@ example we have:</p>
 <p>Only the optional <code>[:LABEL]</code> is omitted. It is normally used to rename targets specified
 in terms of variables -- as is the case with the individual test targets above (where
 <code>[:LABEL]</code><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path d="M8.22 2.97a.75.75 0 0 1 1.06 0l4.25 4.25a.75.75 0 0 1 0 1.06l-4.25 4.25a.75.75 0 0 1-1.042-.018.75.75 0 0 1-.018-1.042l2.97-2.97H3.75a.75.75 0 0 1 0-1.5h7.44L8.22 4.03a.75.75 0 0 1 0-1.06"></path></svg></span> <code>test-</code> because the actual target name is
-<code>$(TESTS)::</code> and it is not very informative at the level of the documentation).</p>
+<code>$(TESTS):</code> and it is not very informative at the level of the documentation).</p>
+<h2 id="theme">Theme<a class="headerlink" href="#theme" title="Permanent link">#</a></h2>
+<p>The default
+<a href="https://github.com/altercation/solarized?tab=readme-ov-file#the-values">Solarized</a>
+theme can be easily customised. Below is an example of the same Makefile but using the
+<a href="https://github.com/dracula/dracula-theme?tab=readme-ov-file#color-palette">Dracula</a>
+theme and exported to png<sup id="fnref:2"><a class="footnote-ref" href="#fn:2">2</a></sup>. Unlike the HTML version above (where the background is
+left to be transparent), here we have set a black background. A "standalone" image is
+generated for convenient use in presentations.</p>
+<p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="examples/makefile-doc-help.png" data-desc-position="bottom"><img alt="ss" src="examples/makefile-doc-help.png"></a></p>
 <div class="footnote">
 <hr>
 <ol>
 <li id="fn:1">
 <p>The meaning of the three tokens is entirely up to you.&nbsp;<a class="footnote-backref" href="#fnref:1" title="Jump back to footnote 1 in the text">↩</a></p>
+</li>
+<li id="fn:2">
+<p>This is done by specifying the <code>EXPORT_THEME</code> option (see the project
+<a href="https://github.com/drdv/makefile-doc?tab=readme-ov-file#export-to-html-and-latex">README</a>.)&nbsp;<a class="footnote-backref" href="#fnref:2" title="Jump back to footnote 2 in the text">↩</a></p>
 </li>
 </ol>
 </div>
