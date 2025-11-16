@@ -1,6 +1,8 @@
 ---
 draft: false
-date: 2025-11-01
+date:
+  created: 2025-11-01
+  updated: 2025-11-16
 categories:
   - GNU Make
 slug: 202511-makefile-doc
@@ -16,8 +18,8 @@ After having spent years documenting my `Makefile`s using (a variation of)
 <!-- more -->
 
 As an example, consider the documentation of the
-[`Makefile`](https://github.com/drdv/makefile-doc/blob/4f7b7315017232242fe6d1730c384a5f8ce8e873/Makefile)
-(at tag `v1.3`) of [makefile-doc](https://github.com/drdv/makefile-doc):
+[`Makefile`](https://github.com/drdv/makefile-doc/blob/670fd3f5ebeec70b61bd492504d27cb2a255945f/Makefile)
+(at tag `v1.4`) of [makefile-doc](https://github.com/drdv/makefile-doc):
 
 <div>
 --8<-- "blog/202511-makefile-doc/examples/makefile-doc-help.html"
@@ -67,12 +69,17 @@ you. As an example, the project's `Makefile` uses the following options:
 ```Makefile
 help: VFLAGS := \
 	-v SUB='$(TESTS_SUB);$(AWK_SUB)' \
+	-v EXPORT_THEME=$(EXPORT_THEME) \
 	-v COLOR_BACKTICKS=33 \
 	-v OUTPUT_FORMAT=$(OUTPUT_FORMAT)`
 ```
 
 The above HTML docs have been generated using `make OUTPUT_FORMAT=HTML` (output to Latex
-is supported as well). The `SUB` option specifies substitutions and value formatting.
+is supported as well).
+
+## Substitutions
+
+The `SUB` option specifies substitutions and value formatting.
 For example, the listing of the supported `awk` variants is generated using
 
 ```
@@ -97,6 +104,20 @@ example we have:
 Only the optional `[:LABEL]` is omitted. It is normally used to rename targets specified
 in terms of variables -- as is the case with the individual test targets above (where
 `[:LABEL]`:octicons-arrow-right-16: `test-` because the actual target name is
-`$(TESTS)::` and it is not very informative at the level of the documentation).
+`$(TESTS):` and it is not very informative at the level of the documentation).
+
+## Theme
+
+The default
+[Solarized](https://github.com/altercation/solarized?tab=readme-ov-file#the-values)
+theme can be easily customised. Below is an example of the same Makefile but using the
+[Dracula](https://github.com/dracula/dracula-theme?tab=readme-ov-file#color-palette)
+theme and exported to png[^2]. Unlike the HTML version above (where the background is
+left to be transparent), here we have set a black background. A "standalone" image is
+generated for convenient use in presentations.
+
+![ss](../202511-makefile-doc/examples/makefile-doc-help.png)
 
 [^1]: The meaning of the three tokens is entirely up to you.
+[^2]: This is done by specifying the `EXPORT_THEME` option (see the project
+    [README](https://github.com/drdv/makefile-doc?tab=readme-ov-file#export-to-html-and-latex).)
