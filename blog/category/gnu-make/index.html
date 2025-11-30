@@ -590,9 +590,18 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#make-modelling-double-colon-rules" class="md-nav__link">
+  <a href="#gnu-make-double-expand" class="md-nav__link">
     <span class="md-ellipsis">
-      Make modelling: double-colon rules
+      GNU Make: double-expand
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#gnu-make-double-colon-rules" class="md-nav__link">
+    <span class="md-ellipsis">
+      GNU Make: double-colon rules
     </span>
   </a>
   
@@ -708,9 +717,18 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#make-modelling-double-colon-rules" class="md-nav__link">
+  <a href="#gnu-make-double-expand" class="md-nav__link">
     <span class="md-ellipsis">
-      Make modelling: double-colon rules
+      GNU Make: double-expand
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#gnu-make-double-colon-rules" class="md-nav__link">
+    <span class="md-ellipsis">
+      GNU Make: double-colon rules
     </span>
   </a>
   
@@ -746,6 +764,45 @@
     <div class="md-post__meta md-meta">
       <ul class="md-meta__list">
         <li class="md-meta__item">
+          <time datetime="2025-12-01 00:00:00+00:00">December 1, 2025</time></li>
+        
+          <li class="md-meta__item">
+            in
+            
+              <a href="./" class="md-meta__link">GNU Make</a></li>
+        
+        
+      </ul>
+      
+    </div>
+  </header>
+  <div class="md-post__content md-typeset">
+    <h2 id="gnu-make-double-expand"><a class="toclink" href="../../202512-make-double-expand/"><code>GNU Make</code>: double-expand</a></h2>
+<p>A few days ago I stumbled upon <a href="https://www.bhk.com/make/closures.html">this</a> article
+late in the evening and it kept me awake the whole night! It describes a cool trick that
+allows to "double-expand" a macro without using <code>eval</code> -- which leads straight down the
+rabbit hole (it took me some effort to not start re-coding
+<a href="https://github.com/drdv/sicp">solutions</a> to
+<a href="https://web.mit.edu/6.001/6.037/sicp.pdf">SICP</a> exercises in GNU Make). The following
+is a summary of the main idea, a reflection of why it works and a small extension of the
+original article.</p>
+
+    
+      <nav class="md-post__action">
+        <a href="../../202512-make-double-expand/">
+          Continue reading
+        </a>
+      </nav>
+    
+  </div>
+</article>
+      
+        <article class="md-post md-post--excerpt">
+  <header class="md-post__header">
+    
+    <div class="md-post__meta md-meta">
+      <ul class="md-meta__list">
+        <li class="md-meta__item">
           <time datetime="2025-11-13 00:00:00+00:00">November 13, 2025</time></li>
         
           <li class="md-meta__item">
@@ -759,7 +816,7 @@
     </div>
   </header>
   <div class="md-post__content md-typeset">
-    <h2 id="make-modelling-double-colon-rules"><a class="toclink" href="../../202511-make-double-colon-rules/"><code>Make</code> modelling: double-colon rules</a></h2>
+    <h2 id="gnu-make-double-colon-rules"><a class="toclink" href="../../202511-make-double-colon-rules/"><code>GNU Make</code>: double-colon rules</a></h2>
 <p>Consider an integration testing setup where the command to test appears on the first
 line of a text file, followed by the expected output. I used to run all tests using:</p>
 <div class="language-Makefile highlight"><pre><span></span><code><span id="__span-8-1"><a id="__codelineno-8-1" name="__codelineno-8-1" href="#__codelineno-8-1"></a><span class="nv">TESTS</span><span class="w"> </span><span class="o">:=</span><span class="w"> </span>test-html<span class="w"> </span>test-latex<span class="w"> </span>test-semicolon<span class="w"> </span>...
