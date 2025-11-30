@@ -6,7 +6,7 @@ categories:
 slug: 202511-make-double-colon-rules
 ---
 
-# `Make` modelling: double-colon rules
+# `GNU Make`: double-colon rules
 
 Consider an integration testing setup where the command to test appears on the first
 line of a text file, followed by the expected output. I used to run all tests using:
