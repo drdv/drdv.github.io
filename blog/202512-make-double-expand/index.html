@@ -788,12 +788,8 @@
 <h1 id="gnu-make-double-expand"><code>GNU Make</code>: double-expand<a class="headerlink" href="#gnu-make-double-expand" title="Permanent link">#</a></h1>
 <p>A few days ago I stumbled upon <a href="https://www.bhk.com/make/closures.html">this</a> article
 late in the evening and it kept me awake the whole night! It describes a cool trick that
-allows to "double-expand" a macro without using <code>eval</code> -- which leads straight down the
-rabbit hole (it took me some effort to not start re-coding
-<a href="https://github.com/drdv/sicp">solutions</a> to
-<a href="https://web.mit.edu/6.001/6.037/sicp.pdf">SICP</a> exercises in GNU Make). The following
-is a summary of the main idea, a reflection of why it works and a small extension of the
-original article.</p>
+allows to "double-expand" a macro without using <code>eval</code>. The following is a summary of
+the main idea, a reflection of why it works and a small extension.</p>
 <!-- more -->
 
 <h2 id="macro-expansion">Macro expansion<a class="headerlink" href="#macro-expansion" title="Permanent link">#</a></h2>
@@ -812,7 +808,7 @@ make an important distinction between the two.</p>
 <h2 id="functions">Functions<a class="headerlink" href="#functions" title="Permanent link">#</a></h2>
 <p>A macro reference of the form <code>$(string srg1,arg2,...)</code> is interpreted as a built-in
 function call, when <code>string</code> exists as a key in a hash table of built-in functions. In
-such a case, the following space-separated strings are interpreted as positional
+such a case, the following comma-separated strings are interpreted as positional
 arguments and are either all expanded as per normal, or are left to the function to
 expand in a custom way. In the <code>C</code> code, this is governed by the <code>EXP?</code> column in</p>
 <div class="language-c highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="k">static</span><span class="w"> </span><span class="k">struct</span><span class="w"> </span><span class="nc">function_table_entry</span><span class="w"> </span><span class="n">function_table_init</span><span class="p">[]</span><span class="w"> </span><span class="o">=</span>
@@ -862,7 +858,7 @@ etc. and use the built-in <code>$(call ...)</code> function:</p>
 <ul>
 <li>detect if what is to be called is actually a built-in function -- in which case it is
   executed directly with the already expanded arguments;</li>
-<li>if instead a user-defined function is to be called, the parameters <code>1, 2, ...</code> are
+<li>if instead, a user-defined function is to be called, the parameters <code>1, 2, ...</code> are
   initialised on a local stack and the macro is expanded (something like the above
   <code>$(let ...)</code> example).</li>
 </ul>
@@ -960,6 +956,15 @@ double-expansion trick:</p>
 </span><span id="__span-11-5"><a id="__codelineno-11-5" name="__codelineno-11-5" href="#__codelineno-11-5"></a>value
 </span><span id="__span-11-6"><a id="__codelineno-11-6" name="__codelineno-11-6" href="#__codelineno-11-6"></a>value
 </span></code></pre></div>
+<p>I believe the following sentence in the
+<a href="https://www.gnu.org/software/make/manual/html_node/Call-Function.html">docs</a> refers to
+the above behaviour:</p>
+<blockquote>
+<p>The 'call' function expands the PARAM arguments before assigning them
+to temporary variables.  This means that VARIABLE values containing
+references to built-in functions that have special expansion rules, like
+'foreach' or 'if', may not work as you expect.</p>
+</blockquote>
 <div class="footnote">
 <hr>
 <ol>
