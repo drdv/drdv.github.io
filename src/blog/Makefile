@@ -1,6 +1,8 @@
 include ../../Makefile.inc
 
-POST_DIRS := 202411-summer-walking-challenge
+POST_DIRS := \
+	202411-summer-walking-challenge \
+	202512-tracking-food
 
 POST_TARGETS_ALL := $(POST_DIRS:%=%-all)
 POST_TARGETS_CLEAN := $(POST_DIRS:%=%-clean)

@@ -1,6 +1,7 @@
+__pycache__
+.ipynb_checkpoints
 site
 src/blog/202412-python-strings/data
 src/blog/202412-python-strings/*.ipynb
 src/blog/202411-summer-walking-challenge/artifacts
-__pycache__
-.ipynb_checkpoints
+src/blog/202512-tracking-food/out

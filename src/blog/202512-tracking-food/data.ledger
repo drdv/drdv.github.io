@@ -1,0 +1,1695 @@
+; --------------------------------------------------------------------------------------
+; Tracking my food from 2025/08/21 to 2025/09/19
+; --------------------------------------------------------------------------------------
+
+commodity g
+    note Gram
+
+commodity ml
+    note Millilitre
+
+payee Breakfast
+payee Lunch
+payee Dinner
+payee Snack
+
+; ------------
+; Categories
+; ------------
+;  1. Proteins
+;  2. Vegetables
+;  3. Legumes
+;  4. Grains
+;  5. Nuts
+;  6. Seeds
+;  7. Spices
+;  8. Algae
+;  9. Dried fruits
+; 10. Fats
+; 11. Carbs
+; 12. Fruits
+; ------------
+
+; -------------------------------------------
+; Proteins
+; -------------------------------------------
+account Ingredients:Proteins:Sardines
+account Ingredients:Proteins:Salmon
+account Ingredients:Proteins:Tofu
+account Ingredients:Proteins:Eggs
+account Ingredients:Proteins:Chicken boiled
+    note Whole chicken
+account Ingredients:Proteins:Chicken bouillon
+    note From the above chicken
+account Ingredients:Proteins:Chicken fried
+    note Chicken breasts
+account Ingredients:Proteins:Turkey roasted
+    note Drumstick
+account Ingredients:Proteins:Liver
+    note Calf liver
+account Ingredients:Proteins:Yogurt
+    note I prepare it from raw cow milk
+
+; -------------------------------------------
+; Vegetables
+; -------------------------------------------
+account Ingredients:Vegetables:Peppers
+    note Cubanelle peppers
+account Ingredients:Vegetables:Peppers chilli
+account Ingredients:Vegetables:Cabbage red
+account Ingredients:Vegetables:Green beans
+account Ingredients:Vegetables:Beetroot
+    note Producer: Marc Bardin
+account Ingredients:Vegetables:Kohlrabi
+account Ingredients:Vegetables:Celery
+account Ingredients:Vegetables:Chive
+account Ingredients:Vegetables:Carrots
+account Ingredients:Vegetables:Fennel
+account Ingredients:Vegetables:Zucchini
+account Ingredients:Vegetables:Parsley
+account Ingredients:Vegetables:Radish
+account Ingredients:Vegetables:Leafy greens
+account Ingredients:Vegetables:Onion
+account Ingredients:Vegetables:Onion fresh
+account Ingredients:Vegetables:Mushrooms
+account Ingredients:Vegetables:Garlic
+
+; -------------------------------------------
+; Legumes
+; -------------------------------------------
+account Ingredients:Legumes:Lentils
+account Ingredients:Legumes:Chickpea
+account Ingredients:Legumes:Natto
+
+; -------------------------------------------
+; Grains
+; -------------------------------------------
+account Ingredients:Grains:Einkorn
+account Ingredients:Grains:Wheat
+account Ingredients:Grains:Cereal
+
+; -------------------------------------------
+; Nuts
+; -------------------------------------------
+account Ingredients:Nuts:Almonds
+account Ingredients:Nuts:Hazelnuts
+account Ingredients:Nuts:Walnuts
+account Ingredients:Nuts:Brazil nuts
+account Ingredients:Nuts:Cocoa beans
+
+; -------------------------------------------
+; Seeds
+; -------------------------------------------
+account Ingredients:Seeds:Chia
+account Ingredients:Seeds:Mustard
+account Ingredients:Seeds:Anise
+account Ingredients:Seeds:Sesame
+
+; -------------------------------------------
+; Spices
+; -------------------------------------------
+account Ingredients:Spices:Za'atar
+account Ingredients:Spices:Salt
+account Ingredients:Spices:Cloves
+account Ingredients:Spices:Cannelle
+account Ingredients:Spices:Tikka masala
+account Ingredients:Spices:Curry powder
+    note I made it myself (with the help of a friend)
+account Ingredients:Spices:Curcuma
+account Ingredients:Spices:Black pepper
+account Ingredients:Spices:Ginger
+
+; -------------------------------------------
+; Algae
+; -------------------------------------------
+account Ingredients:Algae:Spirulina
+
+; -------------------------------------------
+; Dried fruits
+; -------------------------------------------
+account Ingredients:Dried fruits:Dates
+account Ingredients:Dried fruits:Goji berries
+
+; -------------------------------------------
+; Fats
+; -------------------------------------------
+account Ingredients:Fats:Avocado
+account Ingredients:Fats:Olive oil
+account Ingredients:Fats:Butter
+account Ingredients:Fats:Chocolate 100%
+
+; -------------------------------------------
+; Carbs
+; -------------------------------------------
+account Ingredients:Carbs:Bread
+    note Only water and flour (wheat: T100, T150; chestnut)
+account Ingredients:Carbs:Pumpkin
+account Ingredients:Carbs:Chestnut
+account Ingredients:Carbs:Pasta
+account Ingredients:Carbs:Potatoes
+
+; -------------------------------------------
+; Fruits
+; -------------------------------------------
+account Ingredients:Fruits:Apples
+account Ingredients:Fruits:Grapes
+account Ingredients:Fruits:Peaches
+account Ingredients:Fruits:Plums blue
+account Ingredients:Fruits:Figs (wild)
+
+; -------------------------------------------
+; Composite foods
+; -------------------------------------------
+account Composite:Sandwich
+account Composite:Deserts
+    note Deserts containing sugar (e.g., a cake)
+
+; -------------------------------------------
+; Balancing account
+; -------------------------------------------
+account Equity:Food
+
+2025/08/21 * (08:00) Breakfast
+    Equity:Food
+    Ingredients:Grains:Wheat                      30g
+    Ingredients:Carbs:Chestnut                    30g
+    Ingredients:Vegetables:Beetroot               30g
+    Ingredients:Vegetables:Celery                 20g
+    Ingredients:Nuts:Almonds                      30g
+    Ingredients:Nuts:Hazelnuts                    30g
+    Ingredients:Nuts:Walnuts                      30g
+    Ingredients:Nuts:Brazil nuts                  10g
+    Ingredients:Seeds:Chia                         7g
+    Ingredients:Fats:Olive oil                    14g
+    Ingredients:Proteins:Eggs                      2
+    Ingredients:Proteins:Tofu                     60g
+    Ingredients:Spices:Curry powder               14g
+    Ingredients:Dried fruits:Dates                 4
+    Ingredients:Fats:Chocolate 100%               20g
+    Ingredients:Dried fruits:Goji berries          5g
+
+2025/08/21 * (13:30) Lunch
+    Equity:Food
+    Ingredients:Vegetables:Peppers                20g
+    Ingredients:Vegetables:Cabbage red            10g
+    Ingredients:Carbs:Chestnut                    20g
+    Ingredients:Vegetables:Green beans            20g
+    Ingredients:Vegetables:Beetroot               30g
+    Ingredients:Vegetables:Celery                 20g
+    Ingredients:Vegetables:Carrots                30g
+    Ingredients:Grains:Einkorn                    30g
+    Ingredients:Legumes:Lentils                   40g
+    Ingredients:Fats:Avocado                      90g
+    Ingredients:Nuts:Almonds                      10g
+    Ingredients:Seeds:Chia                         7g
+    Ingredients:Fats:Olive oil                    14g
+    Ingredients:Proteins:Tofu                     60g
+    Ingredients:Proteins:Chicken boiled          150g
+
+2025/08/21 * (18:00) Dinner
+    Equity:Food
+    Ingredients:Proteins:Chicken bouillon        150ml
+    Ingredients:Proteins:Eggs                      3
+    Ingredients:Fruits:Plums blue                  2
+
+2025/08/22 * (08:00) Breakfast
+    Equity:Food
+    Ingredients:Carbs:Chestnut                    30g
+    Ingredients:Nuts:Almonds                      20g
+    Ingredients:Nuts:Hazelnuts                    30g
+    Ingredients:Nuts:Walnuts                      20g
+    Ingredients:Nuts:Brazil nuts                  10g
+    Ingredients:Nuts:Cocoa beans                   5g
+    Ingredients:Seeds:Chia                         7g
+    Ingredients:Spices:Curcuma                     7g
+    Ingredients:Algae:Spirulina                   14g
+    Ingredients:Dried fruits:Dates                 6
+    Ingredients:Fats:Chocolate 100%               15g
+    Ingredients:Grains:Cereal                     40g
+    Ingredients:Proteins:Chicken bouillon        130ml
+
+2025/08/22 * (11:00) Snack
+    Equity:Food
+    Ingredients:Fruits:Apples                      1
+    Ingredients:Fruits:Plums blue                  3
+
+2025/08/22 * (12:30) Lunch
+    Equity:Food
+    Ingredients:Vegetables:Beetroot               20g
+    Ingredients:Vegetables:Green beans            25g
+    Ingredients:Vegetables:Peppers                25g
+    Ingredients:Vegetables:Celery                 30g
+    Ingredients:Vegetables:Carrots                30g
+    Ingredients:Vegetables:Fennel                 35g
+    Ingredients:Grains:Wheat                      30g
+    Ingredients:Legumes:Lentils                   40g
+    Ingredients:Carbs:Chestnut                    25g
+    Ingredients:Fats:Olive oil                    14g
+    Ingredients:Proteins:Eggs                      2
+    Ingredients:Proteins:Chicken boiled          150g
+    Ingredients:Proteins:Chicken bouillon        150ml
+    Ingredients:Dried fruits:Dates                 2
+    Ingredients:Dried fruits:Goji berries          5g
+
+2025/08/22 * (16:00) Snack
+    Equity:Food
+    Ingredients:Fruits:Apples                      1
+    Ingredients:Fruits:Plums blue                  5
+    Ingredients:Nuts:Cocoa beans                   1g
+    Ingredients:Fats:Chocolate 100%               20g
+    Ingredients:Nuts:Walnuts                      30g
+
+2025/08/22 * (19:30) Dinner
+    Equity:Food
+    Ingredients:Legumes:Lentils                   30g
+    Ingredients:Vegetables:Garlic                  5g
+    Ingredients:Vegetables:Onion                  80g
+    Ingredients:Spices:Curry powder                7g
+    Ingredients:Spices:Ginger                     10g
+    Ingredients:Proteins:Tofu                     40g
+    Ingredients:Proteins:Eggs                      3
+    Ingredients:Proteins:Chicken bouillon        170ml
+
+2025/08/23 * (08:45) Breakfast
+    Equity:Food
+    Ingredients:Nuts:Almonds                      15g
+    Ingredients:Nuts:Hazelnuts                    30g
+    Ingredients:Nuts:Walnuts                      25g
+    Ingredients:Nuts:Brazil nuts                  10g
+    Ingredients:Nuts:Cocoa beans                   5g
+    Ingredients:Seeds:Chia                        14g
+    Ingredients:Seeds:Anise                      3.5g
+    Ingredients:Algae:Spirulina                    7g
+    Ingredients:Grains:Cereal                     40g
+    Ingredients:Dried fruits:Goji berries         15g
+    Ingredients:Dried fruits:Dates                 5
+    Ingredients:Proteins:Chicken bouillon        170ml
+
+2025/08/23 * (11:15) Snack
+    Equity:Food
+    Ingredients:Fruits:Plums blue                  6
+    Ingredients:Nuts:Cocoa beans                   5g
+
+2025/08/23 * (14:30) Lunch
+    Equity:Food
+    Ingredients:Vegetables:Beetroot               20g
+    Ingredients:Vegetables:Cabbage red            10g
+    Ingredients:Vegetables:Fennel                 20g
+    Ingredients:Vegetables:Carrots                25g
+    Ingredients:Vegetables:Celery                 15g
+    Ingredients:Vegetables:Green beans            30g
+    Ingredients:Grains:Einkorn                    30g
+    Ingredients:Legumes:Lentils                   30g
+    Ingredients:Legumes:Chickpea                  25g
+    Ingredients:Fats:Avocado                      50g
+    Ingredients:Proteins:Tofu                     20g
+    Ingredients:Seeds:Anise                      3.5g
+    Ingredients:Fats:Olive oil                    14g
+    Ingredients:Nuts:Walnuts                      25g
+    Ingredients:Fats:Chocolate 100%               20g
+    Ingredients:Proteins:Chicken boiled          150g
+    Ingredients:Proteins:Chicken bouillon        150ml
+    Ingredients:Proteins:Yogurt                   70g
+
+2025/08/23 * (20:45) Dinner
+    Equity:Food
+    Ingredients:Vegetables:Green beans             5g
+    Ingredients:Vegetables:Garlic                  5g
+    Ingredients:Grains:Einkorn                    15g
+    Ingredients:Legumes:Lentils                   15g
+    Ingredients:Legumes:Chickpea                  15g
+    Ingredients:Fats:Olive oil                     7g
+    Ingredients:Fats:Butter                        5g
+    Ingredients:Nuts:Walnuts                      25g
+    Ingredients:Nuts:Almonds                      20g
+    Ingredients:Nuts:Hazelnuts                    20g
+    Ingredients:Nuts:Brazil nuts                  10g
+    Ingredients:Carbs:Chestnut                    30g
+    Ingredients:Nuts:Cocoa beans                  15g
+    Ingredients:Fats:Chocolate 100%               40g
+    Ingredients:Proteins:Chicken boiled          100g
+    Ingredients:Proteins:Chicken bouillon        150ml
+    Ingredients:Proteins:Eggs                      3
+    Ingredients:Spices:Curry powder               14g
+    Ingredients:Dried fruits:Dates                12
+    Ingredients:Dried fruits:Goji berries          5g
+    Ingredients:Proteins:Yogurt                   70g
+
+2025/08/24 * (08:15) Breakfast
+    Equity:Food
+    Ingredients:Vegetables:Green beans            20g
+    Ingredients:Vegetables:Peppers                15g
+    Ingredients:Nuts:Walnuts                      15g
+    Ingredients:Legumes:Chickpea                  20g
+    Ingredients:Fats:Olive oil                     7g
+    Ingredients:Nuts:Walnuts                      15g
+    Ingredients:Nuts:Almonds                      30g
+    Ingredients:Grains:Einkorn                    15g
+    Ingredients:Dried fruits:Dates                 2
+    Ingredients:Carbs:Chestnut                    30g
+    Ingredients:Proteins:Sardines                 35g
+
+2025/08/24 * (10:10) Snack
+    Equity:Food
+    Ingredients:Fruits:Plums blue                  5
+    Ingredients:Fruits:Apples                      1
+
+2025/08/24 * (13:00) Lunch
+    Equity:Food
+    Ingredients:Vegetables:Cabbage red            10g
+    Ingredients:Vegetables:Carrots                30g
+    Ingredients:Vegetables:Peppers                20g
+    Ingredients:Vegetables:Celery                 10g
+    Ingredients:Vegetables:Mushrooms              70g
+    Ingredients:Legumes:Lentils                   20g
+    Ingredients:Grains:Einkorn                    30g
+    Ingredients:Nuts:Almonds                      10g
+    Ingredients:Seeds:Chia                        14g
+    Ingredients:Seeds:Anise                      3.5g
+    Ingredients:Nuts:Cocoa beans                   5g
+    Ingredients:Carbs:Chestnut                    30g
+    Ingredients:Fats:Avocado                      80g
+    Ingredients:Fats:Olive oil                    14g
+    Ingredients:Proteins:Chicken fried           180g
+
+2025/08/24 * (16:45) Snack
+    Equity:Food
+    Ingredients:Fruits:Plums blue                  6
+
+2025/08/24 * (19:45) Dinner
+    Equity:Food
+    Ingredients:Vegetables:Green beans            25g
+    Ingredients:Legumes:Chickpea                  35g
+    Ingredients:Fats:Butter                        5g
+    Ingredients:Nuts:Walnuts                      10g
+    Ingredients:Nuts:Almonds                       5g
+    Ingredients:Nuts:Hazelnuts                     5g
+    Ingredients:Nuts:Cocoa beans                   5g
+    Ingredients:Proteins:Turkey roasted          400g
+    Ingredients:Fats:Chocolate 100%               20g
+    Ingredients:Dried fruits:Dates                 2
+    Ingredients:Dried fruits:Goji berries          5g
+
+2025/08/25 * (08:00) Breakfast
+    Equity:Food
+    Ingredients:Nuts:Almonds                      20g
+    Ingredients:Nuts:Hazelnuts                    20g
+    Ingredients:Nuts:Walnuts                      25g
+    Ingredients:Nuts:Brazil nuts                  15g
+    Ingredients:Seeds:Chia                         7g
+    Ingredients:Nuts:Cocoa beans                  10g
+    Ingredients:Algae:Spirulina                   14g
+    Ingredients:Spices:Curcuma                     7g
+    Ingredients:Dried fruits:Goji berries         10g
+    Ingredients:Dried fruits:Dates                 4
+    Ingredients:Grains:Cereal                     40g
+    Ingredients:Proteins:Chicken bouillon        170ml
+
+2025/08/25 * (11:00) Snack
+    Equity:Food
+    Ingredients:Fruits:Plums blue                  6
+    Ingredients:Fruits:Apples                      1
+
+2025/08/25 * (12:20) Lunch
+    Equity:Food
+    Ingredients:Vegetables:Green beans            20g
+    Ingredients:Grains:Einkorn                    40g
+    Ingredients:Legumes:Lentils                   25g
+    Ingredients:Fats:Avocado                      45g
+    Ingredients:Nuts:Cocoa beans                   5g
+    Ingredients:Nuts:Walnuts                      20g
+    Ingredients:Proteins:Turkey roasted          150g
+    Ingredients:Proteins:Eggs                      2
+    Ingredients:Carbs:Bread                       80g
+
+2025/08/25 * (18:00) Dinner
+    Equity:Food
+    Ingredients:Vegetables:Green beans            15g
+    Ingredients:Vegetables:Mushrooms              45g
+    Ingredients:Fats:Avocado                      90g
+    Ingredients:Grains:Einkorn                    25g
+    Ingredients:Vegetables:Garlic                  5g
+    Ingredients:Fats:Olive oil                     7g
+    Ingredients:Nuts:Almonds                      10g
+    Ingredients:Nuts:Hazelnuts                    10g
+    Ingredients:Nuts:Walnuts                      15g
+    Ingredients:Proteins:Turkey roasted          200g
+    Ingredients:Dried fruits:Dates                 4
+    Ingredients:Dried fruits:Goji berries         10g
+    Ingredients:Fats:Chocolate 100%               20g
+
+2025/08/26 * (07:45) Breakfast
+    Equity:Food
+    Ingredients:Vegetables:Mushrooms              40g
+    Ingredients:Vegetables:Peppers                40g
+    Ingredients:Nuts:Almonds                      15g
+    Ingredients:Nuts:Hazelnuts                    15g
+    Ingredients:Nuts:Walnuts                      20g
+    Ingredients:Nuts:Cocoa beans                  10g
+    Ingredients:Nuts:Brazil nuts                  15g
+    Ingredients:Seeds:Chia                         7g
+    Ingredients:Proteins:Eggs                      2
+    Ingredients:Dried fruits:Dates                 4
+
+2025/08/26 * (11:00) Lunch
+    Equity:Food
+    Ingredients:Vegetables:Green beans             5g
+    Ingredients:Vegetables:Onion                  30g
+    Ingredients:Vegetables:Carrots                10g
+    Ingredients:Grains:Einkorn                    30g
+    Ingredients:Legumes:Chickpea                  20g
+    Ingredients:Fats:Avocado                      75g
+    Ingredients:Nuts:Almonds                      15g
+    Ingredients:Nuts:Hazelnuts                    15g
+    Ingredients:Proteins:Sardines                 90g
+    Ingredients:Proteins:Eggs                      3
+    Ingredients:Proteins:Tofu                     85g
+    Ingredients:Spices:Curry powder                7g
+
+2025/08/26 * (13:30) Snack
+    Equity:Food
+    Ingredients:Fruits:Figs (wild)               350g  ; from a tree in Tullins
+
+2025/08/26 * (18:20) Dinner
+    Equity:Food
+    Ingredients:Vegetables:Zucchini              100g
+    Ingredients:Vegetables:Cabbage red            40g
+    Ingredients:Grains:Wheat                      25g
+    Ingredients:Vegetables:Garlic                  5g
+    Ingredients:Nuts:Almonds                      15g
+    Ingredients:Nuts:Hazelnuts                    15g
+    Ingredients:Nuts:Brazil nuts                  15g
+    Ingredients:Nuts:Walnuts                      30g
+    Ingredients:Nuts:Cocoa beans                   5g
+    Ingredients:Proteins:Chicken fried           165g
+    Ingredients:Dried fruits:Dates                10
+    Ingredients:Fats:Chocolate 100%               20g
+    Ingredients:Carbs:Bread                       70g
+
+2025/08/27 * (07:45) Breakfast
+    Equity:Food
+    Ingredients:Nuts:Almonds                      15g
+    Ingredients:Nuts:Hazelnuts                    25g
+    Ingredients:Nuts:Walnuts                      15g
+    Ingredients:Nuts:Cocoa beans                  15g
+    Ingredients:Seeds:Chia                         7g
+    Ingredients:Algae:Spirulina                   14g
+    Ingredients:Spices:Curcuma                     7g
+    Ingredients:Grains:Cereal                     30g
+    Ingredients:Dried fruits:Dates                 5
+    Ingredients:Dried fruits:Goji berries         15g
+    Ingredients:Proteins:Chicken bouillon        225ml
+
+2025/08/27 * (12:45) Lunch
+    Equity:Food
+    Ingredients:Vegetables:Celery                 10g
+    Ingredients:Grains:Einkorn                    30g
+    Ingredients:Legumes:Chickpea                  30g
+    Ingredients:Grains:Wheat                      20g
+    Ingredients:Nuts:Almonds                      10g
+    Ingredients:Nuts:Hazelnuts                    10g
+    Ingredients:Nuts:Walnuts                      30g
+    Ingredients:Spices:Curry powder                7g
+    Ingredients:Proteins:Chicken bouillon        360ml
+    Ingredients:Proteins:Chicken fried           140g
+    Ingredients:Proteins:Eggs                      2
+    Ingredients:Proteins:Tofu                     40g
+    Ingredients:Dried fruits:Dates                 4
+    Ingredients:Fats:Chocolate 100%               20g
+    Ingredients:Nuts:Cocoa beans                  10g
+    Ingredients:Dried fruits:Goji berries         10g
+
+2025/08/27 * (15:00) Snack
+    Equity:Food
+    Ingredients:Fruits:Figs (wild)               200g  ; from a tree in Meylan
+
+2025/08/27 * (19:45) Dinner
+    Equity:Food
+    Ingredients:Grains:Wheat                      25g
+    Ingredients:Legumes:Chickpea                  45g
+    Ingredients:Vegetables:Beetroot               25g
+    Ingredients:Vegetables:Carrots                70g
+    Ingredients:Vegetables:Onion                  35g
+    Ingredients:Vegetables:Fennel                 35g
+    Ingredients:Seeds:Anise                      3.5g
+    Ingredients:Vegetables:Parsley                 5g
+    Ingredients:Fats:Avocado                      80g
+    Ingredients:Proteins:Sardines                 50g
+    Ingredients:Proteins:Eggs                      2
+    Ingredients:Proteins:Tofu                     60g
+    Ingredients:Carbs:Bread                       55g
+
+2025/08/28 * (07:10) Breakfast
+    Equity:Food
+    Ingredients:Nuts:Almonds                      20g
+    Ingredients:Nuts:Hazelnuts                    20g
+    Ingredients:Nuts:Brazil nuts                  15g
+    Ingredients:Nuts:Cocoa beans                  10g
+    Ingredients:Algae:Spirulina                   14g
+    Ingredients:Grains:Cereal                     30g
+    Ingredients:Dried fruits:Dates                 5
+    Ingredients:Dried fruits:Goji berries         10g
+    Ingredients:Fats:Chocolate 100%               20g
+
+2025/08/28 * (12:00) Snack
+    Equity:Food
+    Ingredients:Fruits:Figs (wild)               400g  ; from a tree in Meylan
+
+2025/08/28 * (14:00) Lunch
+    Equity:Food
+    Ingredients:Proteins:Chicken boiled          270g
+    Ingredients:Proteins:Chicken bouillon        300ml
+    Ingredients:Proteins:Eggs                      2
+    Ingredients:Carbs:Bread                       60g
+
+2025/08/28 * (19:00) Dinner
+    ; part 1
+    Equity:Food
+    Ingredients:Grains:Einkorn                    15g
+    Ingredients:Fats:Avocado                      35g
+    Ingredients:Nuts:Walnuts                      25g
+    Ingredients:Nuts:Cocoa beans                  10g
+
+2025/08/28 * (19:00) Dinner
+    ; part 2 (stew)
+    Equity:Food
+    Ingredients:Vegetables:Celery                 20g
+    Ingredients:Vegetables:Parsley                 5g
+    Ingredients:Vegetables:Onion                  20g
+    Ingredients:Vegetables:Beetroot               30g
+    Ingredients:Vegetables:Carrots                40g
+    Ingredients:Vegetables:Fennel                 15g
+    Ingredients:Vegetables:Mushrooms              20g
+    Ingredients:Seeds:Anise                      3.5g
+    Ingredients:Spices:Curry powder               14g
+    Ingredients:Proteins:Tofu                     80g
+    Ingredients:Proteins:Eggs                      2
+    Ingredients:Proteins:Chicken boiled           70g
+    Ingredients:Proteins:Chicken bouillon        450ml
+    Ingredients:Spices:Black pepper              3.5g
+
+2025/08/29 * (08:15) Breakfast
+    Equity:Food
+    Ingredients:Nuts:Walnuts                      25g
+    Ingredients:Nuts:Almonds                      20g
+    Ingredients:Nuts:Hazelnuts                    20g
+    Ingredients:Nuts:Brazil nuts                  15g
+    Ingredients:Nuts:Cocoa beans                  15g
+    Ingredients:Seeds:Chia                         7g
+    Ingredients:Algae:Spirulina                   14g
+    Ingredients:Spices:Curcuma                     7g
+    Ingredients:Grains:Cereal                     30g
+    Ingredients:Dried fruits:Dates                 6
+    Ingredients:Dried fruits:Goji berries         10g
+    Ingredients:Fats:Chocolate 100%               10g
+
+2025/08/29 * (12:30) Lunch
+    Equity:Food
+    Ingredients:Vegetables:Peppers                35g
+    Ingredients:Vegetables:Mushrooms              30g
+    Ingredients:Vegetables:Radish                 15g
+    Ingredients:Vegetables:Parsley                 5g
+    Ingredients:Vegetables:Fennel                 10g
+    Ingredients:Grains:Einkorn                    30g
+    Ingredients:Legumes:Chickpea                  30g
+    Ingredients:Seeds:Anise                      3.5g
+    Ingredients:Fats:Butter                        5g
+    Ingredients:Nuts:Cocoa beans                  15g
+    Ingredients:Proteins:Chicken boiled          170g
+    Ingredients:Proteins:Eggs                      2
+
+2025/08/29 * (16:45) Snack
+    Equity:Food
+    Ingredients:Fruits:Apples                      1
+    Ingredients:Dried fruits:Dates                 2
+    Ingredients:Fats:Chocolate 100%               20g
+    Ingredients:Nuts:Almonds                      10g
+    Ingredients:Nuts:Hazelnuts                    10g
+    Ingredients:Nuts:Cocoa beans                  10g
+
+2025/08/29 * (19:15) Dinner
+    Equity:Food
+    Ingredients:Vegetables:Celery                 35g
+    Ingredients:Vegetables:Parsley                10g
+    Ingredients:Vegetables:Beetroot               25g
+    Ingredients:Vegetables:Peppers                20g
+    Ingredients:Vegetables:Mushrooms              40g
+    Ingredients:Spices:Curry powder               14g
+    Ingredients:Legumes:Lentils                   45g
+    Ingredients:Grains:Einkorn                    25g
+    Ingredients:Nuts:Walnuts                      30g
+    Ingredients:Nuts:Brazil nuts                  15g
+    Ingredients:Proteins:Tofu                     60g
+    Ingredients:Proteins:Eggs                      2
+    Ingredients:Proteins:Chicken boiled           70g
+    Ingredients:Proteins:Chicken bouillon        250ml
+    Ingredients:Fats:Olive oil                    14g
+    Ingredients:Carbs:Bread                       70g
+    Ingredients:Dried fruits:Dates                 6
+    Ingredients:Dried fruits:Goji berries         10g
+    Ingredients:Fats:Chocolate 100%               10g
+
+2025/08/30 * (08:45) Breakfast
+    Equity:Food
+    Ingredients:Nuts:Walnuts                      15g
+    Ingredients:Nuts:Almonds                      20g
+    Ingredients:Nuts:Hazelnuts                    20g
+    Ingredients:Nuts:Cocoa beans                   5g
+    Ingredients:Seeds:Chia                         7g
+    Ingredients:Algae:Spirulina                   14g
+    Ingredients:Grains:Cereal                     30g
+    Ingredients:Dried fruits:Dates                 4
+    Ingredients:Dried fruits:Goji berries         10g
+    Ingredients:Proteins:Yogurt                  170g
+
+2025/08/30 * (11:30) Snack
+    Equity:Food
+    Ingredients:Fruits:Figs (wild)               300g
+
+2025/08/30 * (13:30) Lunch
+    Equity:Food
+    Ingredients:Vegetables:Peppers                30g
+    Ingredients:Vegetables:Onion                  25g
+    Ingredients:Vegetables:Mushrooms              30g
+    Ingredients:Vegetables:Parsley                 5g
+    Ingredients:Grains:Einkorn                    30g
+    Ingredients:Legumes:Chickpea                  30g
+    Ingredients:Legumes:Lentils                   30g
+    Ingredients:Spices:Black pepper                7g
+    Ingredients:Seeds:Sesame                       7g
+    Ingredients:Seeds:Anise                      3.5g
+    Ingredients:Proteins:Eggs                      3
+    Ingredients:Proteins:Tofu                     50g
+    Ingredients:Fats:Olive oil                    28g
+
+2025/08/30 * (16:00) Snack
+    Equity:Food
+    Ingredients:Fruits:Figs (wild)               400g
+
+2025/08/30 * (19:00) Dinner
+    Equity:Food
+    Ingredients:Vegetables:Beetroot               20g
+    Ingredients:Legumes:Lentils                   30g
+    Ingredients:Grains:Einkorn                    30g
+    Ingredients:Legumes:Chickpea                  30g
+    Ingredients:Vegetables:Garlic                  5g
+    Ingredients:Nuts:Walnuts                      20g
+    Ingredients:Nuts:Almonds                       5g
+    Ingredients:Nuts:Cocoa beans                   5g
+    Ingredients:Nuts:Hazelnuts                     5g
+    Ingredients:Proteins:Sardines                 55g
+    Ingredients:Proteins:Tofu                     55g
+    Ingredients:Proteins:Eggs                      2
+    Ingredients:Fats:Olive oil                    14g
+
+2025/08/31 * (08:45) Breakfast
+    Equity:Food
+    Ingredients:Nuts:Walnuts                      20g
+    Ingredients:Nuts:Almonds                      25g
+    Ingredients:Nuts:Hazelnuts                    25g
+    Ingredients:Seeds:Chia                         7g
+    Ingredients:Nuts:Cocoa beans                  10g
+    Ingredients:Algae:Spirulina                   14g
+    Ingredients:Spices:Curcuma                     7g
+    Ingredients:Grains:Cereal                     30g
+    Ingredients:Dried fruits:Dates                 4
+    Ingredients:Dried fruits:Goji berries         10g
+    Ingredients:Proteins:Yogurt                  100g
+
+2025/08/31 * (12:15) Lunch
+    Equity:Food
+    Ingredients:Vegetables:Peppers                10g
+    Ingredients:Vegetables:Cabbage red             5g
+    Ingredients:Vegetables:Carrots                15g
+    Ingredients:Vegetables:Onion                   5g
+    Ingredients:Vegetables:Mushrooms              10g
+    Ingredients:Vegetables:Celery                 10g
+    Ingredients:Vegetables:Radish                 15g
+    Ingredients:Fats:Avocado                      55g
+    Ingredients:Grains:Wheat                      20g
+    Ingredients:Legumes:Chickpea                  15g
+    Ingredients:Legumes:Lentils                   25g
+    Ingredients:Proteins:Tofu                     25g
+    Ingredients:Proteins:Turkey roasted          150g
+    Ingredients:Fats:Olive oil                    14g
+    Ingredients:Fats:Chocolate 100%               17g
+    Ingredients:Nuts:Cocoa beans                  10g
+    Ingredients:Proteins:Chicken bouillon        235ml
+
+2025/08/31 * (17:00) Snack
+    Equity:Food
+    Ingredients:Fruits:Apples                      1
+    Ingredients:Fruits:Figs (wild)               300g
+
+2025/08/31 * (20:00) Dinner
+    Equity:Food
+    Ingredients:Vegetables:Peppers                10g
+    Ingredients:Vegetables:Cabbage red             5g
+    Ingredients:Vegetables:Carrots                15g
+    Ingredients:Vegetables:Onion                   5g
+    Ingredients:Vegetables:Mushrooms              10g
+    Ingredients:Vegetables:Celery                 10g
+    Ingredients:Proteins:Tofu                     25g
+    Ingredients:Vegetables:Beetroot               15g
+    Ingredients:Proteins:Turkey roasted          200g
+    Ingredients:Proteins:Yogurt                  250g
+    Ingredients:Legumes:Chickpea                  15g
+    Ingredients:Legumes:Lentils                   25g
+    Ingredients:Vegetables:Garlic                  5g
+    Ingredients:Nuts:Almonds                       5g
+    Ingredients:Nuts:Hazelnuts                     5g
+    Ingredients:Nuts:Walnuts                      25g
+    Ingredients:Nuts:Cocoa beans                  15g
+    Ingredients:Fats:Chocolate 100%               17g
+    Ingredients:Dried fruits:Dates                 3
+
+2025/09/01 * (09:45) Breakfast
+    Equity:Food
+    Ingredients:Proteins:Yogurt                  150g
+
+2025/09/01 * (12:30) Lunch
+    Equity:Food
+    Ingredients:Vegetables:Peppers                35g
+    Ingredients:Vegetables:Carrots                40g
+    Ingredients:Vegetables:Mushrooms              40g
+    Ingredients:Vegetables:Radish                 20g
+    Ingredients:Vegetables:Beetroot               20g
+    Ingredients:Legumes:Chickpea                  20g
+    Ingredients:Grains:Einkorn                    20g
+    Ingredients:Legumes:Lentils                   30g
+    Ingredients:Proteins:Turkey roasted           60g
+    Ingredients:Proteins:Eggs                      2
+    Ingredients:Fats:Olive oil                    14g
+    Ingredients:Fats:Chocolate 100%               17g
+    Ingredients:Nuts:Cocoa beans                   5g
+    Ingredients:Nuts:Walnuts                      20g
+    Ingredients:Nuts:Hazelnuts                     5g
+    Ingredients:Nuts:Almonds                       5g
+
+2025/09/01 * (16:15) Snack
+    Equity:Food
+    Ingredients:Fruits:Apples                      1
+
+2025/09/01 * (19:45) Dinner
+    ; part 1
+    Equity:Food
+    Ingredients:Nuts:Brazil nuts                  15g
+    Ingredients:Nuts:Almonds                      10g
+    Ingredients:Nuts:Hazelnuts                    10g
+    Ingredients:Nuts:Walnuts                      30g
+    Ingredients:Nuts:Cocoa beans                  15g
+    Ingredients:Fats:Chocolate 100%               34g
+    Ingredients:Dried fruits:Dates                 6
+    Ingredients:Dried fruits:Goji berries         10g
+
+2025/09/01 * (19:45) Dinner
+    ; part 2 (stew - I couldn't finish it all)
+    Equity:Food
+    Ingredients:Vegetables:Peppers                10g
+    Ingredients:Vegetables:Cabbage red            15g
+    Ingredients:Vegetables:Carrots                30g
+    Ingredients:Vegetables:Fennel                  5g
+    Ingredients:Vegetables:Onion                  10g
+    Ingredients:Vegetables:Mushrooms              20g
+    Ingredients:Grains:Wheat                      20g
+    Ingredients:Proteins:Tofu                     40g
+    Ingredients:Vegetables:Beetroot               20g
+    Ingredients:Vegetables:Garlic                  5g
+    Ingredients:Spices:Tikka masala               14g
+    Ingredients:Spices:Cannelle                   14g
+    Ingredients:Spices:Cloves                      3
+    Ingredients:Vegetables:Peppers chilli          5g
+    Ingredients:Spices:Ginger                     10g
+    Ingredients:Proteins:Eggs                      2
+
+2025/09/02 * (09:20) Breakfast
+    Equity:Food
+    Ingredients:Proteins:Yogurt                  250g
+    Ingredients:Nuts:Hazelnuts                    20g
+    Ingredients:Nuts:Almonds                      20g
+    Ingredients:Nuts:Cocoa beans                  15g
+    Ingredients:Nuts:Walnuts                      15g
+    Ingredients:Grains:Cereal                     40g
+    Ingredients:Dried fruits:Dates                 4
+    Ingredients:Dried fruits:Goji berries         10g
+
+2025/09/02 * (12:15) Lunch
+    ; I finished the stew from yesterday's dinner (400ml)
+    ; I don't add it here as it was already accounted for above
+    Equity:Food
+    Ingredients:Proteins:Eggs                      3
+    Ingredients:Nuts:Hazelnuts                     5g
+    Ingredients:Nuts:Almonds                       5g
+
+2025/09/02 * (16:15) Snack
+    Equity:Food
+    Ingredients:Fruits:Apples                      1
+
+2025/09/02 * (08:00) Dinner
+    Equity:Food
+    Ingredients:Fats:Avocado                      60g
+    Ingredients:Legumes:Chickpea                  30g
+    Ingredients:Legumes:Lentils                   40g
+    Ingredients:Grains:Einkorn                    20g
+    Ingredients:Vegetables:Mushrooms              65g
+    Ingredients:Proteins:Chicken fried           140g
+    Ingredients:Proteins:Chicken bouillon        650ml
+
+2025/09/03 * (08:15) Breakfast
+    Equity:Food
+    Ingredients:Nuts:Almonds                      20g
+    Ingredients:Nuts:Hazelnuts                    20g
+    Ingredients:Nuts:Cocoa beans                  10g
+    Ingredients:Grains:Cereal                     35g
+    Ingredients:Spices:Curcuma                     7g
+    Ingredients:Algae:Spirulina                   14g
+    Ingredients:Dried fruits:Dates                 4
+    Ingredients:Dried fruits:Goji berries         10g
+    Ingredients:Proteins:Yogurt                  200g
+    Ingredients:Fats:Chocolate 100%               17g
+
+2025/09/03 * (12:15) Lunch
+    Equity:Food
+    Ingredients:Vegetables:Mushrooms              40g
+    Ingredients:Vegetables:Peppers                30g
+    Ingredients:Vegetables:Carrots                25g
+    Ingredients:Fats:Avocado                      35g
+    Ingredients:Vegetables:Beetroot               20g
+    Ingredients:Legumes:Chickpea                  25g
+    Ingredients:Grains:Einkorn                    25g
+    Ingredients:Proteins:Chicken fried           240g
+    Ingredients:Vegetables:Parsley                 2g
+    Ingredients:Vegetables:Celery                  7g
+    Ingredients:Vegetables:Chive                 0.5g
+    Ingredients:Nuts:Walnuts                      30g
+    Ingredients:Nuts:Brazil nuts                  15g
+    Ingredients:Nuts:Hazelnuts                    10g
+    Ingredients:Nuts:Almonds                      10g
+    Ingredients:Nuts:Cocoa beans                   5g
+    Ingredients:Dried fruits:Dates                 4
+    Ingredients:Fats:Chocolate 100%               37g
+    Ingredients:Dried fruits:Goji berries          5g
+    Ingredients:Proteins:Yogurt                  200g
+
+2025/09/03 * (06:15) Dinner
+    Equity:Food
+    Ingredients:Vegetables:Peppers                25g
+    Ingredients:Vegetables:Onion fresh            40g
+    Ingredients:Vegetables:Parsley                 5g
+    Ingredients:Vegetables:Celery                  5g
+    Ingredients:Vegetables:Cabbage red            10g
+    Ingredients:Vegetables:Carrots                13g
+    Ingredients:Seeds:Anise                        7g
+    Ingredients:Legumes:Chickpea                  15g
+    Ingredients:Legumes:Lentils                   25g
+    Ingredients:Grains:Einkorn                    20g
+    Ingredients:Vegetables:Mushrooms              55g
+    Ingredients:Proteins:Sardines                 55g
+    Ingredients:Proteins:Tofu                     73g
+    Ingredients:Fats:Olive oil                    28g
+    Ingredients:Nuts:Walnuts                      20g
+    Ingredients:Nuts:Almonds                       5g
+    Ingredients:Nuts:Hazelnuts                     5g
+    Ingredients:Nuts:Cocoa beans                   5g
+    Ingredients:Fats:Chocolate 100%               20g
+    Ingredients:Dried fruits:Dates                 3
+    Ingredients:Dried fruits:Goji berries          5g
+    Ingredients:Spices:Salt                        2g
+    Ingredients:Seeds:Mustard                     14g
+
+2025/09/04 * (08:00) Breakfast
+    Equity:Food
+    Ingredients:Nuts:Almonds                      20g
+    Ingredients:Nuts:Hazelnuts                    20g
+    Ingredients:Nuts:Brazil nuts                  15g
+    Ingredients:Nuts:Cocoa beans                  10g
+    Ingredients:Nuts:Walnuts                      10g
+    Ingredients:Spices:Curcuma                     7g
+    Ingredients:Algae:Spirulina                   14g
+    Ingredients:Grains:Cereal                     40g
+    Ingredients:Dried fruits:Dates                 4
+    Ingredients:Dried fruits:Goji berries         10g
+    Ingredients:Proteins:Yogurt                  250g
+
+2025/09/04 * (13:00) Lunch
+    Equity:Food
+    Ingredients:Vegetables:Parsley                 5g
+    Ingredients:Vegetables:Celery                  5g
+    Ingredients:Vegetables:Mushrooms              50g
+    Ingredients:Vegetables:Peppers                30g
+    Ingredients:Vegetables:Carrots                30g
+    Ingredients:Spices:Ginger                      5g
+    Ingredients:Vegetables:Onion                  80g
+    Ingredients:Seeds:Anise                      3.5g
+    Ingredients:Spices:Za'atar                   3.5g
+    Ingredients:Legumes:Natto                     45g
+    Ingredients:Vegetables:Beetroot               35g
+    Ingredients:Legumes:Chickpea                  30g
+    Ingredients:Grains:Wheat                      30g
+    Ingredients:Proteins:Chicken fried           150g
+    Ingredients:Proteins:Eggs                      2
+    Ingredients:Nuts:Walnuts                      20g
+    Ingredients:Nuts:Hazelnuts                     5g
+    Ingredients:Nuts:Almonds                       5g
+    Ingredients:Nuts:Cocoa beans                  20g
+    Ingredients:Dried fruits:Dates                 4
+    Ingredients:Dried fruits:Goji berries         10g
+    Ingredients:Fats:Butter                        3g
+    Ingredients:Fats:Olive oil                    28g
+
+2025/09/04 * (15:00) Snack
+    Equity:Food
+    Ingredients:Proteins:Chicken bouillon        380ml
+
+2025/09/04 * (16:45) Snack
+    Equity:Food
+    Ingredients:Fruits:Apples                      1
+
+2025/09/04 * (09:00) Dinner
+    Equity:Food
+    Ingredients:Vegetables:Peppers                10g
+    Ingredients:Vegetables:Onion fresh            15g
+    Ingredients:Vegetables:Parsley                 5g
+    Ingredients:Vegetables:Celery                  5g
+    Ingredients:Vegetables:Carrots                 5g
+    Ingredients:Vegetables:Mushrooms              20g
+    Ingredients:Vegetables:Beetroot               15g
+    Ingredients:Vegetables:Fennel                 10g
+    Ingredients:Nuts:Walnuts                      25g
+    Ingredients:Nuts:Brazil nuts                  10g
+    Ingredients:Fats:Chocolate 100%               15g
+    Ingredients:Dried fruits:Dates                 4
+    Ingredients:Dried fruits:Goji berries         10g
+    Ingredients:Proteins:Chicken boiled          100g
+    Ingredients:Proteins:Yogurt                  450g
+    Ingredients:Carbs:Potatoes                   250g
+
+2025/09/05 * (08:00) Breakfast
+    Equity:Food
+    Ingredients:Nuts:Almonds                      20g
+    Ingredients:Nuts:Hazelnuts                    20g
+    Ingredients:Nuts:Walnuts                      20g
+    Ingredients:Nuts:Brazil nuts                  10g
+    Ingredients:Nuts:Cocoa beans                  10g
+    Ingredients:Grains:Cereal                     40g
+    Ingredients:Spices:Curcuma                     7g
+    Ingredients:Algae:Spirulina                   14g
+    Ingredients:Proteins:Yogurt                  600g
+    Ingredients:Dried fruits:Dates                 4
+    Ingredients:Fats:Chocolate 100%               15g
+    Ingredients:Dried fruits:Goji berries         10g
+
+2025/09/05 * (12:45) Lunch
+    Equity:Food
+    Ingredients:Vegetables:Peppers                20g
+    Ingredients:Vegetables:Carrots                30g
+    Ingredients:Vegetables:Beetroot               20g
+    Ingredients:Legumes:Chickpea                  20g
+    Ingredients:Grains:Einkorn                    20g
+    Ingredients:Legumes:Lentils                   20g
+    Ingredients:Proteins:Eggs                      2
+    Ingredients:Nuts:Hazelnuts                    20g
+    Ingredients:Nuts:Almonds                      15g
+    Ingredients:Nuts:Cocoa beans                  15g
+    Ingredients:Dried fruits:Dates                 4
+    Ingredients:Fats:Olive oil                    14g
+    Ingredients:Proteins:Chicken boiled          180g
+    Ingredients:Proteins:Chicken bouillon        250ml
+    Ingredients:Fats:Chocolate 100%               20g
+
+2025/09/05 * (16:45) Snack
+    Equity:Food
+    Ingredients:Fruits:Apples                      1
+
+2025/09/05 * ( 18:30) Dinner
+    Equity:Food
+    Ingredients:Vegetables:Onion                  30g
+    Ingredients:Vegetables:Carrots                25g
+    Ingredients:Vegetables:Mushrooms              50g
+    Ingredients:Vegetables:Peppers                30g
+    Ingredients:Vegetables:Garlic                  7g
+    Ingredients:Spices:Ginger                      7g
+    Ingredients:Proteins:Chicken boiled          100g
+    Ingredients:Proteins:Eggs                      2
+    Ingredients:Nuts:Walnuts                      30g
+    Ingredients:Nuts:Hazelnuts                    15g
+    Ingredients:Nuts:Almonds                      10g
+    Ingredients:Nuts:Cocoa beans                  10g
+    Ingredients:Nuts:Brazil nuts                  10g
+    Ingredients:Fats:Chocolate 100%               15g
+    Ingredients:Carbs:Bread                       70g
+    Ingredients:Dried fruits:Dates                 6
+    Ingredients:Carbs:Potatoes                    47g
+
+2025/09/06 * (09:30) Breakfast
+    Equity:Food
+    Ingredients:Nuts:Almonds                      25g
+    Ingredients:Nuts:Hazelnuts                    25g
+    Ingredients:Nuts:Brazil nuts                  15g
+    Ingredients:Nuts:Cocoa beans                  10g
+    Ingredients:Grains:Cereal                     40g
+    Ingredients:Algae:Spirulina                   14g
+    Ingredients:Spices:Curcuma                     7g
+    Ingredients:Proteins:Yogurt                  250g
+    Ingredients:Dried fruits:Dates                 4
+    Ingredients:Dried fruits:Goji berries         10g
+
+2025/09/06 * (11:00) Snack
+    Equity:Food
+    Ingredients:Fruits:Figs (wild)               300g
+
+2025/09/06 * (12:45) Lunch
+    Equity:Food
+    Ingredients:Vegetables:Peppers                80g
+    Ingredients:Vegetables:Carrots                35g
+    Ingredients:Vegetables:Fennel                  5g
+    Ingredients:Vegetables:Mushrooms              50g
+    Ingredients:Legumes:Chickpea                  20g
+    Ingredients:Grains:Einkorn                    20g
+    Ingredients:Fats:Olive oil                    14g
+    Ingredients:Proteins:Chicken boiled          400g
+    Ingredients:Proteins:Tofu                     75g
+    Ingredients:Legumes:Natto                     45g
+    Ingredients:Proteins:Eggs                      2
+    Ingredients:Vegetables:Leafy greens           10g
+    Ingredients:Vegetables:Kohlrabi               15g
+
+2025/09/06 * (18:45) Dinner
+    Equity:Food
+    Ingredients:Vegetables:Peppers                50g
+    Ingredients:Vegetables:Carrots                40g
+    Ingredients:Vegetables:Beetroot               15g
+    Ingredients:Grains:Einkorn                    20g
+    Ingredients:Grains:Wheat                      30g
+    Ingredients:Fats:Avocado                      75g
+    Ingredients:Proteins:Chicken bouillon        200ml
+    Ingredients:Proteins:Eggs                      2
+    Ingredients:Carbs:Pumpkin                    100g
+    Ingredients:Vegetables:Leafy greens           10g
+    Ingredients:Dried fruits:Dates                 3
+    Ingredients:Nuts:Almonds                       5g
+    Ingredients:Nuts:Hazelnuts                    10g
+    Ingredients:Nuts:Cocoa beans                  10g
+    Ingredients:Fats:Chocolate 100%               15g
+
+2025/09/07 * (11:00) Breakfast
+    Equity:Food
+    Ingredients:Nuts:Almonds                      20g
+    Ingredients:Nuts:Hazelnuts                    20g
+    Ingredients:Nuts:Cocoa beans                   5g
+    Ingredients:Grains:Cereal                     30g
+    Ingredients:Algae:Spirulina                   14g
+    Ingredients:Proteins:Yogurt                  270g
+    Ingredients:Carbs:Pumpkin                    100g
+
+2025/09/07 * (13:30) Lunch
+    Equity:Food
+    Ingredients:Vegetables:Beetroot               15g
+    Ingredients:Vegetables:Peppers                25g
+    Ingredients:Legumes:Chickpea                  25g
+    Ingredients:Grains:Wheat                      25g
+    Ingredients:Legumes:Natto                     45g
+    Ingredients:Fats:Olive oil                    28g
+    Ingredients:Nuts:Almonds                       5g
+    Ingredients:Nuts:Hazelnuts                     5g
+    Ingredients:Fats:Avocado                      55g
+    Ingredients:Proteins:Turkey roasted          340g
+    Ingredients:Carbs:Pumpkin                     65g
+    Ingredients:Vegetables:Kohlrabi               15g
+
+2025/09/07 * (17:00) Snack
+    Equity:Food
+    Ingredients:Fruits:Figs (wild)               300g
+
+2025/09/07 * (20:00) Dinner
+    Equity:Food
+    Ingredients:Proteins:Turkey roasted          200g
+    Ingredients:Proteins:Yogurt                  250g
+    Ingredients:Carbs:Pumpkin                     75g
+
+2025/09/08 * (09:45) Breakfast
+    Equity:Food
+    Ingredients:Nuts:Almonds                      25g
+    Ingredients:Nuts:Hazelnuts                    25g
+    Ingredients:Nuts:Cocoa beans                  15g
+    Ingredients:Grains:Cereal                     40g
+    Ingredients:Algae:Spirulina                   14g
+    Ingredients:Spices:Curcuma                     7g
+    Ingredients:Proteins:Yogurt                  350g
+    Ingredients:Dried fruits:Dates                 4
+    Ingredients:Dried fruits:Goji berries         10g
+
+2025/09/08 * (13:15) Lunch
+    Equity:Food
+    Ingredients:Vegetables:Beetroot               10g
+    Ingredients:Vegetables:Peppers                20g
+    Ingredients:Vegetables:Carrots                40g
+    Ingredients:Vegetables:Cabbage red            15g
+    Ingredients:Vegetables:Fennel                 10g
+    Ingredients:Spices:Tikka masala               14g
+    Ingredients:Vegetables:Kohlrabi               23g
+    Ingredients:Legumes:Chickpea                  30g
+    Ingredients:Grains:Einkorn                    15g
+    Ingredients:Nuts:Cocoa beans                  10g
+    Ingredients:Nuts:Brazil nuts                  10g
+    Ingredients:Fats:Chocolate 100%               20g
+    Ingredients:Nuts:Walnuts                      25g
+    Ingredients:Fats:Olive oil                    14g
+    Ingredients:Proteins:Turkey roasted          320g
+    Ingredients:Carbs:Pumpkin                    110g
+    Ingredients:Carbs:Bread                       80g
+    Ingredients:Dried fruits:Dates                 2
+    Ingredients:Dried fruits:Goji berries         10g
+    Ingredients:Proteins:Yogurt                  250g
+
+2025/09/08 * (20:00) Dinner
+    Equity:Food
+    Ingredients:Vegetables:Beetroot               25g
+    Ingredients:Legumes:Chickpea                  35g
+    Ingredients:Grains:Einkorn                    20g
+    Ingredients:Vegetables:Carrots                15g
+    Ingredients:Vegetables:Leafy greens            8g
+    Ingredients:Nuts:Walnuts                      20g
+    Ingredients:Nuts:Hazelnuts                     5g
+    Ingredients:Nuts:Cocoa beans                  15g
+    Ingredients:Proteins:Eggs                      3
+    Ingredients:Carbs:Bread                       90g
+    Ingredients:Fats:Chocolate 100%               18g
+    Ingredients:Dried fruits:Dates                 2
+
+2025/09/09 * (09:00) Breakfast
+    Equity:Food
+    Ingredients:Nuts:Almonds                      25g
+    Ingredients:Nuts:Hazelnuts                    25g
+    Ingredients:Nuts:Walnuts                      20g
+    Ingredients:Nuts:Brazil nuts                  10g
+    Ingredients:Nuts:Cocoa beans                  15g
+    Ingredients:Grains:Cereal                     40g
+    Ingredients:Algae:Spirulina                   14g
+    Ingredients:Spices:Curcuma                     7g
+    Ingredients:Proteins:Yogurt                  300g
+    Ingredients:Dried fruits:Dates                 4
+    Ingredients:Dried fruits:Goji berries         10g
+    Ingredients:Fats:Chocolate 100%               18g
+
+2025/09/09 * (13:00) Lunch
+    Equity:Food
+    Ingredients:Proteins:Chicken bouillon        260ml
+    Ingredients:Vegetables:Kohlrabi               10g
+    Ingredients:Vegetables:Peppers                40g
+    Ingredients:Vegetables:Carrots                15g
+    Ingredients:Vegetables:Fennel                 10g
+    Ingredients:Vegetables:Onion fresh            45g
+    Ingredients:Legumes:Chickpea                  20g
+    Ingredients:Grains:Wheat                      30g
+    Ingredients:Fats:Olive oil                    14g
+    Ingredients:Seeds:Anise                        7g
+    Ingredients:Spices:Black pepper                7g
+    Ingredients:Nuts:Almonds                       5g
+    Ingredients:Nuts:Cocoa beans                   5g
+    Ingredients:Proteins:Eggs                      3
+    Ingredients:Proteins:Tofu                     65g
+    Ingredients:Carbs:Bread                       80g
+
+2025/09/09 * (16:30) Snack
+    Equity:Food
+    Ingredients:Fruits:Apples                      1
+    Ingredients:Dried fruits:Dates                 7
+    Ingredients:Nuts:Walnuts                      20g
+    Ingredients:Nuts:Hazelnuts                     5g
+    Ingredients:Nuts:Almonds                       5g
+    Ingredients:Nuts:Cocoa beans                  10g
+    Ingredients:Fats:Chocolate 100%               18g
+    Ingredients:Proteins:Yogurt                   50g
+
+2025/09/09 * (20:00) Dinner
+    Equity:Food
+    Ingredients:Proteins:Eggs                      3
+    Ingredients:Fats:Olive oil                    14g
+
+2025/09/10 * (09:15) Breakfast
+    Equity:Food
+    Ingredients:Nuts:Almonds                      25g
+    Ingredients:Nuts:Hazelnuts                    25g
+    Ingredients:Nuts:Walnuts                      20g
+    Ingredients:Nuts:Cocoa beans                  15g
+    Ingredients:Grains:Cereal                     40g
+    Ingredients:Algae:Spirulina                   14g
+    Ingredients:Spices:Curcuma                     7g
+    Ingredients:Proteins:Yogurt                  260g
+    Ingredients:Dried fruits:Dates                 4
+    Ingredients:Dried fruits:Goji berries         10g
+
+2025/09/10 * (13:45) Lunch
+    Equity:Food
+    Ingredients:Vegetables:Kohlrabi               10g
+    Ingredients:Vegetables:Peppers                55g
+    Ingredients:Vegetables:Mushrooms              75g
+    Ingredients:Vegetables:Carrots                40g
+    Ingredients:Vegetables:Leafy greens            5g
+    Ingredients:Vegetables:Beetroot               15g
+    Ingredients:Grains:Wheat                      35g
+    Ingredients:Fats:Olive oil                    28g
+    Ingredients:Seeds:Anise                        7g
+    Ingredients:Spices:Za'atar                     7g
+    Ingredients:Nuts:Walnuts                      20g
+    Ingredients:Nuts:Almonds                       5g
+    Ingredients:Nuts:Hazelnuts                    10g
+    Ingredients:Nuts:Cocoa beans                   5g
+    Ingredients:Fats:Chocolate 100%               18g
+    Ingredients:Nuts:Brazil nuts                  10g
+    Ingredients:Proteins:Eggs                      2
+    Ingredients:Proteins:Tofu                    110g
+    Ingredients:Dried fruits:Dates                 2
+
+2025/09/10 * (15:45) Snack
+    Equity:Food
+    Ingredients:Carbs:Pumpkin                     85g
+
+2025/09/10 * (19:15) Dinner
+    Equity:Food
+    Ingredients:Proteins:Eggs                      2
+    Ingredients:Carbs:Pumpkin                     70g
+    Ingredients:Proteins:Chicken bouillon         40ml
+    Ingredients:Vegetables:Garlic                  5g
+    Composite:Sandwich                             1  ; Chika sent me a sandwich!
+
+2025/09/11 * (08:15) Breakfast
+    Equity:Food
+    Ingredients:Nuts:Almonds                      10g
+    Ingredients:Nuts:Hazelnuts                    10g
+    Ingredients:Nuts:Walnuts                      20g
+    Ingredients:Nuts:Cocoa beans                  10g
+    Ingredients:Dried fruits:Dates                 4
+    Ingredients:Fats:Chocolate 100%               18g
+    Ingredients:Proteins:Eggs                      2
+    Ingredients:Carbs:Pumpkin                    170g
+
+2025/09/11 * (13:00) Lunch
+    Equity:Food
+    Ingredients:Vegetables:Onion                  76g
+    Ingredients:Vegetables:Peppers                40g
+    Ingredients:Vegetables:Mushrooms              75g
+    Ingredients:Vegetables:Carrots                40g
+    Ingredients:Vegetables:Leafy greens            5g
+    Ingredients:Vegetables:Beetroot               15g
+    Ingredients:Nuts:Walnuts                      35g
+    Ingredients:Nuts:Hazelnuts                     5g
+    Ingredients:Nuts:Brazil nuts                  10g
+    Ingredients:Nuts:Cocoa beans                  10g
+    Ingredients:Proteins:Sardines                 70g
+    Ingredients:Proteins:Eggs                      2
+    Ingredients:Fats:Butter                        3g
+    Ingredients:Proteins:Chicken bouillon        150ml
+    Ingredients:Dried fruits:Dates                 4
+    Ingredients:Dried fruits:Goji berries         10g
+
+2025/09/11 * (16:45) Snack
+    Equity:Food
+    Ingredients:Carbs:Pumpkin                    105g
+    Ingredients:Fruits:Apples                      1
+
+2025/09/11 * (17:45) Snack
+    Equity:Food
+    Ingredients:Fruits:Figs (wild)               200g
+
+2025/09/11 * (19:00) Dinner
+    Equity:Food
+    Ingredients:Proteins:Chicken bouillon        150ml
+    Ingredients:Proteins:Chicken boiled          120g
+    Ingredients:Proteins:Yogurt                   50g
+
+2025/09/12 * (08:15) Breakfast
+    Equity:Food
+    Ingredients:Nuts:Almonds                      25g
+    Ingredients:Nuts:Hazelnuts                    25g
+    Ingredients:Nuts:Brazil nuts                  10g
+    Ingredients:Nuts:Walnuts                      10g
+    Ingredients:Nuts:Cocoa beans                   5g
+    Ingredients:Grains:Cereal                     40g
+    Ingredients:Algae:Spirulina                   14g
+    Ingredients:Spices:Curcuma                     7g
+    Ingredients:Dried fruits:Dates                 4
+    Ingredients:Dried fruits:Goji berries         10g
+    Ingredients:Proteins:Yogurt                  450g
+
+2025/09/12 * (12:00) Lunch
+    Equity:Food
+    Ingredients:Proteins:Chicken boiled          120g
+    Ingredients:Proteins:Chicken bouillon        150ml
+    Ingredients:Proteins:Yogurt                  500g
+    Ingredients:Dried fruits:Dates                 7
+    Ingredients:Nuts:Almonds                      10g
+    Ingredients:Nuts:Hazelnuts                    10g
+    Ingredients:Nuts:Cocoa beans                  10g
+    Ingredients:Fats:Chocolate 100%               36g
+    Ingredients:Carbs:Pasta                       75g
+
+2025/09/12 * (16:30) Snack
+    Equity:Food
+    Ingredients:Fruits:Grapes                    205g
+    Ingredients:Proteins:Yogurt                   50g
+
+2025/09/12 * (19:00) Dinner
+    Equity:Food
+    Ingredients:Grains:Einkorn                    25g
+    Ingredients:Legumes:Chickpea                  25g
+    Ingredients:Proteins:Chicken boiled          150g
+    Ingredients:Proteins:Chicken bouillon        200ml
+    Ingredients:Proteins:Eggs                      2
+    Ingredients:Fats:Butter                        5g
+    Ingredients:Nuts:Cocoa beans                  20g
+    Ingredients:Proteins:Yogurt                   45g
+    Ingredients:Dried fruits:Goji berries         15g
+    Ingredients:Dried fruits:Dates                 6
+    Ingredients:Fats:Chocolate 100%               18g
+
+2025/09/13 * (08:15) Breakfast
+    Equity:Food
+    Ingredients:Nuts:Almonds                      20g
+    Ingredients:Nuts:Hazelnuts                    20g
+    Ingredients:Nuts:Cocoa beans                   5g
+    Ingredients:Grains:Cereal                     30g
+    Ingredients:Dried fruits:Dates                 4
+    Ingredients:Dried fruits:Goji berries         10g
+    Ingredients:Proteins:Yogurt                  300g
+
+2025/09/13 * (13:00) Lunch
+    Equity:Food
+    Ingredients:Vegetables:Peppers                50g
+    Ingredients:Vegetables:Mushrooms              30g
+    Ingredients:Vegetables:Leafy greens            5g
+    Ingredients:Vegetables:Fennel                 10g
+    Ingredients:Legumes:Chickpea                  25g
+    Ingredients:Grains:Einkorn                    25g
+    Ingredients:Proteins:Liver                   190g
+    Ingredients:Proteins:Eggs                      3
+    Ingredients:Fats:Butter                        3g
+    Ingredients:Proteins:Chicken bouillon        400ml
+    Ingredients:Nuts:Walnuts                      30g
+    Ingredients:Nuts:Cocoa beans                  10g
+
+2025/09/13 * (19:00) Dinner
+    Equity:Food
+    Ingredients:Vegetables:Onion                  70g
+    Ingredients:Vegetables:Peppers                85g
+    Ingredients:Vegetables:Mushrooms              30g
+    Ingredients:Vegetables:Leafy greens            5g
+    Ingredients:Vegetables:Garlic                  5g
+    Ingredients:Spices:Ginger                      5g
+    Ingredients:Vegetables:Fennel                 10g
+    Ingredients:Legumes:Chickpea                  30g
+    Ingredients:Grains:Einkorn                    30g
+    Ingredients:Spices:Black pepper              3.5g
+    Ingredients:Seeds:Mustard                    3.5g
+    Ingredients:Seeds:Anise                        7g
+    Ingredients:Proteins:Tofu                    130g
+    Ingredients:Proteins:Sardines                 63g
+    Ingredients:Proteins:Eggs                      2
+    Ingredients:Nuts:Walnuts                      30g
+
+2025/09/14 * (09:45) Breakfast
+    Equity:Food
+    Ingredients:Nuts:Almonds                      25g
+    Ingredients:Nuts:Hazelnuts                    25g
+    Ingredients:Nuts:Walnuts                      20g
+    Ingredients:Nuts:Brazil nuts                  10g
+    Ingredients:Nuts:Cocoa beans                  10g
+    Ingredients:Grains:Cereal                     40g
+    Ingredients:Dried fruits:Dates                 4
+    Ingredients:Dried fruits:Goji berries         10g
+    Ingredients:Algae:Spirulina                   14g
+    Ingredients:Spices:Curcuma                     7g
+    Ingredients:Proteins:Yogurt                  300g
+    Ingredients:Fats:Chocolate 100%               18g
+
+2025/09/14 * (15:30) Lunch
+    Equity:Food
+    Ingredients:Vegetables:Kohlrabi               20g
+    Ingredients:Vegetables:Peppers                60g
+    Ingredients:Vegetables:Carrots                40g
+    Ingredients:Vegetables:Mushrooms              30g
+    Ingredients:Vegetables:Leafy greens            5g
+    Ingredients:Spices:Ginger                      5g
+    Ingredients:Spices:Black pepper              3.5g
+    Ingredients:Seeds:Anise                      3.5g
+    Ingredients:Legumes:Chickpea                  35g
+    Ingredients:Grains:Einkorn                    35g
+    Ingredients:Fats:Olive oil                    28g
+    Ingredients:Nuts:Walnuts                      20g
+    Ingredients:Nuts:Cocoa beans                  15g
+    Ingredients:Nuts:Almonds                       5g
+    Ingredients:Nuts:Hazelnuts                     5g
+    Ingredients:Proteins:Eggs                      3
+    Ingredients:Proteins:Tofu                    145g
+    Ingredients:Dried fruits:Dates                 4
+    Ingredients:Proteins:Yogurt                  210g
+
+2025/09/14 * (16:30) Snack
+    Equity:Food
+    Ingredients:Fruits:Peaches                     1
+
+2025/09/14 * Dinner
+    Equity:Food
+    Ingredients:Proteins:Turkey roasted          400g
+
+2025/09/15 * (09:45) Breakfast
+    Equity:Food
+    Ingredients:Nuts:Almonds                      25g
+    Ingredients:Nuts:Hazelnuts                    25g
+    Ingredients:Nuts:Brazil nuts                  10g
+    Ingredients:Nuts:Cocoa beans                  10g
+    Ingredients:Grains:Cereal                     40g
+    Ingredients:Dried fruits:Dates                 4
+    Ingredients:Dried fruits:Goji berries         10g
+    Ingredients:Algae:Spirulina                   14g
+    Ingredients:Spices:Curcuma                     7g
+    Ingredients:Proteins:Yogurt                  300g
+
+2025/09/15 * (12:45) Lunch
+    Equity:Food
+    Ingredients:Vegetables:Peppers                55g
+    Ingredients:Vegetables:Onion                  75g
+    Ingredients:Vegetables:Carrots                27g
+    Ingredients:Vegetables:Mushrooms              33g
+    Ingredients:Vegetables:Fennel                 17g
+    Ingredients:Vegetables:Leafy greens            3g
+    Ingredients:Fats:Butter                        3g
+    Ingredients:Nuts:Walnuts                      30g
+    Ingredients:Nuts:Cocoa beans                  10g
+    Ingredients:Proteins:Turkey roasted          150g
+    Ingredients:Proteins:Eggs                      2
+    Ingredients:Dried fruits:Dates                 4
+    Ingredients:Fats:Chocolate 100%               18g
+    Ingredients:Proteins:Yogurt                  100g
+    Composite:Deserts                             34g  ; Chika sent me Cheesecake!
+
+2025/09/15 * Dinner
+    Equity:Food
+    Ingredients:Grains:Einkorn                    30g
+    Ingredients:Legumes:Chickpea                  30g
+    Ingredients:Proteins:Eggs                      3
+    Ingredients:Proteins:Sardines                 63g
+    Ingredients:Proteins:Tofu                    120g
+    Ingredients:Carbs:Pasta                       27g
+    Ingredients:Vegetables:Garlic                  5g
+    Ingredients:Nuts:Walnuts                      25g
+    Ingredients:Nuts:Cocoa beans                  10g
+    Ingredients:Dried fruits:Dates                 2
+    Ingredients:Dried fruits:Goji berries         10g
+
+2025/09/16 * (09:00) Breakfast
+    Equity:Food
+    Ingredients:Nuts:Almonds                      25g
+    Ingredients:Nuts:Hazelnuts                    25g
+    Ingredients:Nuts:Brazil nuts                  10g
+    Ingredients:Grains:Cereal                     40g
+    Ingredients:Dried fruits:Dates                 4
+    Ingredients:Dried fruits:Goji berries         10g
+    Ingredients:Algae:Spirulina                   14g
+    Ingredients:Spices:Curcuma                     7g
+    Ingredients:Proteins:Yogurt                  400g
+
+2025/09/16 * (13:15) Lunch
+    Equity:Food
+    Ingredients:Proteins:Chicken bouillon        430ml
+    Ingredients:Vegetables:Peppers                55g
+    Ingredients:Vegetables:Onion                  85g
+    Ingredients:Vegetables:Mushrooms              23g
+    Ingredients:Seeds:Anise                      3.5g
+    Ingredients:Seeds:Mustard                    3.5g
+    Ingredients:Grains:Einkorn                    25g
+    Ingredients:Legumes:Chickpea                  30g
+    Ingredients:Nuts:Walnuts                      10g
+    Ingredients:Nuts:Almonds                       5g
+    Ingredients:Nuts:Hazelnuts                     5g
+    Ingredients:Proteins:Eggs                      3
+    Ingredients:Proteins:Tofu                     88g
+    Ingredients:Fats:Butter                        3g
+
+2025/09/16 * (19:00) Dinner
+    Equity:Food
+    Ingredients:Grains:Einkorn                    25g
+    Ingredients:Legumes:Chickpea                  60g
+    Ingredients:Nuts:Walnuts                      20g
+    Ingredients:Nuts:Almonds                      10g
+    Ingredients:Nuts:Hazelnuts                    10g
+    Ingredients:Nuts:Cocoa beans                  10g
+    Ingredients:Vegetables:Garlic                  5g
+    Ingredients:Carbs:Bread                       80g  ; normal bread from boulangerie
+    Ingredients:Dried fruits:Dates                 4
+    Ingredients:Proteins:Salmon                  250g
+    Ingredients:Fats:Chocolate 100%               18g
+
+2025/09/17 * (09:15) Breakfast
+    Equity:Food
+    Ingredients:Nuts:Almonds                      25g
+    Ingredients:Nuts:Hazelnuts                    25g
+    Ingredients:Nuts:Walnuts                      20g
+    Ingredients:Nuts:Cocoa beans                  15g
+    Ingredients:Grains:Cereal                     40g
+    Ingredients:Dried fruits:Dates                 4
+    Ingredients:Dried fruits:Goji berries         10g
+    Ingredients:Algae:Spirulina                   14g
+    Ingredients:Spices:Curcuma                     7g
+    Ingredients:Proteins:Yogurt                  450g
+
+2025/09/17 * (12:30) Lunch
+    Equity:Food
+    Ingredients:Vegetables:Peppers                55g
+    Ingredients:Vegetables:Carrots                20g
+    Ingredients:Vegetables:Onion                  60g
+    Ingredients:Vegetables:Mushrooms              20g
+    Ingredients:Legumes:Chickpea                  20g
+    Ingredients:Vegetables:Leafy greens            4g
+    Ingredients:Nuts:Walnuts                      25g
+    Ingredients:Proteins:Eggs                      3
+    Ingredients:Proteins:Tofu                    105g
+    Ingredients:Proteins:Salmon                   55g
+    Ingredients:Fats:Olive oil                    14g
+    Ingredients:Fats:Butter                        3g
+    Ingredients:Fats:Chocolate 100%               18g
+
+2025/09/17 * (14:15) Snack
+    Equity:Food
+    Ingredients:Carbs:Pumpkin                    150g
+
+2025/09/17 * (16:45) Snack
+    Equity:Food
+    Ingredients:Carbs:Pumpkin                    170g
+    Ingredients:Nuts:Cocoa beans                  10g
+
+2025/09/17 * (19:45) Dinner
+    Equity:Food
+    Ingredients:Vegetables:Mushrooms              50g
+    Ingredients:Proteins:Eggs                      2
+    Ingredients:Nuts:Walnuts                      30g
+    Ingredients:Nuts:Almonds                       5g
+    Ingredients:Nuts:Hazelnuts                     5g
+    Ingredients:Fats:Chocolate 100%               18g
+    Ingredients:Dried fruits:Dates                 6
+    Ingredients:Carbs:Bread                      100g
+
+2025/09/18 * (08:15) Breakfast
+    Equity:Food
+    Ingredients:Nuts:Almonds                      25g
+    Ingredients:Nuts:Hazelnuts                    25g
+    Ingredients:Nuts:Walnuts                      20g
+    Ingredients:Nuts:Cocoa beans                  10g
+    Ingredients:Grains:Cereal                     40g
+    Ingredients:Dried fruits:Dates                 7
+    Ingredients:Dried fruits:Goji berries         10g
+    Ingredients:Algae:Spirulina                   14g
+    Ingredients:Spices:Curcuma                     7g
+    Ingredients:Proteins:Yogurt                  700g
+
+2025/09/18 * (13:15) Lunch
+    Equity:Food
+    Ingredients:Vegetables:Peppers                55g
+    Ingredients:Vegetables:Carrots                20g
+    Ingredients:Vegetables:Onion                  50g
+    Ingredients:Vegetables:Mushrooms              45g
+    Ingredients:Grains:Einkorn                    25g
+    Ingredients:Seeds:Anise                      3.5g
+    Ingredients:Seeds:Mustard                    3.5g
+    Ingredients:Vegetables:Leafy greens            3g
+    Ingredients:Fats:Olive oil                    28g
+    Ingredients:Nuts:Walnuts                      20g
+    Ingredients:Nuts:Almonds                       5g
+    Ingredients:Nuts:Hazelnuts                     5g
+    Ingredients:Proteins:Eggs                      3
+    Ingredients:Carbs:Pumpkin                    115g
+    Ingredients:Dried fruits:Dates                 2
+    Ingredients:Fats:Chocolate 100%               18g
+
+2025/09/18 * (14:45) Snack
+    Equity:Food
+    Ingredients:Fruits:Figs (wild)                50g
+
+2025/09/18 * (16:45) Snack
+    Equity:Food
+    Ingredients:Fruits:Apples                      1
+    Ingredients:Carbs:Pumpkin                     50g
+    Ingredients:Dried fruits:Dates                 3
+    Ingredients:Nuts:Almonds                       5g
+    Ingredients:Nuts:Hazelnuts                     5g
+    Ingredients:Nuts:Cocoa beans                   5g
+    Ingredients:Proteins:Yogurt                  150g
+
+2025/09/18 * (20:30) Dinner
+    ; late dinner with friends (I didn't measure the food), below are my estimates
+    ; my desert (pumpkin and yogurt) was at around 22:00!
+    Equity:Food
+    Ingredients:Proteins:Turkey roasted          300g
+    Ingredients:Carbs:Potatoes                    50g
+    Ingredients:Carbs:Pumpkin                    150g
+    Ingredients:Proteins:Yogurt                  150g
+    Ingredients:Legumes:Chickpea                  25g
+    Ingredients:Vegetables:Green beans            20g
+
+2025/09/19 * (08:30) Breakfast
+    Equity:Food
+    Ingredients:Nuts:Almonds                      25g
+    Ingredients:Nuts:Hazelnuts                    25g
+    Ingredients:Nuts:Cocoa beans                  10g
+    Ingredients:Grains:Cereal                     40g
+    Ingredients:Dried fruits:Dates                 4
+    Ingredients:Dried fruits:Goji berries         10g
+    Ingredients:Algae:Spirulina                   14g
+    Ingredients:Spices:Curcuma                     7g
+    Ingredients:Proteins:Yogurt                  500g
+    Ingredients:Carbs:Pumpkin                    200g
+
+2025/09/19 * (12:30) Lunch
+    Equity:Food
+    Ingredients:Proteins:Turkey roasted          200g
+    Ingredients:Carbs:Potatoes                    50g
+    Ingredients:Legumes:Lentils                   25g
+    Ingredients:Grains:Einkorn                    25g
+    Ingredients:Legumes:Chickpea                  10g
+    Ingredients:Vegetables:Green beans            25g
+    Ingredients:Fats:Avocado                     115g
+    Ingredients:Fats:Olive oil                    14g
+    Ingredients:Proteins:Yogurt                  200g
+    Ingredients:Dried fruits:Dates                 3
+
+2025/09/19 * (18:30) Dinner
+    Equity:Food
+    Ingredients:Vegetables:Peppers                50g
+    Ingredients:Vegetables:Carrots                30g
+    Ingredients:Vegetables:Onion                  45g
+    Ingredients:Vegetables:Mushrooms              72g
+    Ingredients:Vegetables:Leafy greens            3g
+    Ingredients:Vegetables:Green beans            35g
+    Ingredients:Grains:Einkorn                    20g
+    Ingredients:Legumes:Lentils                   35g
+    Ingredients:Legumes:Chickpea                  20g
+    Ingredients:Fats:Olive oil                    14g
+    Ingredients:Seeds:Anise                      3.5g
+    Ingredients:Seeds:Mustard                    3.5g
+    Ingredients:Proteins:Eggs                      3
+    Ingredients:Carbs:Pumpkin                     67g
+
+; --------------------------------------------------------------------------------------
+; 30 days complete ... finaly this insanity is over!
+; --------------------------------------------------------------------------------------

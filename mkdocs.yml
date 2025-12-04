@@ -52,6 +52,7 @@ not_in_nav: |
     /blog/202411-summer-walking-challenge/README.md
     /blog/202412-python-strings/README.md
     /blog/202511-makefile-doc/README.md
+    /blog/202512-tracking-food/README.md
 
 docs_dir: src
 
