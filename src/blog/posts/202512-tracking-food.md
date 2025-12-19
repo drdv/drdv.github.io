@@ -246,6 +246,10 @@ this frame of mind lead to many valuable discussions with friends that helped me
 understand much about my food and in turn about myself. I am curious to see what would I
 think of this post in five years time ...
 
+!!! note "Comments"
+
+    Got feedback? Leave it [here](https://github.com/drdv/drdv.github.io/discussions/2).
+
 [^1]: However, normally, when I say "I am cooking" I really mean "I am assembling
     ingredients".
 

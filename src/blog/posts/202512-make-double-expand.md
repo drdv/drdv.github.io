@@ -237,6 +237,10 @@ the above behaviour:
 > references to built-in functions that have special expansion rules, like
 > 'foreach' or 'if', may not work as you expect.
 
+!!! note "Comments"
+
+    Got feedback? Leave it [here](https://github.com/drdv/drdv.github.io/discussions/3).
+
 [^1]: But there are exceptions, which are discussed below. Note that `$$` is equivalent
 to `$($)`, and only the first `$` defines the start of a macro reference, while the
 second `$` is a part of the associated string (which expands to itself).

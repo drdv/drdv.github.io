@@ -118,6 +118,10 @@ generated for convenient use in presentations.
 
 ![ss](../202511-makefile-doc/examples/makefile-doc-help.png)
 
+!!! note "Comments"
+
+    Got feedback? Leave it [here](https://github.com/drdv/drdv.github.io/discussions/6).
+
 [^1]: The meaning of the three tokens is entirely up to you.
 [^2]: This is done by specifying the `EXPORT_THEME` option (see the project
     [README](https://github.com/drdv/makefile-doc?tab=readme-ov-file#export-to-html-and-latex).)

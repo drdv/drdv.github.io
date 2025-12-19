@@ -513,3 +513,7 @@ The design decision to have immutable string in python has far-reaching implicat
 related to e.g., hashing, performance optimizations, garbage collection, thread safety
 etc. In addition to all this, having immutable strings was a prerequisite for the
 approach in [PEP 393](https://peps.python.org/pep-0393/).
+
+!!! note "Comments"
+
+    Got feedback? Leave it [here](https://github.com/drdv/drdv.github.io/discussions/7).

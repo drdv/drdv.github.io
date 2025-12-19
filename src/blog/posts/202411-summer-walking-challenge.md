@@ -134,3 +134,7 @@ Here is the [csv](../202411-summer-walking-challenge/data/export_clean.csv) data
 above figures.
 
 ![](../202411-summer-walking-challenge/img/2024_summer.png){ width=200 align=right }
+
+!!! note "Comments"
+
+    Got feedback? Leave it [here](https://github.com/drdv/drdv.github.io/discussions/8).

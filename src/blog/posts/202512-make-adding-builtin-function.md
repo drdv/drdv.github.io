@@ -116,4 +116,8 @@ empty/commented lines after the first recipe line are not accounted for (my gues
 that this is a consequence of "[how makefiles are
 parsed](https://www.gnu.org/software/make/manual/html_node/Parsing-Makefiles.html)").
 
+!!! note "Comments"
+
+    Got feedback? Leave it [here](https://github.com/drdv/drdv.github.io/discussions/4).
+
 [^1]: I am sure I don't handle some edge-cases -- but that's beyond the point.
