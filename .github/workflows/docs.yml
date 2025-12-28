@@ -1,0 +1,32 @@
+name: Documentation
+on:
+  push:
+    branches:
+      - master
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+jobs:
+  deploy:
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/configure-pages@v5
+      - uses: actions/checkout@v5
+      - uses: actions/setup-python@v5
+        with:
+          python-version: 3.x
+      - run: |
+          pip install markdown-exec>=1.11.0
+          pip install mkdocs-glightbox>=0.5.2
+          pip install mkdocs-material>=9.6.22
+          pip install mkdocs-thumbnails>=0.0.10
+      - run: mkdocs build --clean
+      - uses: actions/upload-pages-artifact@v4
+        with:
+          path: site
+      - uses: actions/deploy-pages@v4
+        id: deployment

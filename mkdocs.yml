@@ -1,5 +1,5 @@
 site_name: Dimitar Dimitrov
-site_url: https://drdv.github.io/
+site_url: https://drdv.net/
 
 plugins:
   - blog:

@@ -1,6 +1,6 @@
 include Makefile.inc
 
-.PHONY: serve build deploy artifacts clean-artifacts clean-site clean
+.PHONY: serve build artifacts clean-artifacts clean-site clean
 
 ## Serve site locally
 serve: build
@@ -9,10 +9,6 @@ serve: build
 ## Build site
 build: clean-site artifacts
 	@$(RUN) mkdocs build
-
-##! Deploy site
-deploy: clean-site
-	@${RUN} mkdocs gh-deploy
 
 ## Generate artifacts for all blogs
 artifacts:
