@@ -4,9 +4,25 @@
 
 I was born in Sofia, Bulgaria (20.11.1975)
 
+=== "Overview"
+
+	!!! note inline "Research background"
+
+		+ My core background is in the fields of optimization, real-time optimal control and
+		  dynamic simulation.
+		+ I have more than 20 years of modeling experience across a wide range of applications,
+		  including robotics, economical systems, online bidding, missile navigation, ...
+
+	!!! note "Software development"
+
+		+ I am an experienced software developer with a strong background in **Python** and
+		  **C++**. I have a good working knowledge across a wide range of programming languages,
+		  including **Scala/Spark** and several **Lisp** variants.
+		+ I have a solid foundation in algorithms and data structures.
+
 ## Professional experience
 
-??? info "**2021.03** - **2024.05**: [Kelkoo](https://www.kelkoogroup.com)"
+!!! info "**2021.03** - **2024.05**: [Kelkoo](https://www.kelkoogroup.com)"
 
     **senior data scientist** (science team)
 
@@ -28,7 +44,7 @@ I was born in Sofia, Bulgaria (20.11.1975)
         + working with `HDFS`, `YARN`
         + in charge of scientific and project documentation
 
-??? info "**2017.09** - **2021.03**: [ProbaYes](http://www.probayes.com/en)"
+!!! info "**2017.09** - **2021.03**: [ProbaYes](http://www.probayes.com/en)"
 
     **data scientist/software engineer**
 
@@ -59,7 +75,7 @@ I was born in Sofia, Bulgaria (20.11.1975)
 
 ## Research experience
 
-??? info "**2012.10** - **2015.12**: [INRIA Rhône-Alpes](http://www.inria.fr/centre/grenoble)"
+!!! info "**2012.10** - **2015.12**: [INRIA Rhône-Alpes](http://www.inria.fr/centre/grenoble)"
 
     **research scientist** ([BIPOP](http://www.inrialpes.fr/bipop/index.html) team)
 
@@ -78,7 +94,7 @@ I was born in Sofia, Bulgaria (20.11.1975)
             + implemented an active-set solver for lexicographic least-squares problems
         + `matlab`
 
-??? info "**2007.12** - **2012.09**: [Örebro University](http://www.oru.se)"
+!!! info "**2007.12** - **2012.09**: [Örebro University](http://www.oru.se)"
 
     **research scientist/lecturer** ([Mobile Robotics and Olfaction Lab at AASS](https://www.oru.se/english/research/research-environments/ent/AASS/alumni))
 
@@ -93,7 +109,7 @@ I was born in Sofia, Bulgaria (20.11.1975)
         + simulation of multibody systems
         + introduction to optimization
 
-??? info "**2006.12** - **2007.12**: [INRIA Rhône-Alpes](http://www.inria.fr/centre/grenoble)"
+!!! info "**2006.12** - **2007.12**: [INRIA Rhône-Alpes](http://www.inria.fr/centre/grenoble)"
 
     **research scientist** ([BIPOP](http://www.inrialpes.fr/bipop/index.html) team)
 
@@ -101,7 +117,7 @@ I was born in Sofia, Bulgaria (20.11.1975)
 
 ## Education
 
-??? info "**2003.04** - **2006.03**: [Tohoku University](http://www.tohoku.ac.jp)"
+!!! info "**2003.04** - **2006.03**: [Tohoku University](http://www.tohoku.ac.jp)"
 
     + [Space Robotics Laboratory](http://www.astro.mech.tohoku.ac.jp) Department of Aerospace Engineering
     + **degree**: Ph.D. in aerospace engineering
@@ -109,13 +125,13 @@ I was born in Sofia, Bulgaria (20.11.1975)
     + **advisor**: [Prof. Kazuya Yoshida](https://scholar.google.com/citations?user=mzUOHycAAAAJ&hl=en)
     + **awards**: Scholarship from the Japanese Ministry of Education MONBU-SHYO (**2003.04** - **2006.03**)
 
-??? info "**2003.04** - **2006.03**: [Hirosaki University](https://www.hirosaki-u.ac.jp/en)"
+!!! info "**2003.04** - **2006.03**: [Hirosaki University](https://www.hirosaki-u.ac.jp/en)"
 
     + Department of [Mechanical Science and Engineering](https://www.st.hirosaki-u.ac.jp/english)
     + **advisor**: [Prof. Dragomir Nenchev](https://scholar.google.com/citations?user=f72Fm44AAAAJ&hl=en)
     + **awards**: Scholarship from Hirosaki University (**2002.10** - **2003.03**)
 
-??? info "**1994.09** - **2001.09**: [Technical University - Sofia](http://www.tu-sofia.bg)"
+!!! info "**1994.09** - **2001.09**: [Technical University - Sofia](http://www.tu-sofia.bg)"
 
     + Faculty of [Automatics](http://fa.tu-sofia.bg)
     + **degrees**: M.Sc. in robotics (**1999.09**), B.A. in electrical engineering (**1997.09**)
@@ -132,5 +148,5 @@ I was born in Sofia, Bulgaria (20.11.1975)
 - Bulgarian (native)
 - English (fluent)
 - Japanese (conversational)
+- French (conversational)
 - Russian (basic)
-- French (beginner)
