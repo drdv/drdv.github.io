@@ -41,7 +41,7 @@ theme:
     - navigation.top
 
 nav:
-  - Index: index.md
+  - Home: index.md
   - CV: cv.md
   - Publications: publications.md
   - GPG: gpg.md

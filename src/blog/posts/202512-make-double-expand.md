@@ -4,6 +4,7 @@ date: 2025-12-01
 categories:
   - GNU Make
 slug: 202512-make-double-expand
+description: A cool double-expand trick in GNU Make that makes functional programming possible.
 ---
 
 # `GNU Make`: double-expand

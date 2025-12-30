@@ -4,6 +4,7 @@ date: 2025-12-03
 categories:
   - GNU Make
 slug: 202512-make-adding-builtin-function
+description: An example of how to add a built-in function to GNU Make.
 ---
 
 # `GNU Make`: Adding a built-in function

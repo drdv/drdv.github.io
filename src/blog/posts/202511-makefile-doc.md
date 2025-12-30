@@ -6,14 +6,15 @@ date:
 categories:
   - GNU Make
 slug: 202511-makefile-doc
+description: Presentation of makefile-doc, an AWK script for documenting GNU Makefiles.
 ---
 
 # Documenting Makefiles
 
 After having spent years documenting my `Makefile`s using (a variation of)
- [this](https://gist.github.com/prwhite/8168133) `awk` one-liner, I decided to factor
- things out in a library [makefile-doc](https://github.com/drdv/makefile-doc). This
- turned out to be a nice small project with `awk`. The following is a short overview.
+[this](https://gist.github.com/prwhite/8168133) `awk` one-liner, I decided to factor
+things out in a library [makefile-doc](https://github.com/drdv/makefile-doc). This
+turned out to be a nice small project with `awk`. The following is a short overview.
 
 <!-- more -->
 

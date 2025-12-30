@@ -90,7 +90,7 @@ I was born in Sofia, Bulgaria (20.11.1975)
         + numerical analysis
 
     === "coding"
-        + `c++`
+        + `C++`
             + implemented an active-set solver for lexicographic least-squares problems
         + `matlab`
 

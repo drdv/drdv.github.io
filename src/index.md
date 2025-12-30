@@ -1,8 +1,3 @@
----
-hide:
-  - toc
----
-
 # Welcome to my page!
 
 I have worked as a senior data scientist at [Kelkoo](https://www.kelkoogroup.com)

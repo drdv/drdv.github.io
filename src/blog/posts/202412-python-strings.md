@@ -4,6 +4,7 @@ date: 2024-12-06
 categories:
   - python
 slug: 202412-python-strings
+description: Investigation of how python strings are implemented, core concepts in their design and reasons for their immutability.
 ---
 
 # Anatomy of python strings

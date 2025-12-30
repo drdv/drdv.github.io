@@ -4,6 +4,7 @@ date: 2024-11-15
 categories:
   - sports
 slug: 202411-summer-walking-challenge
+description: My summer walking challenge, walked 28km on average per day over a month and over 2000km in two months and a half.
 ---
 
 # Summer walking challenge

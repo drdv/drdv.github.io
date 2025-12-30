@@ -4,6 +4,7 @@ date: 2025-12-10
 categories:
   - food
 slug: 202512-tracking-food
+description: Tracking my food for a month -- a very revealing exercise.
 ---
 
 # Tracking my food for a month

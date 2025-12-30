@@ -4,6 +4,7 @@ date: 2025-11-13
 categories:
   - GNU Make
 slug: 202511-make-double-colon-rules
+description: I have found GNU Make's double-colon rules to be very useful.
 ---
 
 # `GNU Make`: double-colon rules
