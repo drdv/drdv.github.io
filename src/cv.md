@@ -6,19 +6,27 @@ I was born in Sofia, Bulgaria (20.11.1975)
 
 === "Overview"
 
-	!!! note inline "Research background"
+	!!! note inline ""
 
-		+ My core background is in the fields of optimization, real-time optimal control and
-		  dynamic simulation.
-		+ I have more than 20 years of modeling experience across a wide range of applications,
-		  including robotics, economical systems, online bidding, missile navigation, ...
+        Consistently managing multiple projects with tight deadlines comes naturally.
+
+	!!! note inline "Scientific research"
+
+		I specialize in optimization, real-time optimal control, and dynamic simulation, with
+		more than 20 years of modeling experience spanning robotics, economic systems, online
+		bidding, missile navigation, automated vehicles, nuclear reactor instrumentation safety,
+		satellite systems etc. I have a strong background in machine learning and advanced data analysis.
+	    I am very skilled at problem abstraction, documentation and presentation.
 
 	!!! note "Software development"
 
-		+ I am an experienced software developer with a strong background in **Python** and
-		  **C++**. I have a good working knowledge across a wide range of programming languages,
-		  including **Scala/Spark** and several **Lisp** variants.
-		+ I have a solid foundation in algorithms and data structures.
+		I am an experienced software developer with a strong background in **Python** and
+		**C++**. I have a good working knowledge across a wide range of programming languages,
+		including **Scala/Spark** (for large-scale data processing), **Rust**, **Racket**,
+		**Emacs lisp** and several domain-specific languages such as **Matlab**. I have a solid
+		foundation in algorithms and data structures, with a focus on building efficient,
+		maintainable, and scalable systems. I’m most effective in Linux-based environments,
+		building and maintaining development infrastructure, version control workflows and CI pipelines.
 
 ## Professional experience
 
@@ -35,14 +43,18 @@ I was born in Sofia, Bulgaria (20.11.1975)
     === "coding"
         + `python`
             + development of company standards for code quality and documentation
-            + design/maintenance of common libraries
+            + design/maintenance of common libraries for
+			    + accessing HDFS through its REST API
+                + interfacing optimization solvers and tools
+				+ convenient use of Jupyter notebooks with `scala/spark`
             + put in place a local PyPi server
-        + `scala`
-            + production quality code
-        + `spark`
-            + production quality code
-        + working with `HDFS`, `YARN`
+        + `scala/spark`
+            + production quality code implementing operations-research-based-solutions to traffic optimization
+            + working with `HDFS`, `YARN`
         + in charge of scientific and project documentation
+		    + designed, implemented and put in practice a custom system for result logging and exchange
+		+ integrated [OR tools](https://developers.google.com/optimization) and other specialized solvers into the standard pipeline (a game-changer)
+		+ core participant in the adoption and testing of GitLab CI based workflows
 
 !!! info "**2017.09** - **2021.03**: [ProbaYes](http://www.probayes.com/en)"
 
@@ -66,12 +78,14 @@ I was born in Sofia, Bulgaria (20.11.1975)
 
     === "coding"
         + `python`
-            + delivered code for [many projects](#__tabbed_2_1) to clients (on Linux/Windows)
+            + fast prototyping in the context of many short-term projects (a skill of its own)
+			+ support and delivery of code for Linux/Windows
+            + development of long-term projects with close client collaboration and tight deadlines
         + `C++`
-            + worked as consultant/contractor on code base of [Valeo](https://www.valeo.com/en)
+            + worked as a consultant/contractor on the code base of [Valeo](https://www.valeo.com/en)
             + design/maintenance of `CMake` based build systems
         + `rust`
-            + developed rocket simulator for [MBDA](https://www.mbda-systems.com)
+            + developed a rocket simulator in Rust for [MBDA](https://www.mbda-systems.com) in the context of a reinforcement learning project
 
 ## Research experience
 
@@ -92,7 +106,7 @@ I was born in Sofia, Bulgaria (20.11.1975)
     === "coding"
         + `C++`
             + implemented an active-set solver for lexicographic least-squares problems
-        + `matlab`
+        + `Matlab`
 
 !!! info "**2007.12** - **2012.09**: [Örebro University](http://www.oru.se)"
 
@@ -134,8 +148,8 @@ I was born in Sofia, Bulgaria (20.11.1975)
 !!! info "**1994.09** - **2001.09**: [Technical University - Sofia](http://www.tu-sofia.bg)"
 
     + Faculty of [Automatics](http://fa.tu-sofia.bg)
-    + **degrees**: M.Sc. in robotics (**1999.09**), B.A. in electrical engineering (**1997.09**)
-    + **advisor**: Prof. Veselin Pavlov (M.Sc. thesis)
+    + **degrees**: M.S. in robotics (**1999.09**), B.S. in electrical engineering (**1997.09**)
+    + **advisor**: Prof. Veselin Pavlov (M.S. thesis)
     + I decided to move to Japan after having spent two years as a doctoral student
 
 
