@@ -1,6 +1,6 @@
 # Curriculum vitae
 
-![me](img/me.jpg)
+![me](img/me.jpg){ width="200" }
 
 I was born in Sofia, Bulgaria (20.11.1975)
 
