@@ -133,7 +133,7 @@ I was born in Sofia, Bulgaria (20.11.1975)
 
 !!! info "**2003.04** - **2006.03**: [Tohoku University](http://www.tohoku.ac.jp)"
 
-    + [Space Robotics Laboratory](http://www.astro.mech.tohoku.ac.jp) Department of Aerospace Engineering
+    + [Space Robotics Laboratory](https://astro.mech.tohoku.ac.jp) Department of Aerospace Engineering
     + **degree**: Ph.D. in aerospace engineering
     + **topic**: dynamics and control of space manipulators during a satellite capturing operation
     + **advisor**: [Prof. Kazuya Yoshida](https://scholar.google.com/citations?user=mzUOHycAAAAJ&hl=en)
