@@ -7,7 +7,7 @@ serve: build
 	@$(RUN) mkdocs serve --livereload -o
 
 ## Build site
-build: clean-site artifacts
+build: clean-site # artifacts
 	@$(RUN) mkdocs build
 
 ## Generate artifacts for all blogs
