@@ -2,6 +2,8 @@
 
 ## 2016
 
+This is the year I left academia.
+
 ??? info "Efficient resolution of potentially conflicting linear constraints in robotics"
 
     [manuscript](https://hal.inria.fr/hal-01183003){ .md-button }
