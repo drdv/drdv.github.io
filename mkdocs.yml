@@ -34,10 +34,7 @@ theme:
     - content.code.annotate
     - content.code.copy
     - navigation.indexes
-    - navigation.footer
-    # - navigation.sections
-    # - navigation.tabs
-    # - navigation.tabs.sticky
+    # - navigation.footer
     - navigation.top
 
 nav:
@@ -67,6 +64,20 @@ extra:
   analytics:
     provider: google
     property: G-P7SQ9ZNNBH
+
+extra:
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/drdv
+
+    - icon: fontawesome/brands/linkedin
+      link: https://linkedin.com/in/drdv
+
+    - icon: fontawesome/brands/google-scholar
+      link: https://scholar.google.com/citations?user=rYC8ycUAAAAJ&hl=en
+
+
+
 
 markdown_extensions:
   - def_list
