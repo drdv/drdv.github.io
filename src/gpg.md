@@ -1,3 +1,8 @@
+---
+hide:
+    - navigation
+---
+
 # My public GPG key
 
 [download](snippets/gpg.pub){ .md-button }

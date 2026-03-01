@@ -1,3 +1,8 @@
+---
+hide:
+    - navigation
+---
+
 # Welcome to my page!
 
 I am the Founder & CEO of [Manabiya](https://www.manabiya.fr) &mdash; an education

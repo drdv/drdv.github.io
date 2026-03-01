@@ -1,3 +1,8 @@
+---
+hide:
+    - navigation
+---
+
 # [Publications](http://scholar.google.com/citations?user=rYC8ycUAAAAJ&hl=en)
 
 ## 2016

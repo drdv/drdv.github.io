@@ -18,6 +18,8 @@ plugins:
 
 theme:
   name: material
+  favicon: img/logo-manabiya.png
+  logo: img/logo-manabiya.png
   palette:
     # Palette toggle for light mode
     - scheme: default
@@ -34,8 +36,8 @@ theme:
     - content.code.annotate
     - content.code.copy
     - navigation.indexes
-    # - navigation.footer
     - navigation.top
+    - navigation.tabs
 
 nav:
   - Home: index.md
@@ -66,6 +68,7 @@ extra:
     property: G-P7SQ9ZNNBH
 
 extra:
+  generator: false
   social:
     - icon: fontawesome/brands/github
       link: https://github.com/drdv
@@ -75,9 +78,6 @@ extra:
 
     - icon: fontawesome/brands/google-scholar
       link: https://scholar.google.com/citations?user=rYC8ycUAAAAJ&hl=en
-
-
-
 
 markdown_extensions:
   - def_list

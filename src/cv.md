@@ -1,3 +1,8 @@
+---
+hide:
+    - navigation
+---
+
 # Curriculum vitae
 
 ![me](img/me.jpg){ width="200" }
