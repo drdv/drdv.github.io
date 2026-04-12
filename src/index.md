@@ -10,11 +10,7 @@ center for software engineering, mathematical optimization and their application
 not stop by and join one of our [open-door events](https://www.manabiya.fr/workshops)
 &mdash; let’s explore ideas and work on a hobby-project together.
 
-I am a Co-founder & active member of [Peshachko](https://www.peshachko.bg) &mdash; a
-Bulgarian non-governmental organization that promotes walking as a simple way to stay
-healthy and create more vibrant, people-friendly cities.
-
-I am also a proud father of two teenage daughters, that don't listen to a word I say :)
+I am a proud father of two teenage daughters, that don't listen to a word I say :)
 
 I have worked as a senior data scientist at [Kelkoo](https://www.kelkoogroup.com)
 (France) and a data scientist/software engineer at

@@ -41,9 +41,9 @@ I was born in Sofia, Bulgaria (20.11.1975)
 	software engineering, mathematical optimization and their applications. Our courses are 
 	designed to help you help yourself!
 
-!!! info "**2026.01** &mdash; present : [Peshachko](https://www.peshachko.bg)[^1]"
+!!! info "**2026.01** : [Peshachko](https://www.peshachko.bg)[^1]"
 
-    **Co-founder & active member** of [Peshachko](https://www.peshachko.bg) &mdash; a 
+    **Co-founder** of [Peshachko](https://www.peshachko.bg) &mdash; a
 	Bulgarian non-governmental organization that promotes walking as a simple way to stay 
 	healthy and create more vibrant, people-friendly cities. 
 
