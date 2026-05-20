@@ -213,7 +213,7 @@ hour (it is naturally sweet and so damn delicious).
 --8<-- "blog/202512-tracking-food/out/bal-fruits"
 ```
 
-Dates are my "fried in need". I think that I can easily determined how stressed I am by
+Dates are my "friend in need". I think that I can easily determine how stressed I am by
 how many dates I eat (there is a clear correlation). I eat them mostly with my breakfast
 and before I exercise. During the experiment I didn't feel like eating a lot of fruits
 with one exception -- figs. They are quite expensive and I have no idea why but in the
