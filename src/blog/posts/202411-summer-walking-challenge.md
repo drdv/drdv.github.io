@@ -134,6 +134,13 @@ All in all, this adds up to between 4 and 7 hours of walking per day.
 Here is the [csv](../202411-summer-walking-challenge/data/export_clean.csv) data used to generate the
 above figures.
 
+**Note**: After several years of tracking my walking habits, I realized that the default
+conversion from step count to distance (as estimated by my iPhone) is not entirely
+accurate. Comparing the estimates with my actual walking distances, I found that the
+reported values were, on average, about 10% too low. While going back and updating the
+figures in this post would be largely pointless, it is worth mentioning that I had, in
+fact, achieved the 30 km per day target I was aiming for.
+
 ![](../202411-summer-walking-challenge/img/2024_summer.png){ width=200 align=right }
 
 !!! note "Comments"
