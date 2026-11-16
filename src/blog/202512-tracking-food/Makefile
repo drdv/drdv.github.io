@@ -1,30 +1,20 @@
+-include $(HOME)/help.mk
+
 MAKEFLAGS := --no-print-directory --warn-undefined-variables
 LEDGER := ledger
 LEDGER_DEPS := data.ledger .ledgerrc
 
 override OUT_DIR := out
 
-EXPORT_BALANCE := balance
-
-help: URL := github.com/drdv/makefile-doc/releases/latest/download/makefile-doc.awk
-help: DIR := $(HOME)/.local/share/makefile-doc
-help: SCR := $(DIR)/makefile-doc.awk
-help: VFLAGS = -v SUB='$$(OUT_DIR)/$$(EXPORT_BALANCE):$(OUT_DIR)/$(EXPORT_BALANCE):'
-help: ## Show this help
-	@test -f $(SCR) || wget -q -P $(DIR) $(URL)
-	@awk $(VFLAGS) -f $(SCR) $(MAKEFILE_LIST)
+empty :=
+space := $(empty) $(empty)
+ARTIFACTS := bal-backbone bal-vegetables bal-proteins bal-carbs bal-fruits bal-fats reg-eggs
+MAKEFILE_DOC_FLAGS := -v SUB='$(subst $(space),;,$(foreach t,$(ARTIFACTS),$$(OUT_DIR)/$t:$(OUT_DIR)/$t:))'
 
 .PHONY: all clean
 
 ## Generate artifacts
-all: \
-	$(OUT_DIR)/bal-backbone \
-	$(OUT_DIR)/bal-vegetables \
-	$(OUT_DIR)/bal-proteins \
-	$(OUT_DIR)/bal-carbs \
-	$(OUT_DIR)/bal-fruits \
-	$(OUT_DIR)/bal-fats \
-	$(OUT_DIR)/reg-eggs
+all: $(addprefix $(OUT_DIR)/,$(ARTIFACTS))
 
 ## Balance: backbone
 $(OUT_DIR)/bal-backbone: $(LEDGER_DEPS) Makefile | $(OUT_DIR)
