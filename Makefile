@@ -1,4 +1,4 @@
-include Makefile.inc
+include common.mk
 
 .PHONY: serve build artifacts clean-artifacts clean-site clean
 
